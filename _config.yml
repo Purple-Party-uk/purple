@@ -5,7 +5,7 @@ lang: en-GB
 
 # If the site lives at https://USERNAME.github.io/REPO/ set baseurl to "/REPO".
 # If you use a custom domain (CNAME) or a USERNAME.github.io repo, leave it empty.
-baseurl: ""
+baseurl: "/purple"
 url: ""
 
 # ---- Links to fill in before launch (leave "" until ready) ----
