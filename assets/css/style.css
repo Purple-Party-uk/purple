@@ -457,7 +457,6 @@ body.dark-top main{margin-top:-68px;}
 .hero-media.blend{background:
   radial-gradient(circle at 92% 88%, rgba(14,124,116,.55), transparent 26%),
   linear-gradient(100deg,#5B1F4F 0%,#4A2466 30%,#3A2D86 55%,#26307A 80%,#1C2766 100%);}
-@media (max-width:560px){
 
 /* Inner headers matched to home blend */
 .page-head,.page-head.theme,.page-head.donate-head{background:
