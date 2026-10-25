@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="wrap nav">
-    <a href="{{ '/' | relative_url }}" class="wordmark" aria-label="Purple home"><i aria-hidden="true"></i>Purple</a>
+    <a href="{{ '/' | relative_url }}" class="wordmark" aria-label="Purple home">{% include logo.html %}</a>
     <button class="burger" aria-expanded="false" aria-controls="menu" id="burger">Menu</button>
     <ul class="menu" id="menu">
       {% assign n = page.nav %}
