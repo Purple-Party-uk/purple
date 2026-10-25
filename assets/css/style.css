@@ -432,8 +432,8 @@ body.dark-top main{margin-top:-68px;}
     radial-gradient(circle at 88% 20%, rgba(139,127,224,.45), transparent 34%),
     linear-gradient(120deg,#231B5E 0%,#3A2D86 70%,#2E2474 100%);}
 .page-head .wrap{position:relative;z-index:1;padding-top:118px;padding-bottom:64px;}
-.page-head h1{color:#fff;animation:rise .7s ease both;}
-.page-head .lede{color:#D9D5F5;animation:rise .7s .08s ease both;}
+.page-head h1{color:#fff;animation:rise .25s ease both;}
+.page-head .lede{color:#D9D5F5;animation:rise .25s .04s ease both;}
 .page-head .crumbs{color:#B9B4E4;}
 .page-head .crumbs a{color:#DAD6F6;}
 .page-head .crumbs a:hover{color:#fff;}
