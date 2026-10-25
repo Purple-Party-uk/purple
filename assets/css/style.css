@@ -512,3 +512,10 @@ body.dark-top main{margin-top:-68px;}
 .ctext th,.ctext td{border-bottom:1px solid var(--line);padding:6px 10px 6px 0;text-align:left;vertical-align:top;}
 .ctext th:empty{padding:0;}
 .body h2{scroll-margin-top:90px;}
+
+/* Optional photo behind a bill's page header (front matter: image, image_alt, image_credit, image_position) */
+.page-head .ph-media{position:absolute;inset:0;z-index:0;pointer-events:none;background-size:cover;background-position:center 45%;background-repeat:no-repeat;filter:grayscale(1) contrast(1.15);mix-blend-mode:luminosity;opacity:.42;
+  -webkit-mask-image:linear-gradient(100deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.4) 45%,#000 80%);mask-image:linear-gradient(100deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.4) 45%,#000 80%);}
+.page-head .ph-credit{position:absolute;right:16px;bottom:10px;z-index:1;margin:0;font-size:11.5px;color:rgba(255,255,255,.6);}
+.page-head .ph-credit a{color:inherit;text-decoration:underline;}
+@media (max-width:760px){.page-head .ph-media{opacity:.3;-webkit-mask-image:none;mask-image:none;}.page-head .ph-credit{right:12px;bottom:6px;font-size:10.5px;}}

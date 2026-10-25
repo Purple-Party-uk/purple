@@ -4,6 +4,10 @@ title: "Crown Reform Bill"
 long_title: "A Bill to make provision for the transfer of Crown property to public ownership; to abolish the Sovereign Grant and provide for the remuneration of the Monarch and Heir Apparent; to remove legal exemptions applying to the Crown and members of the Royal Family; to abolish Royal Assent, King's Consent, and the Privy Council; to require publication of communications between the Monarch and Ministers; to provide for parliamentary votes on the continuation of the monarchy upon succession; and for connected purposes."
 policies: [crown-reform]
 # video: YOUTUBE_ID
+# Header photo. Swap for /assets/img/state-opening-2023.jpg once the file is uploaded to the repo.
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lords_Chamber_%28State_Opening_2023%29.jpg/1920px-Lords_Chamber_%28State_Opening_2023%29.jpg"
+image_alt: "The House of Lords chamber during the State Opening of Parliament, November 2023"
+image_credit: 'Photo: © House of Lords / Roger Harris, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>'
 parts:
   - title: "Property and Crown Estate"
     clauses:
