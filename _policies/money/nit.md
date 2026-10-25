@@ -19,11 +19,17 @@ flag_order: 2
 
 ## What we would do
 
-*To follow.*
+Nobody living in the UK would fall below a guaranteed income of £18,000 a year.
 
 ## How it works
 
-*To follow.*
+The payment is based on where you live, not on your work record.
+
+It is paid into a bank account in your name only. Joint accounts do not qualify, and nobody else can direct, redirect or receive the money. This protects people whose partner or family controls their finances.
+
+Banks must open a basic account for anyone who receives the payment. People who cannot produce the usual documents, for example because an abusive partner is holding them, can use simpler proof of identity.
+
+*More detail to follow.*
 
 ## What it costs
 
