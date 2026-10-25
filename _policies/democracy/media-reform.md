@@ -5,6 +5,7 @@ order: 2
 title: "Media reform"
 summary: "Break up concentrated media ownership and protect independent journalism."
 bills: []
+# paper: /assets/papers/media-reform.pdf   # full policy paper; uncomment once uploaded
 flagship: true
 flag_order: 5
 # image: /assets/img/media-reform.jpg   # uncomment when you have a photo

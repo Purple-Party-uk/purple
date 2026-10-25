@@ -8,7 +8,17 @@ nav: policies
   <h1>{{ page.name }}</h1>
   <p class="lede">{{ page.prob }} {{ page.ans }}</p>
 </div></div>
-<section class="block"><div class="wrap">
+{% assign stance = content | strip %}
+<section class="block stance"><div class="wrap">
+  <h2>What we stand for</h2>
+  <div class="stance-body">
+  {% if stance != "" %}{{ content }}{% else %}
+    <p><span class="phtxt">[What we stand for in this area, 150–250 words: the problem readers recognise, the principle Purple applies to it, and what would change. Write it in the body of this area's file in _themes/.]</span></p>
+  {% endif %}
+  </div>
+</div></section>
+<section class="block alt"><div class="wrap">
+  <h2 class="list-head">Our policies</h2>
 {% if list.size > 0 %}
   <ul class="plist">
   {% for p in list %}

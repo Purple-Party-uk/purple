@@ -44,6 +44,11 @@ nav: policies
     {% else %}
       <div class="panel"><h3>Draft legislation</h3><p class="small">No bill published for this policy yet.</p></div>
     {% endif %}
+    {% if page.paper %}{% if page.paper contains "://" %}{% assign paper_url = page.paper %}{% else %}{% assign paper_url = page.paper | relative_url %}{% endif %}
+      <div class="panel"><h3>Full policy paper</h3><p class="small">The evidence, costing workings and sources behind this policy.</p><a class="btn" href="{{ paper_url }}">Read the full paper</a></div>
+    {% else %}
+      <div class="panel"><h3>Full policy paper</h3><p class="small">The full paper, with the evidence, costing workings and sources, is being prepared and will be published here.</p></div>
+    {% endif %}
     {% if related.size > 0 %}
     <div class="panel"><h3>Related writing</h3><ul>
       {% for w in related %}<li><a href="{{ w.url | default: '/writing/' | relative_url }}"{% if w.url contains 'http' %} target="_blank" rel="noopener"{% endif %}><span class="wtype">{{ w.type }}</span>{{ w.title }}</a></li>{% endfor %}

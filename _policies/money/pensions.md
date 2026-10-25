@@ -5,6 +5,7 @@ order: 3
 title: "Pension reform"
 summary: "A national fund that belongs to you, follows you and is not eaten up by fees."
 bills: []
+# paper: /assets/papers/pensions.pdf   # full policy paper; uncomment once uploaded
 flagship: true
 flag_order: 3
 # image: /assets/img/pensions.jpg   # uncomment when you have a photo

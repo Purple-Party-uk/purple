@@ -5,6 +5,7 @@ order: 1
 title: "Income tax reform"
 summary: "Pay no income tax on your first £20,000, with rates rising step by step above that."
 bills: ['tax-bill']
+# paper: /assets/papers/income-tax.pdf   # full policy paper; uncomment once uploaded
 flagship: true
 flag_order: 1
 # image: /assets/img/income-tax.jpg   # uncomment when you have a photo

@@ -5,6 +5,7 @@ order: 1
 title: "Crown reform"
 summary: "Put Crown property in public hands, pay the monarch a taxed salary, bring the Crown under the same laws as everyone else, and let Parliament decide at each succession whether the monarchy continues."
 bills: ['crown-bill']
+# paper: /assets/papers/crown-reform.pdf   # full policy paper; uncomment once uploaded
 flagship: true
 flag_order: 4
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lords_Chamber_%28State_Opening_2023%29.jpg/1920px-Lords_Chamber_%28State_Opening_2023%29.jpg"

@@ -537,3 +537,11 @@ body.dark-top main{margin-top:-68px;}
 /* Costing status and notes on policy pages */
 .cost-status{display:inline-block;margin:32px 0 -8px;padding:3px 10px;border-radius:999px;background:var(--lilac);color:var(--ink);font-size:13px;font-weight:600;letter-spacing:.02em;}
 .cost-note{font-size:15px;color:var(--muted);border-left:3px solid var(--teal);padding-left:12px;}
+
+/* Area pages: "What we stand for" statement above the policy list */
+.stance h2,.list-head{font-size:32px;margin-bottom:20px;}
+.stance-body{max-width:720px;}
+.stance-body p{font-family:'Source Serif 4',Georgia,serif;font-size:19px;line-height:1.7;margin:0 0 16px;}
+.stance-body p:last-child{margin-bottom:0;}
+@media (max-width:760px){.stance h2,.list-head{font-size:26px;}.stance-body p{font-size:17.5px;}}
+.block.alt .empty{background:var(--card);}

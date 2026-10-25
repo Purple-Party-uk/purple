@@ -5,6 +5,7 @@ order: 4
 title: "Debt jubilee"
 summary: "A one-off reset of household debt."
 bills: []
+# paper: /assets/papers/debt-jubilee.pdf   # full policy paper; uncomment once uploaded
 flagship: false
 # image: /assets/img/debt-jubilee.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
