@@ -7,8 +7,9 @@ summary: "Put Crown property in public hands, pay the monarch a taxed salary, br
 bills: ['crown-bill']
 flagship: true
 flag_order: 4
-# image: /assets/img/crown-reform.jpg   # uncomment when you have a photo
-# image_alt: "Describe the photo"
+image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lords_Chamber_%28State_Opening_2023%29.jpg/1920px-Lords_Chamber_%28State_Opening_2023%29.jpg"
+image_alt: "The House of Lords chamber during the State Opening of Parliament, November 2023"
+image_credit: 'Photo: © House of Lords / Roger Harris, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>'
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 
@@ -57,7 +58,7 @@ We know this is a radical policy. We think the case for it is simple: an institu
 These figures come from the bill's explanatory notes and are estimates.
 
 | | Per year |
-|---|---|
+|---|---:|
 | Sovereign Grant abolished | saves around £86 million |
 | Salaries for the monarch and heir | around £900,000 |
 | Royal Household budget, voted by Parliament | £30–50 million |
