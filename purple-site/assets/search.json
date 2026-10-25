@@ -1,4 +1,0 @@
----
-layout: null
----
-[{% for p in site.policies %}{% assign t = site.themes | where: "key", p.theme | first %}{"title":{{ p.title | jsonify }},"summary":{{ p.summary | jsonify }},"theme":{{ t.name | jsonify }},"url":{{ p.url | relative_url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
