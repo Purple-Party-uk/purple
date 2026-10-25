@@ -67,6 +67,7 @@ These figures come from the bill's explanatory notes and are estimates.
 Setting up the new Royal Household and completing the property transfers would cost an estimated £5–10 million once. Crown Estate profits already go to the Treasury and would continue to do so.
 
 The Royal Household budget is set by Parliament each year, so the final figure depends on what Parliament decides the monarch's official duties require.
+
 ## Who it affects
 
 **The monarch and the heir** receive a fixed, taxed salary in place of the Sovereign Grant and Duchy income, and their dealings with ministers become public.
