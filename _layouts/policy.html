@@ -15,7 +15,25 @@ nav: policies
 <div class="wrap doc">
   <article class="body">
     {% include video.html id=page.video title=page.title %}
+    {% assign cost_h = '<h2 id="what-it-costs">What it costs</h2>' %}
+    {% if content contains cost_h %}
+      {% assign before_cost = content | split: cost_h | first %}
+      {% assign after_cost = content | remove_first: before_cost | remove_first: cost_h %}
+      {% assign cost_parts = after_cost | split: '<h2 ' %}
+      {% assign cost_body = cost_parts | first %}
+      {% assign rest = after_cost | remove_first: cost_body %}
+      {% assign fixes = site.data.corrections | where: "policy", page.key %}
+      {{ before_cost }}
+      {% if page.costing == "estimate" %}<p class="cost-status">Best estimate</p>{% elsif page.costing == "partial" %}<p class="cost-status">Partly costed</p>{% elsif page.costing == "not-yet-costed" %}<p class="cost-status">Not yet costed</p>{% endif %}
+      {{ cost_h }}
+      {{ cost_body }}
+      {% if page.costing_note %}<p class="cost-note"><b>Sources and assumptions:</b> {{ page.costing_note }}</p>{% endif %}
+      {% for f in fixes %}<p class="cost-note">Corrected on {{ f.date }}: <a href="{{ '/about/#corrections' | relative_url }}">see the log</a>.</p>{% endfor %}
+      <p class="cost-note">This is our best estimate, built from published figures. We don’t have access to the Treasury’s models, so some of our numbers will be wrong. If you can show us where, tell us below. Every correction is logged publicly.</p>
+      {{ rest }}
+    {% else %}
     {{ content }}
+    {% endif %}
     {% include say-form.html %}
   </article>
   <aside class="side">

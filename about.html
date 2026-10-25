@@ -3,7 +3,7 @@ layout: page-head
 nav: about
 title: About Purple
 permalink: /about/
-lede: "Britain rewards owning over making. Purple exists to reverse that, with every policy costed, published in full and open to challenge."
+lede: "Britain rewards owning over making. Purple exists to reverse that, with every policy published in full and open to challenge."
 ---
 {% capture PH %}<span class="phtxt">{% endcapture %}{% capture PE %}</span>{% endcapture %}
 <section class="block"><div class="wrap about-grid">
@@ -13,7 +13,7 @@ lede: "Britain rewards owning over making. Purple exists to reverse that, with e
       <div class="principle"><h3>Reward making, not owning</h3><p>Tax and regulation should favour people who build businesses, do the work and make things, not people who collect rent on what they already own.</p></div>
       <div class="principle"><h3>Fix the structure, don't police behaviour</h3><p>Where the system lets money be drained out, we remove the mechanism rather than write rules asking people not to use it.</p></div>
       <div class="principle"><h3>Clear rules</h3><p>Thresholds everyone can understand and that can be enforced, rather than case-by-case judgement that favours those who can afford lawyers.</p></div>
-      <div class="principle"><h3>Honest numbers</h3><p>Every policy is costed. Where we are unsure of a figure, we say so.</p></div>
+      <div class="principle"><h3>Honest numbers</h3><p>Every policy comes with our best estimate of what it costs. Where we are unsure of a figure, we say so. Where we are wrong, we correct it in public.</p></div>
       <div class="principle"><h3>The same for everyone</h3><p>Schemes that apply to everyone are simpler to run and harder to game than means-testing, and people can see what they are entitled to.</p></div>
     </div>
     <div class="lr">
@@ -50,9 +50,22 @@ lede: "Britain rewards owning over making. Purple exists to reverse that, with e
 <section class="block alt"><div class="wrap about-grid">
   <div class="about-label"><h2>How our policies are made</h2></div>
   <div class="howmade">
-    <p>Every policy is written in plain English, costed, and published in full. Where a policy needs a new law, we draft the bill and publish that too, so you can see exactly what we would do rather than what we say we would do.</p>
+    <p>Every policy is written in plain English and published in full, with our best estimate of what it costs. We don’t have the Treasury’s models, so some of those estimates will be wrong. Where a policy needs a new law, we draft the bill and publish that too, so you can see exactly what we would do rather than what we say we would do.</p>
     <p>Every policy is open for comment. If you think we have got something wrong, tell us on the policy page.</p>
     <div class="ctas"><a class="btn violet" href="{{ '/policies/' | relative_url }}">Read our policies</a><a class="btn ghost" href="{{ '/bills/' | relative_url }}">See the draft bills</a></div>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap about-grid">
+  <div class="about-label" id="corrections"><h2>Corrections</h2></div>
+  <div class="facts">
+    {% if site.data.corrections and site.data.corrections.size > 0 %}
+    {% for c in site.data.corrections %}{% assign cp = site.policies | where: "key", c.policy | first %}
+    <div class="fact"><span>{{ c.date }}</span><p>{% if cp %}<a href="{{ cp.url | relative_url }}">{{ cp.title }}</a>: {% endif %}we said {{ c.was }}; it is {{ c.now }}. {{ c.reason }}</p></div>
+    {% endfor %}
+    {% else %}
+    <div class="fact"><span>None yet</span><p>When we correct a figure, it will be listed here with the date, what we said, what we now say and why.</p></div>
+    {% endif %}
   </div>
 </div></section>
 

@@ -530,3 +530,7 @@ body.dark-top main{margin-top:-68px;}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .body tbody tr:last-child:has(strong) td{color:var(--ink);}}
 :root[data-theme="dark"] .body tbody tr:last-child:has(strong) td{color:var(--ink);}
 @media (max-width:560px){.body th,.body td{padding:10px 12px;}.body td:last-child{white-space:normal;}}
+
+/* Costing status and notes on policy pages */
+.cost-status{display:inline-block;margin:32px 0 -8px;padding:3px 10px;border-radius:999px;background:var(--lilac);color:var(--ink);font-size:13px;font-weight:600;letter-spacing:.02em;}
+.cost-note{font-size:15px;color:var(--muted);border-left:3px solid var(--teal);padding-left:12px;}
