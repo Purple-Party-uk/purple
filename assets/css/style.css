@@ -395,7 +395,7 @@ body.dark-top main{margin-top:-68px;}
 .num{display:flex;flex-direction:column;gap:10px;padding:28px 24px 30px 0;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--line);}
 .num + .num{padding-left:24px;border-left:1px solid var(--line);}
 .num:nth-child(3n+1){padding-left:0;border-left:0;}
-.num .big{font-size:clamp(40px,4.6vw,64px);font-weight:800;letter-spacing:-0.04em;line-height:1;color:var(--violet);font-variant-numeric:tabular-nums;}
+.num .big{font-size:clamp(40px,4.6vw,64px);font-weight:800;letter-spacing:-0.04em;line-height:1;color:var(--violet);}
 .num:nth-child(even) .big{color:var(--teal);}
 .num .what{font-size:16.5px;color:var(--muted);max-width:220px;}
 .num .more{margin-top:auto;font-size:14.5px;font-weight:600;color:var(--ink);}
