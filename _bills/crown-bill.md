@@ -945,7 +945,7 @@ schedules:
 {:start="12"}
 12. Clause 6 removes all tax exemptions applying to the Monarch and Royal Family. They become liable to all forms of taxation on the same basis as any other person. The provision is not retrospective.
 
-13. Clause 7 abolishes the Sovereign Grant Act 2011. The Sovereign Grant, which provided approximately £86 million annually, ceases.
+13. Clause 7 abolishes the Sovereign Grant Act 2011. The Sovereign Grant, set at £132 million for both 2025-26 and 2026-27, ceases.
 
 14. Clause 8 provides for fixed salaries of £750,000 for the Monarch and £150,000 for the Heir Apparent, increased annually in line with the Consumer Prices Index. These salaries are subject to tax.
 
@@ -997,9 +997,9 @@ schedules:
 
 {:start="31"}
 31. The Bill has significant financial implications:
-   - **Revenue**: All Crown Estate revenue (approximately £442 million annually) continues to flow to the Consolidated Fund as at present. Tax revenue from the Royal Family is estimated at £2–5 million annually depending on their private income.
-   - **Expenditure**: The Sovereign Grant (£86 million) is abolished. It is replaced by salaries totalling approximately £900,000 and a budget for the Royal Household estimated at £30–50 million annually (significantly less than the current Sovereign Grant).
-   - **Net saving**: Approximately £35–55 million annually to the public purse.
+   - **Revenue**: All Crown Estate revenue continues to flow to the Consolidated Fund as at present. The Bill does not change this flow. The amount varies from year to year and fell sharply in 2025-26 as offshore wind income declined. Tax revenue from the Royal Family is estimated at £2–5 million annually depending on their private income.
+   - **Expenditure**: The Sovereign Grant (£132 million in 2026-27) is abolished. It is replaced by salaries totalling approximately £900,000 and a budget for the Royal Household estimated at £30–50 million annually (significantly less than the current Sovereign Grant).
+   - **Net saving**: Approximately £81–101 million annually to the public purse.
    - **One-off costs**: Establishing the Royal Household as an NDPB and completing property transfers may cost £5–10 million in transitional expenses.
 
 ## Impact on existing legislation
