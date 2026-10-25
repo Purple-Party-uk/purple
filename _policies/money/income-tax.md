@@ -61,13 +61,7 @@ Here is what that means, compared with what someone earning a salary pays today 
 
 If you sell shares, a business or a second property for more than you paid, the profit counts as income in the year you sell. It is taxed at the same rates as wages.
 
-A single tax only works if people cannot slip around it. Three rules close the main routes.
-
-**Perks from your own company or trust.** If a company or trust you control lets you use a house, a yacht or a jet for less than the going rate, the difference is taxed as income. Pay the full rent and there is nothing to tax. Genuine work items, such as a laptop or a work car, are listed and excluded.
-
-**Living on loans instead of income.** Ordinary borrowing is untouched. That includes your mortgage, student loan, business borrowing, and up to £100,000 of other personal borrowing such as car finance and credit cards. Above that, a loan only counts as a loan if it is repaid within seven years, at a proper interest rate, from income that has already been taxed. A loan from your own company has to be repaid within 12 months. If not, the money is taxed as income.
-
-**Trusts.** Money or benefits paid out of a trust are taxed as if they were paid straight to the person who receives them. Charities and employee-owned firms are not affected.
+A single tax only works if people cannot slip around it. So perks from your own company or trust, money paid out of trusts, and large loans used to live on instead of an income are all taxed as income. [Taxes on wealth and assets]({{ '/policies/money/wealth/' | relative_url }}) explains how.
 
 ## What it costs
 
