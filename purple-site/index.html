@@ -1,0 +1,46 @@
+---
+layout: default
+nav: home
+title: Purple
+---
+<section class="hero2">
+  <div class="hero-media blend" aria-hidden="true">
+    {% comment %} To use a photo: add style="background-image:url('{{ '/assets/img/hero.jpg' | relative_url }}');background-size:cover;background-position:center" to this div and delete the label below. {% endcomment %}
+    <span class="hero-media-label">Full-width photo or silent video loop</span>
+  </div>
+  <div class="wrap hero2-inner">
+    <p class="kicker reveal">A new party for a country that makes things</p>
+    <h1 class="reveal">Built by us.<br><em>Shared</em> by us.</h1>
+    <p class="hero2-sub reveal">The wealth this country creates should be shared by the people who create it. Every Purple policy is costed, published in full and open to challenge.</p>
+    <div class="ctas reveal"><a class="btn" href="{{ '/join/' | relative_url }}">Join Purple</a><a class="btn light" href="{{ '/policies/' | relative_url }}">Read our policies</a></div>
+    <a class="manifesto-link on-dark reveal" href="{{ site.manifesto_pdf | relative_url }}">Download the full manifesto (PDF)</a>
+  </div>
+  <a class="scroll-cue" href="#after-hero" aria-label="Scroll down"></a>
+</section>
+
+<section class="statement" id="after-hero"><div class="wrap">
+  <p class="reveal">Rent, fees and paper profits are rewarded. <span>Work, research and building things are taxed.</span> We would turn that round.</p>
+</div></section>
+
+{% assign tax = site.policies | where: "key", "income-tax" | first %}
+{% assign nit = site.policies | where: "key", "nit" | first %}
+<section class="numbers"><div class="wrap">
+  <div class="num-grid">
+    <a class="num reveal" href="{{ tax.url | relative_url }}"><span class="big">£20,000</span><span class="what">you earn before paying any income tax</span><span class="more">Income tax reform</span></a>
+    <a class="num reveal" href="{{ nit.url | relative_url }}"><span class="big">£18,000</span><span class="what">an income floor no one falls below</span><span class="more">Negative income tax</span></a>
+    <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">{{ site.themes.size }}</span><span class="what">policy areas, every policy costed</span><span class="more">All policies</span></a>
+    <a class="num reveal" href="{{ '/bills/' | relative_url }}"><span class="big">{{ site.bills.size }}</span><span class="what">draft bills already written</span><span class="more">Read the bills</span></a>
+  </div>
+</div></section>
+
+<section class="block home-video"><div class="wrap"><div class="hv reveal">{% include video.html %}</div></div></section>
+
+<section class="block"><div class="wrap">
+  <div class="block-head"><div><h2>Where to start</h2><p>The policies that would change most for most people.</p></div><a href="{{ '/policies/' | relative_url }}">All policy areas</a></div>
+  {% include flagships.html %}
+</div></section>
+
+<section class="involve"><div class="wrap involve-grid">
+  <a class="inv join reveal" href="{{ '/join/' | relative_url }}"><span class="inv-k">Join</span><h2>Help decide what we stand for.</h2><span class="inv-go">Register your interest</span></a>
+  <a class="inv give reveal" href="{{ '/donate/' | relative_url }}"><span class="inv-k">Donate</span><h2>Every pound counted. Every large donor named.</h2><span class="inv-go">Give from £5</span></a>
+</div></section>

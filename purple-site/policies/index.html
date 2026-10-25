@@ -1,0 +1,26 @@
+---
+layout: page-head
+nav: policies
+title: Our policies
+lede: "Twelve areas, each with costed policies written in plain English. Where a policy needs a new law, we have drafted the bill too."
+manifesto_link: true
+---
+<section class="block"><div class="wrap">
+  <div class="block-head"><div><h2>Headline policies</h2></div></div>
+  {% include flagships.html %}
+</div></section>
+<section class="block alt"><div class="wrap">
+  <div class="block-head"><div><h2>Find a policy</h2><p>Search by topic, for example "pensions" or "tax".</p></div>
+    <div class="search"><input id="q" type="search" placeholder="Search policies" aria-label="Search policies" data-index="{{ '/assets/search.json' | relative_url }}"></div></div>
+  <div class="results" id="results" aria-live="polite"></div>
+</div></section>
+<section class="block"><div class="wrap">
+  <div class="block-head"><div><h2>Policy areas</h2></div></div>
+  <div class="themes">
+  {% assign themes = site.themes | sort: "order" %}
+  {% for t in themes %}{% assign list = site.policies | where: "theme", t.key | sort: "order" %}
+    <div class="tile"><h3><a class="tile-link" href="{{ t.url | relative_url }}">{{ t.name }}</a></h3><p class="prob">{{ t.prob }}</p><p class="ans"><b>Our answer:</b> {{ t.ans }}</p>
+      <div class="tile-foot">{% if list.size > 0 %}<span class="count">{{ list.size }} {% if list.size == 1 %}policy{% else %}policies{% endif %}</span>{% for p in list %}<a class="chip" href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endfor %}{% else %}<span class="count soon">Policies coming soon</span>{% endif %}</div></div>
+  {% endfor %}
+  </div>
+</div></section>

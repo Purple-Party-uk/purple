@@ -1,0 +1,13 @@
+# Update these by hand from the accounts (or have the treasurer do it).
+example: true            # set to false once the figures are real
+updated: "[Date]"
+update_frequency: "[monthly]"
+total: 48350
+donors: 612
+small_share: 71          # % of money raised from donations under the threshold
+threshold: 1000
+# Everyone giving more than the threshold in a calendar year (gifts added together)
+major:
+  - { name: "[Donor name]", type: Individual, date: "[Month Year]", amount: 5000 }
+  - { name: "[Donor name]", type: Individual, date: "[Month Year]", amount: 2500 }
+  - { name: "[Donor name]", type: Company,    date: "[Month Year]", amount: 1200 }

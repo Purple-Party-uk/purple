@@ -1,0 +1,32 @@
+# Speeches & Writing. Newest first. type: Article | Speech | Video
+# policies: list of policy ids this piece relates to (shows on those policy pages)
+- type: Article
+  title: "Your Pension Is a Ponzi Scheme. There. Someone Said It."
+  date: "[Date]"
+  where: Substack
+  url: "https://joshuaskoczylis.substack.com"
+  policies: [pensions]
+- type: Article
+  title: "We Stole This Idea From Milton Friedman. The Rest Is Ours."
+  date: "[Date]"
+  where: Substack
+  url: "https://joshuaskoczylis.substack.com"
+  policies: [nit]
+- type: Article
+  title: "[Housing and rent article title]"
+  date: "[Date]"
+  where: Substack
+  url: "https://joshuaskoczylis.substack.com"
+  policies: []
+- type: Speech
+  title: "[Speech title]"
+  date: "[Date]"
+  where: "[Venue]"
+  url: ""
+  policies: [income-tax]
+- type: Video
+  title: "[Video title]"
+  date: "[Date]"
+  where: YouTube
+  url: ""
+  policies: [crown-reform]

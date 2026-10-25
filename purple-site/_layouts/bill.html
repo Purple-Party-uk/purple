@@ -1,0 +1,42 @@
+---
+layout: default
+nav: bills
+---
+<div class="page-head"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/bills/' | relative_url }}">Bills</a> / {{ page.title }}</nav>
+  <span class="tag">Draft bill</span>
+  <h1>{{ page.title }}</h1>
+  <div class="delivers"><span>Delivers</span>{% for pid in page.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>
+  <p class="longtitle">{{ page.long_title }}</p>
+</div></div>
+<div class="wrap billdoc">
+  {% include video.html id=page.video title=page.title %}
+  <div class="bt-head"><h2>Bill text</h2><button class="linkbtn" id="toggleAll">Expand all</button></div>
+  <div class="parts">
+  {% assign n = 0 %}
+  {% for pt in page.parts %}
+    <details class="part"{% if forloop.first %} open{% endif %}>
+      <summary><span class="pnum">Part {{ forloop.index }}</span><span class="ptitle">{{ pt.title }}</span><span class="pcount">{{ pt.clauses.size }} clause{% if pt.clauses.size != 1 %}s{% endif %}</span></summary>
+      <ol class="clauses">
+      {% for c in pt.clauses %}{% assign n = n | plus: 1 %}
+        <li><span class="cnum">{{ n }}</span><div><h4>{{ c.title | default: c }}</h4>{% if c.text %}<div class="ctext">{{ c.text | markdownify }}</div>{% else %}<p class="tbc">Clause text to follow.</p>{% endif %}</div></li>
+      {% endfor %}
+      </ol>
+    </details>
+  {% endfor %}
+  {% if page.schedules and page.schedules.size > 0 %}
+    <details class="part sched">
+      <summary><span class="pnum">Schedules</span><span class="ptitle">{{ page.schedules.size }} schedule{% if page.schedules.size != 1 %}s{% endif %}</span></summary>
+      <ol class="clauses">
+      {% for s in page.schedules %}
+        <li><span class="cnum">S{{ forloop.index }}</span><div><h4>{{ s.title | default: s }}</h4>{% if s.text %}<div class="ctext">{{ s.text | markdownify }}</div>{% else %}<p class="tbc">Schedule text to follow.</p>{% endif %}</div></li>
+      {% endfor %}
+      </ol>
+    </details>
+  {% endif %}
+  </div>
+  <details class="part notes">
+    <summary><span class="pnum">Notes</span><span class="ptitle">Explanatory notes</span></summary>
+    {% assign notes = content | strip %}<div class="notes-body">{% if notes != "" %}{{ content }}{% else %}<p class="tbc">To follow.</p>{% endif %}</div>
+  </details>
+</div>

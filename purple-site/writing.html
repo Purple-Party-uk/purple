@@ -1,0 +1,25 @@
+---
+layout: default
+nav: writing
+title: Speeches & Writing
+permalink: /writing/
+---
+<div class="page-head"><div class="wrap">
+  <h1>Speeches &amp; Writing</h1>
+  <p class="lede">Articles, speeches and videos setting out the thinking behind our policies.</p>
+  <p class="lede small-note">For discussion, join the conversation in the comments on <a href="{{ site.substack_url }}" target="_blank" rel="noopener">our Substack</a>.</p>
+</div></div>
+<section class="block"><div class="wrap">
+  <div class="filters" role="group" aria-label="Filter by type">
+    <button class="filter on" data-type="All" aria-pressed="true">All</button><button class="filter" data-type="Article" aria-pressed="false">Article</button><button class="filter" data-type="Speech" aria-pressed="false">Speech</button><button class="filter" data-type="Video" aria-pressed="false">Video</button>
+  </div>
+  <ul class="wlist" id="wlist">
+  {% for w in site.data.writing %}
+    <li data-type="{{ w.type }}">
+      <div class="wmeta"><span class="wtype">{{ w.type }}</span><span>{{ w.date }}</span><span>{{ w.where }}</span></div>
+      <h3>{% if w.url != "" %}<a href="{{ w.url }}" target="_blank" rel="noopener">{{ w.title }}</a>{% else %}{{ w.title }}{% endif %}</h3>
+      {% if w.policies.size > 0 %}<div class="wpol">{% for pid in w.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a class="chip" href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div></section>
