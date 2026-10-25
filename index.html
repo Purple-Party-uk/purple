@@ -23,10 +23,14 @@ title: Purple
 
 {% assign tax = site.policies | where: "key", "income-tax" | first %}
 {% assign nit = site.policies | where: "key", "nit" | first %}
+{% assign jubilee = site.policies | where: "key", "debt-jubilee" | first %}
 <section class="numbers"><div class="wrap">
   <div class="num-grid">
     <a class="num reveal" href="{{ tax.url | relative_url }}"><span class="big">£20,000</span><span class="what">you earn before paying any income tax</span><span class="more">Income tax reform</span></a>
     <a class="num reveal" href="{{ nit.url | relative_url }}"><span class="big">£18,000</span><span class="what">an income floor no one falls below</span><span class="more">Negative income tax</span></a>
+    <a class="num reveal" href="{{ jubilee.url | relative_url }}"><span class="big">£100,000</span><span class="what">of your debts paid off, or paid into your pension if you have none</span><span class="more">Debt jubilee</span></a>
+    {% comment %} Point this tile at the corporation tax policy once its page exists. {% endcomment %}
+    <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">£1 million</span><span class="what">turnover a business can make before paying any corporation tax</span><span class="more">Corporation tax</span></a>
     <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">{{ site.themes.size }}</span><span class="what">policy areas, every policy published in full</span><span class="more">All policies</span></a>
     <a class="num reveal" href="{{ '/bills/' | relative_url }}"><span class="big">{{ site.bills.size }}</span><span class="what">draft bills already written</span><span class="more">Read the bills</span></a>
   </div>
