@@ -1,0 +1,6 @@
+{% assign flags = site.policies | where: "flagship", true | sort: "flag_order" %}
+<div class="flagships">
+{% for p in flags %}{% assign t = site.themes | where: "key", p.theme | first %}
+  <a class="flag" href="{{ p.url | relative_url }}"><span class="area">{{ t.name }}</span><h3>{{ p.title }}</h3><p>{{ p.summary }}</p><span class="go">Read the policy</span></a>
+{% endfor %}
+</div>

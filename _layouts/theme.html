@@ -1,0 +1,21 @@
+---
+layout: default
+nav: policies
+---
+{% assign list = site.policies | where: "theme", page.key | sort: "order" %}
+<div class="page-head theme"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/policies/' | relative_url }}">Policies</a> / {{ page.name }}</nav>
+  <h1>{{ page.name }}</h1>
+  <p class="lede">{{ page.prob }} {{ page.ans }}</p>
+</div></div>
+<section class="block"><div class="wrap">
+{% if list.size > 0 %}
+  <ul class="plist">
+  {% for p in list %}
+    <li><a href="{{ p.url | relative_url }}"><h3>{{ p.title }}</h3><p>{{ p.summary }}</p><span class="read">Read the policy</span></a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <div class="empty">Policies for this area are being published. <a href="{{ '/policies/' | relative_url }}">Back to all areas</a></div>
+{% endif %}
+</div></section>
