@@ -7,7 +7,7 @@ summary: "A guaranteed income floor of £18,000, paid automatically into your ow
 bills: []
 # paper: /assets/papers/nit.pdf   # full policy paper; uncomment once uploaded
 flagship: true
-flag_order: 2
+flag_order: 3
 # image: /assets/img/nit.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
 # video: YOUTUBE_ID             # uncomment and paste the video ID

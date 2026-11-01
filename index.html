@@ -24,11 +24,11 @@ title: Purple
 {% assign tax = site.policies | where: "key", "income-tax" | first %}
 {% assign nit = site.policies | where: "key", "nit" | first %}
 {% assign jubilee = site.policies | where: "key", "debt-jubilee" | first %}
+{% assign rtb = site.policies | where: "key", "rent-to-buy" | first %}
 {% assign rnd = site.policies | where: "key", "research-development" | first %}
 <section class="numbers"><div class="wrap">
   <div class="num-grid">
-    {% comment %} Point the rent-to-buy links at its policy page once it exists. {% endcomment %}
-    <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">25 years</span><span class="what">and the home you rent is yours. Every payment buys a share. No deposit.</span><span class="more">Rent to buy</span></a>
+    <a class="num reveal" href="{{ rtb.url | relative_url }}"><span class="big">25 years</span><span class="what">and the home you rent is yours. Every payment buys a share. No deposit.</span><span class="more">Rent to buy</span></a>
     <a class="num reveal" href="{{ tax.url | relative_url }}"><span class="big">£20,000</span><span class="what">you earn before paying any income tax</span><span class="more">Income tax reform</span></a>
     <a class="num reveal" href="{{ nit.url | relative_url }}"><span class="big">£18,000</span><span class="what">an income floor no one falls below</span><span class="more">Negative income tax</span></a>
     <a class="num reveal" href="{{ jubilee.url | relative_url }}"><span class="big">£100,000</span><span class="what">for every adult: debt on your home paid off first, the rest into your pension</span><span class="more">Debt jubilee</span></a>
@@ -36,13 +36,14 @@ title: Purple
     <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">£1 million</span><span class="what">turnover a business can make before paying any corporation tax</span><span class="more">Corporation tax</span></a>
     <a class="num reveal" href="{{ rnd.url | relative_url }}"><span class="big">£165bn</span><span class="what">a year of government spending on research, more than seven times today’s budget</span><span class="more">Research and development</span></a>
   </div>
+  <a class="bills-line reveal" href="{{ '/bills/' | relative_url }}"><span class="big">{{ site.bills.size }}</span><span>draft bills already written, so you can read the law we would pass, not just the promise.</span><span class="more">Read the bills</span></a>
 </div></section>
 
 <section class="feature-band"><div class="wrap feature-grid">
   <h2 class="reveal">Rent today buys your landlord a house. <span>Under Purple, it buys you one.</span></h2>
   <div class="reveal">
     <p>Almost every rented home becomes rent-to-buy. Each payment buys you a share, and within 25 years the home is yours. The Debt Jubilee pays off up to £100,000 of it on day one. Your payments never rise faster than wages, and your share comes with you when you move.</p>
-    <a class="btn violet" href="{{ '/policies/' | relative_url }}">See how rent to buy works</a>
+    <a class="btn violet" href="{{ rtb.url | relative_url }}">See how rent to buy works</a>
   </div>
 </div></section>
 
