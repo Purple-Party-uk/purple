@@ -30,6 +30,7 @@ nav: policies
       {% if page.costing_note %}<p class="cost-note"><b>Sources and assumptions:</b> {{ page.costing_note }}</p>{% endif %}
       {% for f in fixes %}<p class="cost-note">Corrected on {{ f.date }}: <a href="{{ '/about/#corrections' | relative_url }}">see the log</a>.</p>{% endfor %}
       <p class="cost-note">This is our best estimate, built from published figures. We don’t have access to the Treasury’s models, so some of our numbers will be wrong. If you can show us where, tell us below. Every correction is logged publicly.</p>
+      {% unless page.key == "how-we-pay-for-it" %}{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}<p class="afford-line"><b>Can Britain afford this?</b> Yes, if Britain can make and do it. <a href="{{ pay.url | relative_url }}">How we pay for it</a></p>{% endunless %}
       {{ rest }}
     {% else %}
     {{ content }}
