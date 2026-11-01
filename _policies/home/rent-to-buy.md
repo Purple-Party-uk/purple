@@ -8,8 +8,8 @@ bills: []
 # paper: /assets/papers/rent-to-buy.pdf   # full policy paper; uncomment once uploaded
 flagship: true
 flag_order: 2
-costing: partial
-costing_note: "The Debt Jubilee is costed in its own policy. The running costs, the money the Sovereign Wealth Fund ties up and the returns it gives up have not yet been modelled."
+costing: not-yet-costed
+costing_note: "The Debt Jubilee is costed in its own policy. The running costs, the maintenance payments, the money the Sovereign Wealth Fund ties up and the returns it gives up have not yet been modelled."
 # image: /assets/img/rent-to-buy.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
@@ -118,14 +118,14 @@ The tenant carries on as normal, and rent paid while the tenancy was hidden coun
 
 ## What it costs
 
-We have not yet modelled this policy in full. These are the costs we know about.
+We have not yet put figures on this policy. These are the costs it carries.
 
-- **No bonus for landlords.** An earlier version offered small landlords a bonus for moving their share into their pension. It would have cost £10–25 billion, and we have dropped it. The Debt Jubilee repays much of each landlord's money at once, and the link to inflation protects the rest.
 - **No yearly subsidy.** Because what is owed rises with inflation or pay, repayments keep their value. Shares in the Sovereign Wealth Fund earn exactly what tenants pay. The one gap is in years when pay grows more slowly than inflation. Then landlords and the Fund lose a little. That is a deliberate choice to put tenants first.
 - **Money tied up in the Fund.** Paying out students, buying shares from landlords who want cash, and covering tenants on long-term lower payments all tie up the Fund's money. It is repaid, but it earns less than the Fund could make elsewhere.
+- **Maintenance.** Where the Fund owns part of a home, it pays its share of that home's maintenance reserve. The cost shrinks as tenants buy the Fund out.
 - **Running the scheme.** The registration portal, local enforcement teams, hardship panels, the housing tribunal and the Maintenance Agency. Shares lost through penalties pay for part of the enforcement.
 
-The Debt Jubilee is costed in its own policy.
+The Debt Jubilee is costed in its own policy. We will publish figures for each of these costs once they have been modelled.
 
 ## Who it affects
 
