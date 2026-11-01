@@ -142,6 +142,13 @@
     render();
   }
 
+  /* Tables in policy and bill text: a table whose last column holds sentences,
+     not short figures, gets the "prose" style so its text wraps and aligns left. */
+  document.querySelectorAll(".body table:not(.prose)").forEach(t => {
+    const cells = t.querySelectorAll("tbody td:last-child");
+    if([...cells].some(td => td.textContent.trim().length > 30)) t.classList.add("prose");
+  });
+
   /* Join: form not set yet */
   const jb = $("#joinBtn");
   if(jb && !cfg.joinFormUrl) jb.addEventListener("click", e => { e.preventDefault(); toast("Sign-up opens soon."); });
