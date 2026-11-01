@@ -46,6 +46,8 @@ Here is an example. An heir with their full allowance inherits a £1.5 million h
 
 The tax is put off, not cancelled. Any rise in the home's value after you inherit it is taxed as income when you sell, like any other gain.
 
+**Debt Jubilee money.** Jubilee money you give to family, or leave when you die, counts towards the £400,000 lifetime allowance. Any tax due is taken from the bonds themselves.
+
 The farm or business must be a real one, with real work, staff or trade. Holding companies and property portfolios do not qualify. Hard cases go to a panel of a tax specialist, a business valuer and an independent chair, and their decisions are published without names.
 
 ## What it costs
