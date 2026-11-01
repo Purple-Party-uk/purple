@@ -19,7 +19,9 @@ flag_order: 6
 
 ## What we would do
 
-*To follow.*
+We would abolish the TV licence fee and fund the BBC from general taxation. Today every household that watches live TV or uses iPlayer pays the same £180 a year, whatever its income. Paying for the BBC through tax means people contribute according to what they earn.
+
+The rest of this policy is *to follow.*
 
 ## How it works
 
@@ -27,7 +29,9 @@ flag_order: 6
 
 ## What it costs
 
-*To follow.*
+The licence fee raises about £3.8 billion a year. That cost moves to general taxation, so households stop paying it directly.
+
+The rest of the costing is *to follow.*
 
 ## Who it affects
 
