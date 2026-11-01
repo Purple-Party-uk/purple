@@ -119,6 +119,7 @@ In year two of a Purple government, after a year of setting up the system that c
 | **A single renter whose home joins rent-to-buy at £250,000.** They also have £8,000 on cards. | The full £100,000 goes on the home, because the home is paid first. They still owe £150,000, and their monthly payment is about £530 instead of £890. The card debt is not cleared. |
 | **A 70-year-old with no debts.** | £100,000 goes into their pension pot. They can take up to £5,000 in the first year, slightly less each year after, for the rest of their life. What is left passes to their family. |
 | **A 15-year-old.** | £57,100 goes into their pension pot. They can use it towards a rent-to-buy home when they leave home, or draw on it from 60. |
+{: .prose}
 
 ## What it costs
 
