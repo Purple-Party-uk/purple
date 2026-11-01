@@ -544,6 +544,11 @@ body.dark-top main{margin-top:-68px;}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .body tbody tr:last-child:has(strong) td{color:var(--ink);}}
 :root[data-theme="dark"] .body tbody tr:last-child:has(strong) td{color:var(--ink);}
 @media (max-width:560px){.body th,.body td{padding:10px 12px;}.body td:last-child{white-space:normal;}}
+.body table.prose{font-variant-numeric:normal;}
+.body table.prose th:last-child,.body table.prose td:last-child{text-align:left;white-space:normal;}
+.body table.prose td:first-child{width:38%;}
+.body table.prose tbody tr:last-child:has(strong) td{background:inherit;border-top:0;color:inherit;}
+.body table.prose tbody tr:last-child:nth-child(even) td{background:var(--paper);}
 
 /* Costing status and notes on policy pages */
 .cost-status{display:inline-block;margin:32px 0 -8px;padding:3px 10px;border-radius:999px;background:var(--lilac);color:var(--ink);font-size:13px;font-weight:600;letter-spacing:.02em;}
