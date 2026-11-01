@@ -542,16 +542,18 @@ parts:
       - (c) operating costs to be independently verified annually; and
       - (d) a right of any member to leave the platform and take their content with them on reasonable notice.
 
-      (5) "Net revenue" means total platform revenue less—
+      (5) A worker-owned content platform must meet the minimum governance requirements in Part 1 of Schedule 5 and the annual reporting requirements in Part 2 of that Schedule.
+
+      (6) "Net revenue" means total platform revenue less—
 
       - (a) verified costs of hosting, bandwidth, and technical infrastructure;
       - (b) verified costs of payment processing;
       - (c) verified staff costs for persons employed in technical and administrative roles who are not active content creator members; and
       - (d) such other costs as the Secretary of State may specify by regulations, subject to the affirmative procedure.
 
-      (6) A worker-owned content platform is subject to all requirements of the Online Safety Act 2023 and any other legislation applying to online platforms on the same basis as any other platform operating in the United Kingdom. This Part creates no additional regulatory requirements and confers no exemptions from existing requirements.
+      (7) A worker-owned content platform is subject to all requirements of the Online Safety Act 2023 and any other legislation applying to online platforms on the same basis as any other platform operating in the United Kingdom. This Part creates no additional regulatory requirements and confers no exemptions from existing requirements.
 
-      (7) The Secretary of State must publish governance standards consistent with this section to assist worker groups seeking to establish platforms under the Worker-Owned Adult Content Platform Investment Programme or otherwise.
+      (8) The Secretary of State must publish governance standards consistent with this section and Schedule 5 to assist worker groups seeking to establish platforms under the Worker-Owned Adult Content Platform Investment Programme or otherwise.
   - num: '32'
     title: Certification for levy exemption and investment eligibility
     text: |
@@ -562,7 +564,7 @@ parts:
 
       (2) The Secretary of State must maintain a public register of certified platforms.
 
-      (3) Certification must be renewed annually, accompanied by independently verified accounts for the preceding year demonstrating continued compliance with section 31.
+      (3) Certification must be renewed annually, accompanied by independently verified accounts for the preceding year demonstrating continued compliance with section 31, including the requirements of Schedule 5.
 
       (4) The Secretary of State may revoke certification where satisfied that a platform no longer meets the requirements of section 31. Revocation takes effect 28 days after notice, during which the platform may make representations. A platform may appeal revocation to the First-tier Tribunal within 21 days.
 
@@ -660,7 +662,7 @@ parts:
 
       **"market rate"** means the rate that would be charged by an arm's length supplier in the open market for equivalent services, as determined by independent valuation where disputed;
 
-      **"net revenue"** has the meaning given in section 31(5);
+      **"net revenue"** has the meaning given in section 31(6);
 
       **"qualifying offence"** has the meaning given in section 7;
 
@@ -1004,7 +1006,7 @@ schedules:
 ### Part 6 — Worker-owned content platforms
 
 {:start="15"}
-15. Clauses 31 and 32 define worker-owned content platforms and provide for certification that qualifies them for exemption from the Content Extraction Levy and for investment under the Worker-Owned Adult Content Platform Investment Programme. This Part does not create a licensing regime — it creates a definition and a certification mechanism. The regulatory framework governing online platforms, including age verification, content standards, and illegal content obligations, is the Online Safety Act 2023, which applies to worker-owned platforms on exactly the same basis as any other platform. Clause 31(6) makes this explicit. The investment programme itself is a policy instrument established under the Sovereign Wealth Fund Act, not this Bill. This Part simply defines what qualifies.
+15. Clauses 31 and 32 define worker-owned content platforms and provide for certification that qualifies them for exemption from the Content Extraction Levy and for investment under the Worker-Owned Adult Content Platform Investment Programme. This Part does not create a licensing regime — it creates a definition and a certification mechanism. Clause 31(5) makes the governance and annual reporting requirements in Schedule 5 part of that definition, so a platform that does not meet them cannot be certified. The regulatory framework governing online platforms, including age verification, content standards, and illegal content obligations, is the Online Safety Act 2023, which applies to worker-owned platforms on exactly the same basis as any other platform. Clause 31(7) makes this explicit. The investment programme itself is a policy instrument established under the Sovereign Wealth Fund Act, not this Bill. This Part simply defines what qualifies.
 
 ### Part 7 — Consequential amendments and repeals
 
