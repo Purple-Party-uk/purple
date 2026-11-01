@@ -8,8 +8,8 @@ bills: []
 # paper: /assets/papers/research-development.pdf   # full policy paper; uncomment once uploaded
 flagship: false            # set to true (with flag_order) once the sections below are written
 # flag_order: 4
-# image: /assets/img/research-development.jpg   # uncomment when you have a photo
-# image_alt: "Describe the photo"
+image: /assets/img/making.jpg
+image_alt: "Rolls of sheet steel on a factory floor"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 

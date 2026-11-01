@@ -5,4 +5,7 @@ name: "A Country That Makes Things"
 title: "A Country That Makes Things"
 prob: "Britain rewards owning assets more than building businesses or making products."
 ans: "Back research, industry and the firms that produce here."
+image: /assets/img/making.jpg
+image_alt: "Rolls of sheet steel on a factory floor"
+# image: /assets/img/<area>.jpg and image_alt work the same way on every area page
 ---
