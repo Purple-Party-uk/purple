@@ -10,8 +10,9 @@ flagship: true
 flag_order: 2
 costing: not-yet-costed
 costing_note: "The Debt Jubilee is costed in its own policy. The running costs, the maintenance payments, the money the Sovereign Wealth Fund ties up and the returns it gives up have not yet been modelled."
-# image: /assets/img/rent-to-buy.jpg   # uncomment when you have a photo
-# image_alt: "Describe the photo"
+image: /assets/img/rent-to-buy.jpg
+image_alt: "A street of Victorian terraced houses with cars parked along both sides"
+image_position: "center 55%"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 
