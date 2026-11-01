@@ -29,7 +29,7 @@ Everyone gets the same £100,000. If you have a mortgage, it pays the mortgage. 
 
 The idea comes from the economist Steve Keen's "Modern Debt Jubilee". In his version, every adult gets the same sum, people in debt must use it to pay their debts, and everyone else gets it as savings. We keep that equal treatment, and we turn the savings into pensions.
 
-A jubilee on its own would not last. Debt would build up again within a generation. So it comes with our ban on predatory lending and with [rent to buy]({{ '/policies/home/rent-to-buy/' | relative_url }}), which ends the need to borrow hundreds of thousands of pounds for a home.
+A jubilee on its own would not last. Debt would build up again within a generation. So it comes with our ban on predatory lending and with [rent to buy]({{ '/policies/home/rent-to-buy/' | relative_url }}), which ends the need to borrow hundreds of thousands of pounds for a home. New mortgages would be paid for by savers, [not by banks creating money]({{ '/policies/home/mortgages/' | relative_url }}).
 
 ## How it works
 
@@ -90,10 +90,12 @@ If your allowance pays more towards a shared home than your partner's does, you 
 Whatever is left after your debts are cleared goes into your [Sovereign Wealth Fund pension pot]({{ '/policies/money/pensions/' | relative_url }}) as Jubilee Bonds. These are government bonds that cannot be sold. They earn a set return above inflation, so they grow faster than prices.
 
 - **From 60,** you can take out up to one-twentieth of what is left each year. Because it is a share of what is left, it never runs out. It lasts for life, and whatever remains passes to your family.
-- **At any age,** you can use it to pay for a rent-to-buy home, including one you move into years after the Jubilee.
+- **At any age,** you can use it to pay for a rent-to-buy home, including one you move into years after the Jubilee, or towards the deposit on a [mortgage]({{ '/policies/home/mortgages/' | relative_url }}).
 - **If you are terminally ill,** you can take it all at once.
 - **You can give it to close family** at any time: a spouse or partner, children, stepchildren or grandchildren living legally in the UK. It clears their debts or moves into their pension pot under the same rules. Gifts over £20,000 need an independent witness, to protect older people from being pressured.
 - **When you die,** what is left passes to the pension pots of the family members you have named, or to your spouse or partner and then your children if you have named no one. If you have no close family, you can name up to two other people, such as a sibling or a friend.
+
+£50 of every adult's Jubilee becomes their membership share in the new national mutual lender, which every adult in the UK owns. It gives the mutual its starting money, about £2.75 billion in all, and any surplus the mutual makes is paid back into members' pension pots. Read more under [Danish-style mortgages]({{ '/policies/home/mortgages/' | relative_url }}).
 
 Gifts and inherited Jubilee money count towards the receiver's [£400,000 lifetime allowance]({{ '/policies/money/inheritance/' | relative_url }}).
 
