@@ -6,6 +6,8 @@ title: "How we pay for it"
 summary: "A government is not a household. The limit on what Britain can afford is people, skills, materials and energy, not pounds. Here is how we spend, how we keep prices steady, and why you shouldn't lose sleep over the deficit."
 bills: []
 flagship: false
+image: /assets/img/how-we-pay-for-it.jpg
+image_alt: "A pile of Bank of England and Royal Bank of Scotland £5 and £10 notes"
 ---
 
 ## In short
