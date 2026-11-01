@@ -1,6 +1,7 @@
 ---
 key: tax-bill
 title: "[Income tax bill title]"
+summary: "[Short description of the bill]"
 long_title: "[Long title of the bill]"
 policies: [income-tax]
 # Each Part has a title and a list of clauses. A clause can be just a title,
