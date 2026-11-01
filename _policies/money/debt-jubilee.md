@@ -6,7 +6,8 @@ title: "Debt jubilee"
 summary: "We pay off up to £100,000 of every adult's household debt, once, starting with the home you live in. Whatever is left goes into your pension."
 bills: []
 # paper: /assets/papers/debt-jubilee.pdf   # full policy paper; uncomment once uploaded
-flagship: false
+flagship: true
+flag_order: 3
 costing: estimate
 costing_note: "Household debt from the Bank of England (mortgages, Q1 2026; consumer credit, April 2026). Population from ONS mid-2024 estimates. Student debt from the Student Loans Company, March 2026. The figures for arrears, drawings from 60 and running costs are still being modelled."
 # image: /assets/img/debt-jubilee.jpg   # uncomment when you have a photo

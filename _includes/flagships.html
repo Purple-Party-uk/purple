@@ -1,6 +1,14 @@
 {% assign flags = site.policies | where: "flagship", true | sort: "flag_order" %}
+{% if include.style == "list" %}
+<ul class="flaglist">
+{% for p in flags %}{% assign t = site.themes | where: "key", p.theme | first %}
+  <li class="flagrow"><div class="flagrow-text"><span class="area">{{ t.name }}</span><h3><a class="tile-link" href="{{ p.url | relative_url }}">{{ p.title }}</a></h3><p>{{ p.summary }}</p></div><span class="go">Read the policy</span></li>
+{% endfor %}
+</ul>
+{% else %}
 <div class="flagships">
 {% for p in flags %}{% assign t = site.themes | where: "key", p.theme | first %}
   <a class="flag" href="{{ p.url | relative_url }}"><span class="area">{{ t.name }}</span><h3>{{ p.title }}</h3><p>{{ p.summary }}</p><span class="go">Read the policy</span></a>
 {% endfor %}
 </div>
+{% endif %}

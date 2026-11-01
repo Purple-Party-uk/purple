@@ -7,7 +7,7 @@ summary: "Put Crown property in public hands, pay the monarch a taxed salary, br
 bills: ['crown-bill']
 # paper: /assets/papers/crown-reform.pdf   # full policy paper; uncomment once uploaded
 flagship: true
-flag_order: 5
+flag_order: 6
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lords_Chamber_%28State_Opening_2023%29.jpg/1920px-Lords_Chamber_%28State_Opening_2023%29.jpg"
 image_alt: "The House of Lords chamber during the State Opening of Parliament, November 2023"
 image_credit: 'Photo: © House of Lords / Roger Harris, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>'
