@@ -131,11 +131,14 @@ section.block.alt{background:var(--wash);}
 .toc a{color:var(--muted);}
 
 /* Bills index */
-.bills{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;}
-.billcard{display:block;padding:26px;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:var(--ink);border-left:6px solid var(--teal);}
-.billcard:hover{background:var(--wash);}
-.billcard h3{font-size:21px;margin-bottom:8px;}
-.billcard p{color:var(--muted);margin:0;font-size:15.5px;}
+.bills{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);}
+.billrow{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px 32px;padding:22px 0 22px 20px;border-bottom:1px solid var(--line);border-left:4px solid var(--teal);}
+.billrow:hover{background:var(--wash);}
+.billrow h3{font-size:20px;margin:0 0 4px;}
+.billrow p{color:var(--muted);margin:0;font-size:15.5px;max-width:720px;}
+.billrow .delivers{margin-top:0;justify-content:flex-end;}
+.billrow:hover .tile-link{color:var(--violet);}
+@media (max-width:760px){.billrow{grid-template-columns:1fr;}.billrow .delivers{justify-content:flex-start;}}
 
 .stub{padding:80px 0 120px;max-width:640px;}
 .stub p{color:var(--muted);font-size:18px;}
@@ -305,8 +308,6 @@ footer .logo-dot{fill:var(--teal-on-dark);}
 @media (max-width:760px){.counters{grid-template-columns:1fr;}}
 
 
-.billcard{position:relative;}
-.billcard:hover .tile-link{color:var(--violet);}
 .delivers.small{margin-top:14px;}
 .delivers.small span{font-size:12.5px;}
 
@@ -427,7 +428,7 @@ body.dark-top main{margin-top:-68px;}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;}.scroll-cue::after{animation:none;}}
 
 /* Surfaces lifted off the tinted page */
-.give,.counter:not(.main),.tier:not(.member),.billcard,.helpways a,.custom,.num-grid,.say{background:var(--card);}
+.give,.counter:not(.main),.tier:not(.member),.helpways a,.custom,.num-grid,.say{background:var(--card);}
 .say{background:var(--wash);}
 .num-grid{background:transparent;}
 .block.alt .tile,.block.alt .panel{background:var(--card);}

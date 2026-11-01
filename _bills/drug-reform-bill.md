@@ -1,6 +1,7 @@
 ---
 key: drug-reform-bill
 title: "Drug Law Reform Bill"
+summary: "Regulates drugs by the harm they do and ends penalties for personal possession."
 long_title: "A Bill to establish a harm-based framework for the regulation of psychoactive substances across three bands; to create the Substance Regulation Authority; to abolish criminal offences relating to personal possession of regulated substances; to create offences relating to unlicensed supply and production; to permit home cultivation of Band 1 substances; to establish a quality mark scheme for online retailers of Band 1 substances; to reform the regulation of alcohol including provision for minimum unit pricing by statutory instrument on recommendation of the Authority; to prohibit advertising of regulated substances including alcohol, tobacco, vapes, nicotine pouches, and other products designated by the Authority; to require plain packaging of tobacco, vapes, nicotine pouches, and Authority-designated products; to create criminal liability for persons who produce or procure prohibited advertising; to provide for the automatic expungement of historical possession convictions; to make provision for integrated health and treatment services throughout the United Kingdom; and for connected purposes."
 policies: []
 parts:

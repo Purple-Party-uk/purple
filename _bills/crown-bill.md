@@ -1,6 +1,7 @@
 ---
 key: crown-bill
 title: "Crown Reform Bill"
+summary: "Takes Crown property into public ownership and lets Parliament vote on the monarchy."
 long_title: "A Bill to make provision for the transfer of Crown property to public ownership; to abolish the Sovereign Grant and provide for the remuneration of the Monarch and Heir Apparent; to remove legal exemptions applying to the Crown and members of the Royal Family; to abolish Royal Assent, King's Consent, and the Privy Council; to require publication of communications between the Monarch and Ministers; to provide for parliamentary votes on the continuation of the monarchy upon succession; and for connected purposes."
 policies: [crown-reform]
 # Header photo. Swap for /assets/img/state-opening-2023.jpg once the file is uploaded to the repo.

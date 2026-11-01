@@ -1,6 +1,7 @@
 ---
 key: sex-work-bill
 title: Sex Work (Decriminalisation and Worker Protection) Bill
+summary: "Decriminalises sex work between adults and makes exploiting sex workers a crime."
 long_title: A Bill to decriminalise sex work between consenting adults; to provide for the disregard and deletion of historical convictions and cautions for offences relating to sex work that have been abolished; to prohibit financial discrimination against sex workers; to provide for the licensing of sex worker cooperative venues; to create offences of exploitative extraction from sex work; to define worker-owned content platforms for the purposes of levy exemption under the Finance Act and government investment eligibility; to make consequential amendments to existing legislation; and for connected purposes.
 policies: []
 parts:

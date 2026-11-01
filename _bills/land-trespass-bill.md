@@ -1,6 +1,7 @@
 ---
 key: land-trespass-bill
 title: Land Rights, Trespass and Vehicle Removal Bill
+summary: "Powers to remove trespassers from private land and cars blocking driveways."
 long_title: A Bill to make provision conferring powers on the police and local authorities to remove trespassers from residential and personal land; to create a graduated system of warnings, fixed penalty notices, and criminal offences in respect of trespass; to make provision about squatting in occupied and unoccupied buildings; to confer powers on local authorities to remove vehicles parked illegally on private land or obstructing private driveways; to provide for cost recovery and liability in respect of vehicle removal; and for connected purposes.
 policies: []
 parts:
