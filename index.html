@@ -10,7 +10,7 @@ title: Purple
   </div>
   <div class="wrap hero2-inner">
     <h1 class="reveal">The country got richer. You didn’t.<br><em>Let’s change that.</em></h1>
-    <p class="hero2-sub reveal">No income tax on your first £20,000. A guaranteed income floor of £18,000. A pension that belongs to you and isn’t eaten up by fees.</p>
+    <p class="hero2-sub reveal">No income tax on your first £20,000. No VAT on everyday spending. A guaranteed income floor of £18,000. A pension that belongs to you and isn’t eaten up by fees.</p>
     <div class="ctas reveal"><a class="btn" href="{{ '/join/' | relative_url }}">Join Purple</a><a class="btn light" href="{{ '/policies/' | relative_url }}">Read our policies</a></div>
     <a class="manifesto-link on-dark reveal" href="{{ site.manifesto_pdf | relative_url }}">Download the full manifesto (PDF)</a>
   </div>
@@ -59,6 +59,18 @@ title: Purple
 </div></section>
 
 <section class="block home-video"><div class="wrap"><div class="hv reveal">{% include video.html %}</div></div></section>
+
+{% assign vat = site.policies | where: "key", "vat" | first %}
+{% assign media = site.policies | where: "key", "media-reform" | first %}
+<section class="feature-band"><div class="wrap feature-grid">
+  <h2 class="reveal">No more 20% VAT at the till. <span>And most businesses stop collecting it.</span></h2>
+  <div class="reveal">
+    <p>Clothes, phone bills, petrol, repairs, haircuts: everyday spending comes out of VAT altogether, and the law makes sure shops pass the cut on. VAT stays only on luxuries and on things like gambling, tobacco and flights.</p>
+    <p>For businesses, that means no registration and no quarterly returns, unless you sell luxury goods, gambling, payday loans or flights. Pubs and corner shops are spared too: the tax on alcohol and tobacco is paid by the producer.</p>
+    <p><a href="{{ media.url | relative_url }}">No more TV licence, either.</a> The BBC is funded from general taxation, so no household pays a flat £180 a year whatever its income.</p>
+    <a class="btn violet" href="{{ vat.url | relative_url }}">See how the VAT cut works</a>
+  </div>
+</div></section>
 
 <section class="block"><div class="wrap">
   <div class="block-head"><div><h2>Where to start</h2><p>The policies that would change most for most people.</p></div><a href="{{ '/policies/' | relative_url }}">All policy areas</a></div>
