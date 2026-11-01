@@ -68,6 +68,18 @@ When you move, your share comes with you. You can be bought out straight away, o
 
 Shared houses become co-operatives owned by the people who live in them.
 
+### Buying a home that comes up for sale
+
+Rent to buy is also the way in for anyone who cannot get a [mortgage]({{ '/policies/home/mortgages/' | relative_url }}), or does not want one. When someone sells a home they live in, the buyer can put in whatever they have, such as savings, Jubilee money or what they made from selling their last home, and buy the rest through rent to buy.
+
+The seller can be paid at once, with the Sovereign Wealth Fund buying their share at market value. Or they can keep their share and be bought out gradually, as tenants who move on can now.
+
+These homes pay a fair interest rate instead of 0.5%. Each year the Fiscal Council publishes the average rate on new mortgages, minus expected inflation. That becomes the rate for buyers who join that year, fixed for their whole term. The price still rises only with inflation or pay, whichever is lower.
+
+Homes that come from the rented stock keep the 0.5% rate, whoever the tenant is.
+
+There are two rates for a reason. The 0.5% rate is for people who have rented, often for years, with nothing to show for it. If buying through rent to buy were cheaper than a mortgage, nobody would take a mortgage. The Sovereign Wealth Fund would end up paying for most home sales at a return below what it owes its members, and cheap money would push up the prices homes come in at. With the same cost either way, people can choose what suits them. Owners also have no reason to let a home out just to get it the lower rate, because it is the landlord who loses from that rate.
+
 ### Students and emergency housing
 
 Emergency and temporary accommodation and student housing are not rent-to-buy homes, because people do not stay long enough to buy them. Tenants there still build a share while they live there. When they leave, the Sovereign Wealth Fund pays them their share straight away. The Fund is then repaid from future payments on the same home.
@@ -126,7 +138,7 @@ The tenant carries on as normal, and rent paid while the tenancy was hidden coun
 We have not yet put figures on this policy. These are the costs it carries.
 
 - **No yearly subsidy.** Because what is owed rises with inflation or pay, repayments keep their value. Shares in the Sovereign Wealth Fund earn exactly what tenants pay. The one gap is in years when pay grows more slowly than inflation. Then landlords and the Fund lose a little. That is a deliberate choice to put tenants first.
-- **Money tied up in the Fund.** Paying out students, buying shares from landlords who want cash, and covering tenants on long-term lower payments all tie up the Fund's money. It is repaid, but it earns less than the Fund could make elsewhere.
+- **Money tied up in the Fund.** Paying out students, buying shares from landlords who want cash, and covering tenants on long-term lower payments all tie up the Fund's money. It is repaid, but it earns less than the Fund could make elsewhere. Buying out sellers of owner-occupied homes also ties up the Fund's money, but those homes pay the fair rate, so there is no subsidy.
 - **Maintenance.** Where the Fund owns part of a home, it pays its share of that home's maintenance reserve. The cost shrinks as tenants buy the Fund out.
 - **Running the scheme.** The registration portal, local enforcement teams, hardship panels, the housing tribunal and the Maintenance Agency. Shares lost through penalties pay for part of the enforcement.
 
@@ -144,4 +156,6 @@ The Debt Jubilee is costed in its own policy. We will publish figures for each o
 
 **Lenders** are repaid as before. They stop making new loans whose only purpose is to collect rent.
 
-**People who already own their home** are not affected by this policy.
+**People who already own their home** can sell to a rent-to-buy buyer and be paid at once by the Sovereign Wealth Fund, or bought out gradually.
+
+**Buyers who cannot get a mortgage** can buy a home that comes up for sale through rent to buy, at a fair interest rate.
