@@ -7,7 +7,7 @@ summary: "A national fund that belongs to you, follows you and is not eaten up b
 bills: []
 # paper: /assets/papers/pensions.pdf   # full policy paper; uncomment once uploaded
 flagship: true
-flag_order: 4
+flag_order: 5
 # image: /assets/img/pensions.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
 # video: YOUTUBE_ID             # uncomment and paste the video ID

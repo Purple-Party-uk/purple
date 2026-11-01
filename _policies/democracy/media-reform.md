@@ -7,7 +7,7 @@ summary: "Break up concentrated media ownership and protect independent journali
 bills: []
 # paper: /assets/papers/media-reform.pdf   # full policy paper; uncomment once uploaded
 flagship: true
-flag_order: 6
+flag_order: 7
 # image: /assets/img/media-reform.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
