@@ -3,7 +3,6 @@ key: swf-bill
 title: "Sovereign Wealth Fund Bill"
 long_title: "A Bill to establish the United Kingdom Sovereign Wealth Fund as a permanent publicly owned investment fund; to provide for its governance, funding, and investment mandate; to establish six ring-fenced sub-accounts for pension, social care, green transition, public media, productive investment, and overseas diversification purposes; to protect the fund from dissolution or material alteration except by supermajority vote of the House of Commons; and for connected purposes."
 policies: [pensions]
-# video: YOUTUBE_ID
 parts:
   - title: "Establishment and Legal Status"
     clauses:
