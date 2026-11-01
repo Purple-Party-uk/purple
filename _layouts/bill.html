@@ -7,7 +7,7 @@ nav: bills
   <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/bills/' | relative_url }}">Bills</a> / {{ page.title }}</nav>
   <span class="tag">Draft bill</span>
   <h1>{{ page.title }}</h1>
-  <div class="delivers"><span>Delivers</span>{% for pid in page.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>
+  {% if page.policies and page.policies.size > 0 %}<div class="delivers"><span>Delivers</span>{% for pid in page.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>{% endif %}
   <p class="longtitle">{{ page.long_title }}</p>
 </div></div>
 <div class="wrap billdoc">
@@ -20,7 +20,7 @@ nav: bills
       <summary><span class="pnum">Part {{ forloop.index }}</span><span class="ptitle">{{ pt.title }}</span><span class="pcount">{{ pt.clauses.size }} clause{% if pt.clauses.size != 1 %}s{% endif %}</span></summary>
       <ol class="clauses">
       {% for c in pt.clauses %}{% assign n = n | plus: 1 %}
-        <li><span class="cnum">{{ n }}</span><div><h4>{{ c.title | default: c }}</h4>{% if c.text %}<div class="ctext">{{ c.text | markdownify }}</div>{% else %}<p class="tbc">Clause text to follow.</p>{% endif %}</div></li>
+        <li><span class="cnum">{{ c.num | default: n }}</span><div><h4>{{ c.title | default: c }}</h4>{% if c.text %}<div class="ctext">{{ c.text | markdownify }}</div>{% else %}<p class="tbc">Clause text to follow.</p>{% endif %}</div></li>
       {% endfor %}
       </ol>
     </details>
