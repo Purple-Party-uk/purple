@@ -55,12 +55,13 @@ When the Jubilee pays off your mortgage, the government pays your lender and the
 
 The real effect comes later. Normally, as people pay their loans back month by month, that money is destroyed bit by bit. After the Jubilee, people keep that money instead. That is where the risk lies, and we are straight about it.
 
-- **Monthly repayments stop.** A family that no longer pays a mortgage has more to spend each month. That extra spending builds up over time. That is why the Jubilee starts in year two, and why the Inflation Brake Rule exists.
-- **Money left over goes into a pension pot, not your pocket.** If your debts come to less than £100,000, the rest goes into your Sovereign Wealth Fund pension pot. It stays there until pension age. People over pension age get their debts cleared, but any money left over is not paid out.
-- **Some landlords receive cash.** Under rent-to-buy, Jubilee payments that clear what tenants owe go to landlords and their lenders. That money can be spent, and we count it.
+- **Monthly repayments stop.** A family that no longer pays a mortgage has more to spend each month. That extra spending builds up over time. If your mortgage is cleared, you pay half your old monthly payment into your own pension pot for three years, which slows it down. That is why the Jubilee starts in year two, and why the Inflation Brake Rule exists.
+- **Money left over goes into a pension pot, not your pocket.** If your debts come to less than £100,000, the rest goes into your Sovereign Wealth Fund pension pot as Jubilee Bonds. These are government bonds that cannot be sold. From 60, you can take out up to one-twentieth of what is left each year.
+- **People over 60 can spend their Jubilee money.** People over 60 get the same £100,000. Their debts are cleared first. The rest is paid out slowly, at most one-twentieth of what is left each year, so it never comes as a lump sum. We count it as planned spending. That is the biggest source of extra spending in the Jubilee, and the Inflation Brake Rule is set up with it in mind.
+- **Landlords get pension savings, not cash.** Under rent-to-buy, Jubilee payments that clear what tenants owe pay off the landlord's mortgage. The rest goes into the landlord's pension pot as Jubilee Bonds, not into their pocket. So landlords do not get a pile of cash to spend.
 - **Banks end up holding more money at the Bank of England.** Banks do not lend more just because they hold more of this money. They lend when people want to borrow and the rules allow it. Under our interest plan, banks will not earn full interest on all of it either.
 
-The Jubilee does not create a mountain of new spending money. It wipes out debt that banks created, and gives people back the income that went on repaying it.
+The Jubilee does not create a mountain of new spending money. That is because the money left over is held as bonds in your pension pot. The fund does not have to rush out and buy trillions of pounds of shares and property. The Jubilee wipes out debt that banks created, and gives people back the income that went on repaying it.
 
 ## The real limit: what Britain can make and do
 
@@ -100,6 +101,12 @@ The Bank of England still sets interest rates, but as a backstop. Its main job b
 ## What will our plans cost?
 
 Britain already borrows [£132 billion a year](https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/publicsectorfinance/bulletins/publicsectorfinances/march2026). We are finishing our full costings and will publish them policy by policy, including the parts we are less sure about. Until those figures have been checked, we would rather not give you a number we cannot stand behind.
+
+## What happens to the national debt?
+
+On the standard measure, the Debt Jubilee roughly triples the national debt. Public sector net debt was about £2.9 trillion in 2025–26, roughly the size of the economy. The Jubilee adds about £6 trillion, which takes it to about three times the size of the economy. We are not going to hide that.
+
+We think the standard measure misleads here. Much of the new "debt" is money that banks hold at the Bank of England after mortgages are paid off. Most of the rest is Jubilee Bonds sitting in people's own pension pots. That is savings owed to British households, drawn on slowly over their lifetimes, not money owed to overseas lenders who can demand it back. The real test is the same as for any other spending: whether it pushes up prices. That is why we limit how fast Jubilee money can be spent, and why the Inflation Brake Rule exists.
 
 ## "Didn't this go wrong in 2022?"
 

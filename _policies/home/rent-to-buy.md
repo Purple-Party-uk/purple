@@ -44,7 +44,7 @@ This means **your payments never rise faster than pay does across the country.**
 
 ### The Debt Jubilee gives most renters a large share on day one
 
-Under our [Debt Jubilee]({{ '/policies/money/debt-jubilee/' | relative_url }}), every adult receives up to £100,000 of debt relief, and debt on the home you live in is paid first. For a tenant in the scheme, that means what they still owe on their home. A single renter starts with up to £100,000 paid off. A couple starts with up to £200,000 paid off.
+Under our [Debt Jubilee]({{ '/policies/money/debt-jubilee/' | relative_url }}), every adult living legally in the UK on election day receives up to £100,000 of debt relief, and debt on the home you live in is paid first. For a tenant in the scheme, that means what they still owe on their home. A single renter starts with up to £100,000 paid off. A couple starts with up to £200,000 paid off.
 
 | A home that enters the scheme at £250,000 | Still owed | Monthly payment |
 |---|---|---|
@@ -54,7 +54,11 @@ Under our [Debt Jubilee]({{ '/policies/money/debt-jubilee/' | relative_url }}), 
 
 These payments are in today's money, over 25 years at 0.5% interest. Each year they rise by inflation or pay growth, whichever is lower. A maintenance payment is added on top (see below).
 
-Renters over state pension age get the same help with what they owe on their home. Any money left over once their debts are cleared is not paid out to them.
+Older renters get the same help. Whatever is left after their debts are cleared goes into their pension pot, like everyone else's.
+
+- If your home has not yet joined rent-to-buy when the Jubilee is paid, your share is held for up to two years and paid into your home when it joins.
+- You can use the Jubilee money in your pension pot to pay for your rent-to-buy home at any time, including if you start renting after the Jubilee.
+- If the Jubilee clears what you owe on your home, you pay half your old monthly payment into your pension pot for three years.
 
 ### No deposits, and your share moves with you
 
@@ -101,7 +105,7 @@ The reserve belongs to the home, not to the tenant. When someone owns the home o
 
 A landlord keeps their share and is repaid as the tenant pays. The share rises with inflation or pay, whichever is lower, and earns the 0.5% interest. Where there is a mortgage, the lender is repaid alongside the landlord.
 
-Much of the money comes back early. When a tenant's Jubilee clears part of what they owe, that money goes to the landlord and any lender straight away. On a £250,000 home let to a working couple, up to £200,000 is repaid at once.
+Much of the money comes back early. When a tenant's Jubilee clears part of what they owe, the landlord's mortgage on the home is paid off straight away. The rest goes into the landlord's pension pot as Jubilee Bonds, not as cash. Company and overseas landlords receive theirs in equal parts over 20 years. On a £250,000 home let to a working couple, up to £200,000 is settled at once.
 
 A landlord who wants out sooner can:
 
