@@ -583,8 +583,6 @@ body.dark-top main{margin-top:-68px;}
 /* Hero second line: solid teal, not outlined */
 .hero2 h1 em{color:#9FE3DA;-webkit-text-stroke:0;}
 
-/* One colour per headline */
-.statement span,.feature-band h2 span,.afford h2 span{color:inherit;}
 
 /* "Can Britain afford this?": a flat band, not a striped card */
 .afford{background:var(--wash);padding:80px 0;}
