@@ -575,16 +575,13 @@ body.dark-top main{margin-top:-68px;}
 
 /* ---- Less templated look (Nov 2026) ----
    Flat sections instead of accent-striped cards, single-colour headlines,
-   no decorative circles, tighter corners, serif headlines. Pill buttons, chips and tags keep their shape. */
+   no decorative circles, tighter corners. Pill buttons, chips and tags keep their shape. */
 :root{--ph:#DAD9DF;--ph-ink:#5A5966;}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ph:#2A2843;--ph-ink:#AAA6CB;}}
 :root[data-theme="dark"]{--ph:#2A2843;--ph-ink:#AAA6CB;}
 
-/* Serif headlines; interface text stays in Schibsted Grotesk */
-h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spacing:-0.01em;}
-.hero h1,.hero2 h1,.page-head h1{font-weight:700;letter-spacing:-0.02em;}
-.hero2 h1{line-height:1.02;}
-.statement p,.num .big,.bills-line .big,.afford h2,.feature-band h2{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spacing:-0.015em;}
+/* Hero second line: solid teal, not outlined */
+.hero2 h1 em{color:#9FE3DA;-webkit-text-stroke:0;}
 
 /* One colour per headline */
 .statement span,.feature-band h2 span,.afford h2 span{color:inherit;}
@@ -593,7 +590,7 @@ h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spaci
 .afford{background:var(--wash);padding:80px 0;}
 .afford-grid{background:none;border:0;border-top:2px solid var(--teal);border-radius:0;padding:32px 0 0;}
 .afford-head .media{margin:28px 0 0;}
-.afford-answer{font-family:'Source Serif 4',Georgia,serif;font-size:24px!important;font-weight:600;color:var(--violet-deep);}
+.afford-answer{font-size:22px!important;font-weight:700;color:var(--violet-deep);}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .afford-answer{color:var(--ink);}}
 :root[data-theme="dark"] .afford-answer{color:var(--ink);}
 @media (max-width:900px){.afford{padding:56px 0;}.afford-grid{padding:24px 0 0;}}
