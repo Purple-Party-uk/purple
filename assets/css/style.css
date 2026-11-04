@@ -585,7 +585,8 @@ body.dark-top main{margin-top:-68px;}
 
 
 /* "Can Britain afford this?": a flat band, not a striped card */
-.afford{background:var(--wash);padding:80px 0;}
+.afford{background:none;padding:72px 0 80px;}
+.afford h2 span{display:block;color:var(--violet);}
 .afford-grid{background:none;border:0;border-top:2px solid var(--teal);border-radius:0;padding:32px 0 0;}
 .afford-head .media{margin:28px 0 0;}
 .afford-answer{font-size:22px!important;font-weight:700;color:var(--violet-deep);}
