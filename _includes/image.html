@@ -1,8 +1,8 @@
-{% comment %}Usage: {% include image.html src="/assets/img/file.jpg" alt="..." %}. With no src, shows a placeholder.{% endcomment %}
+{% comment %}Usage: {% include image.html src="/assets/img/file.jpg" alt="..." %}. With no src, shows a grey placeholder; pass caption="what the photo should show" and optionally ratio="4/3" (default 16/9).{% endcomment %}
 <figure class="media">
 {% if include.src %}
-  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy" style="border-radius:16px;width:100%">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt }}" loading="lazy">
 {% else %}
-  <div class="ph"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 17l-5-5-9 8"/></svg>Image</div>
+  <div class="ph-photo" style="aspect-ratio:{{ include.ratio | default: '16/9' }}" role="img" aria-label="Photo to come{% if include.caption %}: {{ include.caption | escape }}{% endif %}"><span>Photo needed{% if include.caption %}: {{ include.caption }}{% endif %}</span></div>
 {% endif %}
 </figure>

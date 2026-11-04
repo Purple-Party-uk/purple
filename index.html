@@ -16,17 +16,27 @@ title: Purple
 
 {% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
 <section class="afford" id="after-hero"><div class="wrap afford-grid">
-  <h2 class="reveal">Can Britain afford this? <span>Yes, if Britain can make and do it.</span></h2>
+  <div class="afford-head reveal">
+    <h2>Can Britain afford this?</h2>
+    {% include image.html caption="Builders on a housing site" ratio="4/3" %}
+  </div>
   <div class="afford-body reveal">
-    <p>That is the real limit. The government issues the pound, so it cannot run out of pounds the way a household can. It can run out of workers, materials and energy. Spend beyond those, and prices rise.</p>
-    <p>So we do three things. We spend first on what lets Britain make more: homes, skills and research. We bring every change in over several years. And we write an inflation brake into law, with an independent referee, so nobody has to take a minister’s word for it.</p>
+    <p class="afford-answer">Yes, if Britain can make and do it.</p>
+    <p>The government issues the pound, so it cannot run out of pounds the way a household can. It can run out of workers, materials and energy. If it spends beyond those, prices rise.</p>
+    <p>Our plans are built around that limit. We spend first on what lets Britain make more: homes, skills and research. We phase each change in over several years. And we write an inflation brake into law, checked by an independent referee, so nobody has to take a minister’s word for it.</p>
     <p>Britain already borrows £132 billion a year. Our full costings will be published policy by policy.</p>
     <a class="btn violet" href="{{ pay.url | relative_url }}">Read how we pay for it</a>
   </div>
 </div></section>
 
 <section class="statement"><div class="wrap">
-  <p class="reveal">Rent, fees and paper profits are rewarded. <span>Work, research and building things are taxed.</span> We would turn that round.</p>
+  <p class="reveal">Rent, fees and paper profits are rewarded. Work, research and building things are taxed. We would turn that round.</p>
+</div></section>
+
+<section class="photo-strip"><div class="wrap strip-grid">
+  {% include image.html caption="Someone at work in a workshop or factory" ratio="4/3" %}
+  {% include image.html caption="Researchers in a lab" ratio="4/3" %}
+  {% include image.html caption="A teacher with a class" ratio="4/3" %}
 </div></section>
 
 {% assign tax = site.policies | where: "key", "income-tax" | first %}
@@ -48,7 +58,7 @@ title: Purple
 </div></section>
 
 <section class="feature-band"><div class="wrap feature-grid">
-  <h2 class="reveal">Rent today buys your landlord a house. <span>Under Purple, it buys you one.</span></h2>
+  <h2 class="reveal">Rent today buys your landlord a house. Under Purple, it buys you one.</h2>
   <div class="reveal">
     <p>Almost every rented home becomes rent-to-buy. Each payment buys you a share, and within 25 years the home is yours. The Debt Jubilee pays off up to £100,000 of it on day one. Your payments never rise faster than wages, and your share comes with you when you move.</p>
     <a class="btn violet" href="{{ rtb.url | relative_url }}">See how rent to buy works</a>
@@ -60,7 +70,7 @@ title: Purple
 {% assign vat = site.policies | where: "key", "vat" | first %}
 {% assign media = site.policies | where: "key", "media-reform" | first %}
 <section class="feature-band"><div class="wrap feature-grid">
-  <h2 class="reveal">No more 20% VAT at the till. <span>And most businesses stop collecting it.</span></h2>
+  <h2 class="reveal">No more 20% VAT at the till. And most businesses stop collecting it.</h2>
   <div class="reveal">
     <p>Clothes, phone bills, petrol, repairs, haircuts: everyday spending comes out of VAT altogether, and the law makes sure shops pass the cut on. VAT stays only on luxuries and on things like gambling, tobacco and flights.</p>
     <p>For businesses, that means no registration and no quarterly returns, unless you sell luxury goods, gambling, payday loans or flights. Pubs and corner shops are spared too: the tax on alcohol and tobacco is paid by the producer.</p>
