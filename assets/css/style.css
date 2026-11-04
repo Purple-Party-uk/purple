@@ -572,3 +572,53 @@ body.dark-top main{margin-top:-68px;}
 @media (max-width:900px){.afford{padding:56px 0 0;}.afford-grid{grid-template-columns:1fr;gap:20px;padding:30px 24px;}}
 .afford-line{font-size:16px;background:var(--lilac);border-radius:10px;padding:12px 16px;}
 .afford-line a{font-weight:600;}
+
+/* ---- Less templated look (Nov 2026) ----
+   Flat sections instead of accent-striped cards, single-colour headlines,
+   no decorative circles, tighter corners, serif headlines. Pill buttons, chips and tags keep their shape. */
+:root{--ph:#DAD9DF;--ph-ink:#5A5966;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ph:#2A2843;--ph-ink:#AAA6CB;}}
+:root[data-theme="dark"]{--ph:#2A2843;--ph-ink:#AAA6CB;}
+
+/* Serif headlines; interface text stays in Schibsted Grotesk */
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spacing:-0.01em;}
+.hero h1,.hero2 h1,.page-head h1{font-weight:700;letter-spacing:-0.02em;}
+.hero2 h1{line-height:1.02;}
+.statement p,.num .big,.bills-line .big,.afford h2,.feature-band h2{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spacing:-0.015em;}
+
+/* One colour per headline */
+.statement span,.feature-band h2 span,.afford h2 span{color:inherit;}
+
+/* "Can Britain afford this?": a flat band, not a striped card */
+.afford{background:var(--wash);padding:80px 0;}
+.afford-grid{background:none;border:0;border-top:2px solid var(--teal);border-radius:0;padding:32px 0 0;}
+.afford-head .media{margin:28px 0 0;}
+.afford-answer{font-family:'Source Serif 4',Georgia,serif;font-size:24px!important;font-weight:600;color:var(--violet-deep);}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .afford-answer{color:var(--ink);}}
+:root[data-theme="dark"] .afford-answer{color:var(--ink);}
+@media (max-width:900px){.afford{padding:56px 0;}.afford-grid{padding:24px 0 0;}}
+
+/* Accent stripes removed */
+.billrow{border-left:0;padding-left:0;}
+.cost-note{border-left:0;padding-left:0;}
+.say{border-top:0;}
+.helpways a{border-top:1px solid var(--line);}
+
+/* Decorative circles removed */
+.hero::before,.hero::after,.inv::after{display:none;}
+
+/* Tighter corners on cards and panels */
+.flag,.panel,.part,.person,.counter,.tier,.helpways a,.give,.inv,.say,.lr,.empty,.ph,.body table,.amt,.custom,.give-summary .note,.afford-line,.draft-flag{border-radius:6px;}
+
+/* Photos and placeholders */
+.media{margin:0;}
+.media img{display:block;width:100%;border-radius:6px;}
+.ph-photo{display:flex;align-items:flex-end;width:100%;background:var(--ph);color:var(--ph-ink);border-radius:6px;padding:14px 16px;font-size:14px;line-height:1.4;}
+.photo-strip{padding:0 0 72px;}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media (max-width:760px){.strip-grid{grid-template-columns:1fr;}.photo-strip{padding-bottom:48px;}}
+.stance-photo{margin-top:36px;max-width:880px;}
+.people .media{margin-top:16px;}
+.helpways{margin-top:16px;}
+.promise .media{margin-bottom:24px;}
+.avatar{background:var(--ph);border:0;}

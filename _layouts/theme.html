@@ -17,6 +17,7 @@ nav: policies
     <p><span class="phtxt">[What we stand for in this area, 150–250 words: the problem readers recognise, the principle Purple applies to it, and what would change. Write it in the body of this area's file in _themes/.]</span></p>
   {% endif %}
   </div>
+  {% unless page.image %}<div class="stance-photo">{% include image.html caption="A header photo for this area. Set image: in this area's file in _themes/" ratio="21/9" %}</div>{% endunless %}
 </div></section>
 <section class="block alt"><div class="wrap">
   <h2 class="list-head">Our policies</h2>
