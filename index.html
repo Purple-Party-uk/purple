@@ -14,22 +14,7 @@ title: Purple
   <a class="scroll-cue" href="#after-hero" aria-label="Scroll down"></a>
 </section>
 
-{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
-<section class="afford" id="after-hero"><div class="wrap afford-grid">
-  <div class="afford-head reveal">
-    <h2>Can Britain afford this?</h2>
-    {% include image.html caption="Builders on a housing site" ratio="4/3" %}
-  </div>
-  <div class="afford-body reveal">
-    <p class="afford-answer">Yes, if Britain can make and do it.</p>
-    <p>The government issues the pound, so it cannot run out of pounds the way a household can. It can run out of workers, materials and energy. If it spends beyond those, prices rise.</p>
-    <p>Our plans are built around that limit. We spend first on what lets Britain make more: homes, skills and research. We phase each change in over several years. And we write an inflation brake into law, checked by an independent referee, so nobody has to take a minister’s word for it.</p>
-    <p>Britain already borrows £132 billion a year. Our full costings will be published policy by policy.</p>
-    <a class="btn violet" href="{{ pay.url | relative_url }}">Read how we pay for it</a>
-  </div>
-</div></section>
-
-<section class="statement"><div class="wrap">
+<section class="statement" id="after-hero"><div class="wrap">
   <p class="reveal">Rent, fees and paper profits are rewarded. <span>Work, research and building things are taxed.</span> We would turn that round.</p>
 </div></section>
 
@@ -55,6 +40,20 @@ title: Purple
     <a class="num reveal" href="{{ rnd.url | relative_url }}"><span class="big">£165bn</span><span class="what">a year of government spending on research, more than seven times today’s budget</span><span class="more">Research and development</span></a>
   </div>
   <a class="bills-line reveal" href="{{ '/bills/' | relative_url }}"><span class="big">{{ site.bills.size }}</span><span>draft bills already written, so you can read the law we would pass, not just the promise.</span><span class="more">Read the bills</span></a>
+</div></section>
+
+{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
+<section class="afford"><div class="wrap afford-grid">
+  <div class="afford-head reveal">
+    <h2>Can Britain afford this? <span>Yes, if Britain can make and do it.</span></h2>
+    {% include image.html caption="Builders on a housing site" ratio="4/3" %}
+  </div>
+  <div class="afford-body reveal">
+    <p>The government issues the pound, so it cannot run out of pounds the way a household can. It can run out of workers, materials and energy. If it spends beyond those, prices rise.</p>
+    <p>Our plans are built around that limit. We spend first on what lets Britain make more: homes, skills and research. We phase each change in over several years. And we write an inflation brake into law, checked by an independent referee, so nobody has to take a minister’s word for it.</p>
+    <p>Britain already borrows £132 billion a year. Our full costings will be published policy by policy.</p>
+    <a class="btn violet" href="{{ pay.url | relative_url }}">Read how we pay for it</a>
+  </div>
 </div></section>
 
 <section class="feature-band"><div class="wrap feature-grid">
