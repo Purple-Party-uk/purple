@@ -9,8 +9,9 @@ bills: []
 flagship: false
 costing: not-yet-costed
 costing_note: "Nobody knows how many people live in the UK without legal status, so we will not give a figure until there is a sound basis for one."
-# image: /assets/img/regularisation.jpg
-# image_alt: "Describe the photo"
+image: /assets/img/regularisation.jpg
+image_alt: "A street of terraced houses with bay windows and cars parked along the kerb"
+image_position: "center 45%"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 

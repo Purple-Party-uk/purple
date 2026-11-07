@@ -9,8 +9,9 @@ bills: []
 flagship: false
 costing: not-yet-costed
 costing_note: "The employer levy, the visa surcharge, equal rights for work visa holders and the Integration Service have not yet been modelled."
-# image: /assets/img/work-visas.jpg
-# image_alt: "Describe the photo"
+image: /assets/img/work-visas.jpg
+image_alt: "An older person's hand held in a younger person's hands"
+image_position: "60% 55%"
 video: Q8htnFomwRs
 ---
 

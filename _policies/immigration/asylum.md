@@ -9,8 +9,9 @@ bills: []
 flagship: false
 costing: not-yet-costed
 costing_note: "More caseworkers, legal aid, reception centres and tribunal reform have not yet been modelled against the cost of today's system."
-# image: /assets/img/asylum.jpg
-# image_alt: "Describe the photo"
+image: /assets/img/asylum.jpg
+image_alt: "A row of blue lever-arch files on an office shelf"
+image_position: "center 55%"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 
