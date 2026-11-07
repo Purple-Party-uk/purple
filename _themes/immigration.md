@@ -3,8 +3,11 @@ key: immigration
 order: 10
 name: "Immigration"
 title: "Immigration"
-prob: "The system is neither fair nor well run, and nobody trusts it."
-ans: "Clear rules, applied consistently."
+prob: "Governments promise migration targets they cannot meet, and some employers use migrant workers to undercut wages."
+ans: "Control migration through fair pay and workplace enforcement, and publish honest figures every year."
+image: /assets/img/immigration.jpg
+image_alt: "An airport departures board listing flights to cities around the world"
+image_position: "center 50%"
 ---
 
 Governments keep promising to cut immigration to a number, and they keep missing it. Most people come to Britain because employers want their work. Border rules can decide who comes and on what terms. They cannot set the total, and tougher rules often push it up.
