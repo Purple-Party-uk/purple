@@ -61,7 +61,7 @@ You do not have to sell to pay the tax. The bill is worked out on the day you in
 
 Here is an example. An heir with their full allowance inherits a £1.5 million house and makes it their only home. The tax on the £1.1 million above the allowance is £290,000. On an income of £40,000, they pay £800 a year. If they sell ten years later, they pay the remaining balance, about £282,000 in today's money.
 
-The remaining balance is due if you sell, move out, buy another home or let the property.
+The remaining balance is due if you sell, move out, buy another home, let the property or use it for business.
 
 ### Inheriting a working farm or family business
 
@@ -69,21 +69,43 @@ The farm or business qualifies if:
 
 - it is a real working farm or trading business, with real work, staff or trade. Holding companies, property portfolios and passive investments do not qualify;
 - it passes to a child, stepchild, adopted child or grandchild, or to wider family if there are none;
-- you keep it running.
+- the family keeps it running, and the business stays the family's.
 
 There is no size limit. A large farm qualifies on the same terms as a small one. If you already run a business of your own, you do not have to give it up.
 
 The bill works in the same way as for a home. It is fixed on the day you inherit, rises with inflation, and you pay 2% of your income towards it each year.
 
-- **Retiring does not trigger the bill.** You can step back from the work and keep the farm.
-- **Passing it on does not trigger the bill either.** When you hand the farm or business to the next generation, during your life or in your will, the unpaid balance passes with it. Your children carry it on under the same rules.
-- **Diversifying is fine.** A farm shop, a campsite or solar panels do not end the arrangement, as long as the business stays in the family. Their profits are taxed like any other business's.
-- **Letting some land is fine.** You can let fields, grazing or buildings while the family farms the rest. You can also use a contractor to do the work, as long as the farm business stays yours.
-- **Letting the whole farm ends the arrangement.** If the family stops farming and lets all the land to someone else, it has become a landlord, and the remaining balance is due, as it would be for a let house. The one exception is a hard time: if the heir is a child, seriously ill or needs time to take over, the family can let the whole farm for up to five years without losing the arrangement.
-- **Selling part of it means paying part of the bill.** If you sell a field, you pay the share of the bill that goes with that field. The rest carries on as before.
-- **Selling up means paying the rest.** If the family sells the farm or business, or closes it, the remaining balance is due.
+These do not trigger the bill:
+
+- **Retiring.** You can step back from the work and keep the farm.
+- **Passing it on.** Handing the farm or business to the next generation, during your life or in your will, does not make the bill due. [How handing it on works](#handing-it-on-during-your-life) is explained below.
+- **Diversifying.** A farm shop, a campsite or solar panels do not end the arrangement, as long as the family runs them and the business stays in the family. Their profits are taxed like any other business's. Leasing land to a solar developer is not diversifying. It is a lease, and the lease rules below apply.
+- **Letting land to a local farmer.** You can let fields or grazing to a local working farmer.
+- **Using a contractor.** A contractor can do the work, as long as the farm business stays the family's.
+
+These trigger all or part of the bill:
+
+- **Any other lease.** Leasing land to anyone else, including a solar or other developer, ends the arrangement on the land you lease. You pay the same share of the remaining balance as the share of the farm you lease. Lease 10% of the farm, and 10% of the balance is due. You pay it in equal yearly amounts over ten years, still rising with inflation. The arrangement on the rest of the farm carries on. Lease the whole farm, and the whole balance is due on the same terms.
+- **Selling part of it.** You pay the same share of the remaining balance as the share of the farm you sell. Sell a quarter of the farm, and a quarter of the balance is due. The rest carries on as before.
+- **Selling up or closing.** If the family sells the farm or business, or closes it, the remaining balance is due.
+
+There is one exception for hard times. If the heir is a child, seriously ill or needs time to take over, the family can let the whole farm to anyone for up to five years without losing the arrangement. A panel within HMRC decides whether the exception applies.
 
 Here is an example. An heir with their full allowance inherits a farm worth £4 million. The tax on the £3.6 million above the allowance is £1.45 million. On a farm income of £30,000, they pay £600 a year. As long as the family keeps farming, that is all they pay. If they sell, the remaining balance is due.
+
+### Handing it on during your life
+
+When you hand a home, farm or business to someone during your life, they are taxed under the normal rules. It counts against their own £400,000 allowance, and they can claim their own arrangement if they qualify.
+
+You keep your own unpaid balance. It does not disappear when you hand the asset over.
+
+- **The balance stays with the asset.** At handover, your unpaid balance is registered against the asset, on the Land Registry title for land and property. It follows the asset, whoever owns it.
+- **While you are alive,** you keep paying 2% of your income towards it, as before.
+- **If the asset is sold while you are alive,** your balance is paid from the sale money first. Selling or leasing part of it means paying the same share of your balance, on the same terms as above.
+- **When you die,** your estate pays what it can. Anything left over is added to the new owner's own balance on that asset. They then have one balance, on the normal rules: it rises with inflation, they pay 2% of their income towards it, and it is due if they sell. Nobody pays more than 2% of their income.
+- **If the new owner has no arrangement of their own,** for example because the home is not their only home, they pay what is left over in equal yearly amounts over ten years, rising with inflation.
+
+Because the balance is registered against the asset, spending or giving away the rest of an estate does not escape it.
 
 ### What this means compared with today
 
@@ -113,13 +135,13 @@ Jubilee money you give to family, or leave when you die, counts towards the £40
 
 ### Hard cases and fraud
 
-Hard cases go to a panel of a tax specialist, a business valuer and an independent chair. Their decisions are published without names, so everyone can see how the rules are applied.
+Hard cases go to an independent panel of a tax specialist, a business valuer and an independent chair. Their decisions are published without names, so everyone can see how the rules are applied. You can appeal a decision to the tax tribunal.
 
 Anyone who hides other property or businesses to claim the arrangement loses all the inherited assets and faces the full tax, penalties and possible prosecution.
 
 ## What it costs
 
-We estimate the new system would raise £13–15 billion a year, compared with £7 billion from Inheritance Tax today. Letting families keep homes and farms delays some of this money until the asset is sold, but does not reduce it, because the unpaid bill rises with inflation.
+We estimate the new system would raise £13–15 billion a year, compared with £7 billion from Inheritance Tax today. Letting families keep homes and farms delays some of this money until the asset is sold. The unpaid bill rises with inflation, so it keeps its value. But where a family keeps a home or farm for generations, some of the bill may not be collected for decades.
 
 ## Who it affects
 
@@ -131,6 +153,6 @@ We estimate the new system would raise £13–15 billion a year, compared with �
 
 **Families who want to keep a home** can keep it, as long as they live in it.
 
-**Farming families** never have to sell to pay the tax. They pay 2% of their income each year while they farm, and the bill passes to the next generation with the land.
+**Farming families** never have to sell to pay the tax. They pay 2% of their income each year while they farm, and any unpaid bill stays with the land when it passes to the next generation.
 
-**Families who sell inherited land or property** pay the tax that was put off.
+**Families who sell or lease out inherited land or property** pay the tax that was put off. Letting fields to a local farmer does not count.
