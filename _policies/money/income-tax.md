@@ -13,7 +13,7 @@ costing_note: "Revenue was modelled on an earlier five-band version of this poli
 image: /assets/img/income-tax.jpg
 image_alt: "Travellers crossing the concourse at King's Cross station, seen from above"
 image_position: "center 60%"
-# video: YOUTUBE_ID             # uncomment and paste the video ID
+video: 9Yp8prysmI8
 ---
 
 ## The problem
