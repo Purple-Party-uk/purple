@@ -11,7 +11,7 @@ costing: partial
 costing_note: "The national mutual lender's starting capital (about £2.75 billion) is £50 for each of about 55 million adults, from ONS mid-2024 population estimates. The regulator's running costs, any top-up grant to the mutual, the margin bands and the effect on the Sovereign Wealth Fund's returns have not yet been modelled."
 # image: /assets/img/mortgages.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
-# video: YOUTUBE_ID             # uncomment and paste the video ID
+video: pKjCLPx4xqI
 ---
 
 ## The problem
