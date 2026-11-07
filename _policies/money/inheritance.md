@@ -10,7 +10,7 @@ flagship: false
 costing: estimate
 # image: /assets/img/inheritance.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
-# video: YOUTUBE_ID             # uncomment and paste the video ID
+video: F8mfqPNdENw
 ---
 
 ## The problem
@@ -90,6 +90,10 @@ Here is an example. An heir with their full allowance inherits a farm worth £4 
 From April 2026, farms and businesses worth more than £2.5 million pay Inheritance Tax on the value above that, at an effective rate of 20%. The bill can be spread over ten years, but it has to be paid whether the family keeps farming or not.
 
 Under our plan, the bill on a large farm is higher on paper, because there is no relief. But a family that keeps farming pays far less in cash, year by year. The bill falls due only if the land is sold.
+
+{% include video.html id="8A1FGq_eAEA" title="Institute for Fiscal Studies on the Inheritance Tax changes for farms and businesses" %}
+
+In this discussion, economists at the Institute for Fiscal Studies explain why the old reliefs for farms and businesses were used to avoid tax. It was recorded when the cap was first announced at £1 million. The government has since raised it to £2.5 million.
 
 ### A bill that may never be paid off
 
