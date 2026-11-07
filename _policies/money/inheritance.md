@@ -80,14 +80,16 @@ These do not trigger the bill:
 - **Retiring.** You can step back from the work and keep the farm.
 - **Passing it on.** Handing the farm or business to the next generation, during your life or in your will, does not make the bill due. [How handing it on works](#handing-it-on-during-your-life) is explained below.
 - **Diversifying.** A farm shop, a campsite or solar panels do not end the arrangement, as long as the family runs them and the business stays in the family. Their profits are taxed like any other business's. Leasing land to a solar developer is not diversifying. It is a lease, and the lease rules below apply.
-- **Letting land to a local farmer.** You can let fields or grazing to a local working farmer.
-- **Using a contractor.** A contractor can do the work, as long as the farm business stays the family's.
+- **Using a contractor.** A contractor can do the work, as long as the farm business stays the family's. The family carries the risk and keeps the profit. This is the route for a family that cannot farm all its land itself.
+- **Short grazing licences.** You can let someone graze livestock or cut grass on open fields for up to six months in any year. This does not cover buildings or the farmhouse, it cannot become a tenancy, and it cannot go to a company, trust or person connected to the family. Anything else counts as a lease.
 
 These trigger all or part of the bill:
 
-- **Any other lease.** Leasing land to anyone else, including a solar or other developer, ends the arrangement on the land you lease. You pay the same share of the remaining balance as the share of the farm you lease. Lease 10% of the farm, and 10% of the balance is due. You pay it in equal yearly amounts over ten years, still rising with inflation. The arrangement on the rest of the farm carries on. Lease the whole farm, and the whole balance is due on the same terms.
+- **Leasing land.** Any lease, to anyone, ends the arrangement on the land you lease. That includes leases to other farmers and to solar or other developers. A family that leases land out is taking rent, not farming, which is why letting an inherited home ends the arrangement too. You pay the same share of the remaining balance as the share of the farm you lease. Lease 10% of the farm, and 10% of the balance is due. You pay it in equal yearly amounts over ten years, still rising with inflation. The arrangement on the rest of the farm carries on. Lease the whole farm, and the whole balance is due on the same terms.
 - **Selling part of it.** You pay the same share of the remaining balance as the share of the farm you sell. Sell a quarter of the farm, and a quarter of the balance is due. The rest carries on as before.
 - **Selling up or closing.** If the family sells the farm or business, or closes it, the remaining balance is due.
+
+A share of the farm is measured by what that part was worth on the day you inherited, not by its size. The valuation at inheritance records a value for each field and building. Say a farm was worth £4 million when you inherited it, and one field was worth £400,000 of that. Leasing or selling that field is 10% of the farm, so 10% of the remaining balance is due. Measuring by size would not work, because a farmhouse or a yard is worth far more per acre than open grazing.
 
 There is one exception for hard times. If the heir is a child, seriously ill or needs time to take over, the family can let the whole farm to anyone for up to five years without losing the arrangement. A panel within HMRC decides whether the exception applies.
 
@@ -155,4 +157,4 @@ We estimate the new system would raise £13–15 billion a year, compared with �
 
 **Farming families** never have to sell to pay the tax. They pay 2% of their income each year while they farm, and any unpaid bill stays with the land when it passes to the next generation.
 
-**Families who sell or lease out inherited land or property** pay the tax that was put off. Letting fields to a local farmer does not count.
+**Families who sell or lease out inherited land or property** pay the tax that was put off.
