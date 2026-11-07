@@ -10,7 +10,7 @@ flagship: false
 costing: estimate
 # image: /assets/img/inheritance.jpg   # uncomment when you have a photo
 # image_alt: "Describe the photo"
-video: F8mfqPNdENw
+# video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 
 ## The problem
