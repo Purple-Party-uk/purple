@@ -10,8 +10,9 @@ flagship: true
 flag_order: 1
 costing: estimate
 costing_note: "Revenue was modelled on an earlier five-band version of this policy and is being recalculated for the six bands shown here. Comparisons with today use 2026/27 rates for England, Wales and Northern Ireland."
-# image: /assets/img/income-tax.jpg   # uncomment when you have a photo
-# image_alt: "Describe the photo"
+image: /assets/img/income-tax.jpg
+image_alt: "Travellers crossing the concourse at King's Cross station, seen from above"
+image_position: "center 60%"
 # video: YOUTUBE_ID             # uncomment and paste the video ID
 ---
 
