@@ -8,6 +8,7 @@ bills: []
 flagship: false
 image: /assets/img/how-we-pay-for-it.jpg
 image_alt: "A pile of Bank of England and Royal Bank of Scotland £5 and £10 notes"
+video: mqSBiLfcNS4
 ---
 
 ## In short
@@ -107,6 +108,8 @@ Britain already borrows [£132 billion a year](https://www.ons.gov.uk/economy/go
 On the standard measure, the Debt Jubilee roughly triples the national debt. Public sector net debt was about £2.9 trillion in 2025–26, roughly the size of the economy. The Jubilee adds about £6 trillion, which takes it to about three times the size of the economy. We are not going to hide that.
 
 We think the standard measure misleads here. Much of the new "debt" is money that banks hold at the Bank of England after mortgages are paid off. Most of the rest is Jubilee Bonds sitting in people's own pension pots. That is savings owed to British households, drawn on slowly over their lifetimes, not money owed to overseas lenders who can demand it back. The real test is the same as for any other spending: whether it pushes up prices. That is why we limit how fast Jubilee money can be spent, and why the Inflation Brake Rule exists.
+
+{% include video.html id="LxJW7hl8oqM" title="David Graeber on public and private debt" %}
 
 ## "Didn't this go wrong in 2022?"
 
