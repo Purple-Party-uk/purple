@@ -1,5 +1,6 @@
-{% comment %}Usage: {% include video.html id="YOUTUBE_ID" title="..." %}. With no id, shows a placeholder.{% endcomment %}
+{% comment %}Usage: {% include video.html id="YOUTUBE_ID" title="..." intro="..." %}. With no id, shows a placeholder.{% endcomment %}
 <figure class="media">
+{% if include.intro %}<figcaption class="video-intro">{{ include.intro }}</figcaption>{% endif %}
 {% if include.id %}
   <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/{{ include.id }}" title="{{ include.title | default: 'Video' }}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
 {% else %}
