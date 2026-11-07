@@ -1,17 +1,17 @@
 ---
-key: migration
+key: work-visas
 theme: immigration
 order: 1
-title: "Fair rules for immigration"
-summary: "Control migration through wages and workplaces, give people who come here a fast, cheap route to settle, and decide asylum claims within six months."
+title: "Work, visas and citizenship"
+summary: "Control migration through wages and workplaces, give workers equal rights from day one, and offer a fast, cheap route to settlement and citizenship."
 bills: []
-# paper: /assets/papers/migration.pdf   # full policy paper; uncomment once uploaded
+# paper: /assets/papers/immigration.pdf   # full policy paper; uncomment once uploaded
 flagship: false
 costing: not-yet-costed
-costing_note: "Faster asylum decisions, the Integration Service, the employer levy, the visa surcharge and regularisation have not yet been modelled. Nobody knows how many people live in the UK without legal status, so we will not give a figure for regularisation until there is a sound basis for one."
-# image: /assets/img/migration.jpg
+costing_note: "The employer levy, the visa surcharge, equal rights for work visa holders and the Integration Service have not yet been modelled."
+# image: /assets/img/work-visas.jpg
 # image_alt: "Describe the photo"
-# video: YOUTUBE_ID             # uncomment and paste the video ID
+video: Q8htnFomwRs
 ---
 
 ## The problem
@@ -20,9 +20,9 @@ Every government since 2010 has promised to cut net migration to a target. Every
 
 They missed it because most people come to Britain for one reason: employers want their work. When the economy needs workers, people come. Border rules decide who comes and on what terms. They do not decide how many.
 
-Tougher borders often make the numbers go up. People who fear they will not be allowed back stop moving back and forth. They stay for good and bring their families. Every announced crackdown sets off a rush to get in first. Where there is no legal route, people pay smugglers.
+Tougher borders often make the numbers go up. People who fear they will not be allowed back stop moving back and forth. They stay for good and bring their families. Every announced crackdown sets off a rush to get in first.
 
-Meanwhile, the system we have is slow, expensive and unfair. Asylum seekers wait years for a decision in hotels. Workers tied to one employer cannot leave a bad job. Families pay thousands of pounds in fees for each renewal. And some employers use cheap, insecure migrant labour to hold down everyone's wages.
+Meanwhile, the system we have is expensive and unfair. Workers tied to one employer cannot leave a bad job. Families pay thousands of pounds in fees for each renewal. And some employers use cheap, insecure migrant labour to hold down everyone's wages.
 
 ## What we would do
 
@@ -31,9 +31,8 @@ We would control migration where control actually works: through wages, working 
 - **Work visas that belong to the worker.** Equal rights from the day you arrive, no upfront fee, and freedom to change jobs.
 - **Employers pay, not workers.** A levy on employers who recruit from abroad, and the right to recruit only in sectors that meet fair pay and conditions.
 - **A clear path to citizenship.** Settlement after five years and citizenship after seven and a half, with no fee.
-- **Asylum decided within six months**, in reception centres rather than hotels, with the right to work from day one.
+- **Enforcement in workplaces**, not shows of force at the border.
 - **No net migration target.** Honest figures instead, published every year.
-- **A one-off regularisation scheme** for people who have built their lives here without legal status.
 
 We will be honest about one thing. Our plans for growth, including a large housebuilding programme and more public investment in research, will increase the demand for workers. A growing economy draws people in. No party controls the total. What a government can control is who comes, on what terms, and who benefits.
 
@@ -92,32 +91,6 @@ A parent without status whose child is British can stay and work while the child
 
 Parents and grandparents of British citizens and settled residents can visit for up to three months a year without a visa. They need a free online travel authorisation and health insurance. Emergency care is free for everyone until they are stable, so nobody hesitates to call an ambulance.
 
-### Asylum
-
-Countries would be graded green, amber or red. People from green countries cannot claim asylum. People from amber countries can claim in specific circumstances. Claims from red countries are fast-tracked.
-
-People could apply from abroad, online or at UK-run centres overseas, and travel once accepted. A safe legal route takes business away from the smugglers.
-
-Every claim would be decided within six months, phased in over three years. That means three to four times as many Home Office caseworkers, legal aid for asylum claims and reformed tribunals with specialist judges.
-
-While a claim is decided, people can work from day one. They live in regional reception centres, not hotels, with English classes, legal advice and health checks.
-
-People arriving by small boat are held briefly for identity, health and security checks, then move to a reception centre and report regularly. Holding everyone for the whole of their claim does not stop the crossings. Children are never detained.
-
-A refugee who goes back to the country they fled, without permission, shows that it is safe for them. Refugees need Home Office approval before travelling there, and urgent requests, such as a dying relative, are decided quickly. Unauthorised travel triggers a review of their status, with legal aid, an interpreter and a right of appeal.
-
-Where a claim fails, the person is returned to their own country. We would not send anyone to a third country.
-
-### When someone cannot be returned
-
-If return would expose someone to war, persecution or torture, they get Humanitarian Protection, not years in limbo.
-
-If return is safe but blocked because their country will not take them back, Britain puts escalating pressure on that country, through visas, aid, trade and diplomacy. The person lives under restrictions for up to two years. If their country still refuses and they have committed no crime, they get limited leave to remain.
-
-People wanted for ordinary crimes at home are not refugees. Where poor prison conditions block their removal, we would negotiate treaties so that their sentence is served in a UK prison and they are removed once it is served. These treaties will take years. Until they exist, some of these people will stay here, under the strictest conditions the law allows. We will not promise removals we cannot yet deliver.
-
-Anyone sentenced to a year or more in prison is deported unless removal would do severe, lasting harm to a child that nothing else could prevent. An offence committed as a child never leads to deportation. Anyone who got a visa or status by fraud is removed where possible and barred from applying for any UK visa for at least 20 years.
-
 ### Enforcement in workplaces, not on beaches
 
 Most people without legal status did not arrive in a small boat. They came on a visa and stayed after it ran out, and most of them are working. So we would move money from border measures that exist for show into workplace inspection.
@@ -134,26 +107,14 @@ We would scrap the net migration target. Each year the Migration Advisory Commit
 
 A national Integration Service would support migrants and refugees for up to five years after arrival, with free English classes and help getting qualifications recognised, finding work and registering with services.
 
-### Regularisation
-
-Nobody knows how many people live in the UK without legal status. Many have been here for years, working and raising children. Finding and removing them one by one would cost more than the state could ever recover, and it keeps them outside the tax system and open to exploitation.
-
-We would run a single, one-off scheme to bring them in. Anyone who can show they have built a life here can apply, using evidence such as tenancy agreements, employer records, school records and NHS records. There is no cut-off date. People convicted of serious crimes, people who used fraud, and people whose short-term visa ran out only recently are excluded.
-
-Successful applicants get leave to remain and move onto the five-year route to settlement. The years they have already spent here count. They pay the visa surcharge on their earnings for five years, like everyone else.
-
-The scheme happens once. After it closes, the ordinary rules apply to everyone.
-
 ## What it costs
 
 We have not yet put figures on this policy. These are the costs and income it carries.
 
-- **Faster asylum decisions** need more caseworkers, legal aid and tribunal capacity. They should also cut the cost of today's slow system, with its years of hotel bills.
 - **The visa surcharge** is set to cover the cost of processing, from first visa to citizenship. It is not designed to raise money, and it replaces the income from today's fees.
 - **The employer levy** raises new money, earmarked for training and for enforcing employment standards.
 - **Equal rights for work visa holders** cost money in services and income-floor payments, set against the tax they pay.
 - **The Integration Service** is a new cost.
-- **Regularisation** costs money to process and brings in new income tax and National Insurance. How much depends on how many people apply, and nobody knows that number.
 
 We will publish figures once these have been modelled.
 
@@ -165,8 +126,4 @@ We will publish figures once these have been modelled.
 
 **Employers** that rely on low pay face higher costs through the levy and sector-wide standards. That is intended. Employers who already treat their staff fairly gain, because competitors who undercut them get caught.
 
-**People seeking asylum** get a decision within six months, the right to work while they wait and a reception centre instead of a hotel.
-
 **Families** can bring a partner without an income test, and children who grow up here become British.
-
-**People living here without status** get one chance to come into the system, pay tax and stop living in fear.
