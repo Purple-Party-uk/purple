@@ -19,9 +19,9 @@ title: Purple
 </div></section>
 
 <section class="photo-strip"><div class="wrap strip-grid">
-  {% include image.html caption="Someone at work in a workshop or factory" ratio="4/3" %}
-  {% include image.html caption="Researchers in a lab" ratio="4/3" %}
-  {% include image.html caption="A teacher with a class" ratio="4/3" %}
+  {% include image.html src="/assets/img/home-workshop.jpg" alt="Two workers in red hard hats fitting steel panels" %}
+  {% include image.html src="/assets/img/home-lab.jpg" alt="A researcher in a white coat working at a laboratory bench" %}
+  {% include image.html src="/assets/img/home-classroom.jpg" alt="A teacher writing on a blackboard in front of a classroom" %}
 </div></section>
 
 {% assign tax = site.policies | where: "key", "income-tax" | first %}
