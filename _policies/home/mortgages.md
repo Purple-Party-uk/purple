@@ -12,6 +12,7 @@ costing_note: "The national mutual lender's starting capital (about £2.75 billi
 image: /assets/img/mortgages.jpg
 image_alt: "A small model house with a stack of coins in front of it"
 video: pKjCLPx4xqI
+video_link: true               # owner blocks embedding, so link to YouTube instead
 video_intro: "This video explains how Denmark's system works. Our version keeps its core rule and changes some details, set out below."
 ---
 

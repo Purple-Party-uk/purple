@@ -14,7 +14,7 @@ nav: policies
 </div></div>
 <div class="wrap doc">
   <article class="body">
-    {% include video.html id=page.video title=page.title intro=page.video_intro %}
+    {% include video.html id=page.video title=page.title intro=page.video_intro link=page.video_link %}
     {% assign cost_h = '<h2 id="what-it-costs">What it costs</h2>' %}
     {% if content contains cost_h %}
       {% assign before_cost = content | split: cost_h | first %}
