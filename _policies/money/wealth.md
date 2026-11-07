@@ -12,7 +12,7 @@ costing_note: "The revenue figure is for the portfolio levy. The register, trust
 image: /assets/img/wealth.jpg
 image_alt: "The City of London skyline, with its glass office towers under a grey sky"
 image_position: "center 45%"
-video: _luCGP5pKjw
+video: luobN4xGOdA
 ---
 
 ## The problem
@@ -53,6 +53,8 @@ It covers all shares listed in the UK, whoever owns them, and all listed shares 
 UK residents must declare all their listed holdings, wherever they are held. Countries already share account information under an international agreement, the [Common Reporting Standard](https://www.oecd.org/tax/automatic-exchange/common-reporting-standard/), which does most of the checking.
 
 Anyone who leaves the UK to live elsewhere for tax purposes pays a one-off levy on their whole portfolio, so moving abroad is not a way out.
+
+{% include video.html id="_luCGP5pKjw" title="Barry Ferns on the wealth tax debate" %}
 
 ### A register of valuable assets
 
@@ -99,3 +101,7 @@ The other rules raise money by stopping wealth slipping out of income tax and th
 **People with very large share portfolios** pay a small part of their wealth each year, whether or not they sell.
 
 **People who use trusts, private companies or large loans to avoid tax** find that the benefit they get is taxed as income, like everyone else's.
+
+## Listen: the case for taxing billionaires
+
+{% include podcast.html url="https://podcasts.apple.com/nz/podcast/the-billionaire-tax-debate-gabriel-zucman/id1665265193?i=1000776514618" length="1hr 12min" title="The billionaire tax debate, with Gabriel Zucman" text="Gabriel Zucman, the economist behind the proposal for a minimum tax on billionaires, on whether the very rich pay their fair share and what tax havens have to do with it." %}

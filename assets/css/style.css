@@ -620,3 +620,9 @@ body.dark-top main{margin-top:-68px;}
 .helpways{margin-top:16px;}
 .promise .media{margin-bottom:24px;}
 .avatar{background:var(--ph);border:0;}
+/* Podcast link */
+.podcast{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:28px 0;padding:20px 24px;background:#fff;border-radius:16px;}
+.podcast-btn{white-space:nowrap;}
+.podcast-text{flex:1;min-width:220px;}
+.podcast-text p{margin:0;}
+.podcast-title{font-weight:600;margin-bottom:4px !important;}

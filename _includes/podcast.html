@@ -1,0 +1,5 @@
+{% comment %}Usage: {% include podcast.html url="https://..." length="1hr 12min" title="..." text="..." %}{% endcomment %}
+<div class="podcast">
+  <a class="btn violet podcast-btn" href="{{ include.url }}" target="_blank" rel="noopener"><span aria-hidden="true">&#9654;</span> Listen{% if include.length %} &middot; {{ include.length }}{% endif %}</a>
+  <div class="podcast-text">{% if include.title %}<p class="podcast-title">{{ include.title }}</p>{% endif %}{% if include.text %}<p class="small">{{ include.text }}</p>{% endif %}</div>
+</div>
