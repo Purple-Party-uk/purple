@@ -16,15 +16,19 @@ costing_note: "More caseworkers, legal aid, reception centres and tribunal refor
 
 ## The problem
 
-People seeking asylum in Britain wait years for a decision, many of them in hotels. While they wait, most cannot work. The longer a case drags on, the more it costs and the harder it becomes to remove anyone whose claim fails.
+Britain has got faster at making first decisions on asylum claims. In June 2026, about 40,000 people were waiting for one, half as many as a year earlier. The number of asylum seekers in hotels also halved, to about 16,000.
 
-There are almost no safe, legal ways to claim asylum from abroad. So people pay smugglers. Governments respond with tougher rules and plans to send people to other countries. Neither has stopped the boats.
+The delay has moved to the appeals stage. By the middle of 2026, more than 90,000 asylum appeals were waiting to be heard, more than double the number at the end of 2024. Appeals were taking well over a year to decide. While people wait, most cannot work, and many stay in hotels at public expense.
+
+Refugee charities say poor first decisions are forcing people into appeals. Speeding up the Home Office without fixing the quality of its decisions moves the queue to the courts instead of clearing it.
+
+There are still almost no safe, legal ways to claim asylum from abroad. So people pay smugglers. Governments respond with tougher rules and plans to send people to other countries. Neither has stopped the boats.
 
 Removal is often blocked for reasons that have nothing to do with the person's claim. Some countries refuse to take their own citizens back. Some people wanted for crimes at home argue that their country's prisons would breach their human rights. They end up stuck here for years, in limbo.
 
 ## What we would do
 
-- **A decision on every claim within six months**, with more caseworkers, legal aid and specialist tribunals.
+- **A decision on every claim within six months**, and appeals heard within three to twelve months, with more caseworkers, legal aid and specialist tribunals.
 - **Safe legal routes** to apply from abroad, so that fewer people need smugglers.
 - **Reception centres instead of hotels**, with the right to work from day one.
 - **No removals to third countries.** People whose claims fail go back to their own country.
