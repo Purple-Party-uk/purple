@@ -1,7 +1,9 @@
-{% comment %}Usage: {% include video.html id="YOUTUBE_ID" title="..." intro="..." %}. With no id, shows a placeholder.{% endcomment %}
+{% comment %}Usage: {% include video.html id="YOUTUBE_ID" title="..." intro="..." link=true %}. link=true shows a thumbnail that opens the video on YouTube, for videos whose owners block embedding. With no id, shows a placeholder.{% endcomment %}
 <figure class="media">
 {% if include.intro %}<figcaption class="video-intro">{{ include.intro }}</figcaption>{% endif %}
-{% if include.id %}
+{% if include.id and include.link %}
+  <a class="video-embed video-link" href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank" rel="noopener" style="background-image:url('https://i.ytimg.com/vi/{{ include.id }}/hqdefault.jpg');"><span class="play" aria-hidden="true">&#9654;</span><span class="video-link-label">Watch on YouTube<span class="sr-only"> (opens in a new tab)</span></span></a>
+{% elsif include.id %}
   <div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/{{ include.id }}" title="{{ include.title | default: 'Video' }}" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
 {% else %}
   <div class="ph"><span class="play" aria-hidden="true">&#9654;</span>YouTube video</div>
