@@ -78,6 +78,8 @@ The bill works in the same way as for a home. It is fixed on the day you inherit
 - **Retiring does not trigger the bill.** You can step back from the work and keep the farm.
 - **Passing it on does not trigger the bill either.** When you hand the farm or business to the next generation, during your life or in your will, the unpaid balance passes with it. Your children carry it on under the same rules.
 - **Diversifying is fine.** A farm shop, a campsite or solar panels do not end the arrangement, as long as the business stays in the family. Their profits are taxed like any other business's.
+- **Letting some land is fine.** You can let fields, grazing or buildings while the family farms the rest. You can also use a contractor to do the work, as long as the farm business stays yours.
+- **Letting the whole farm ends the arrangement.** If the family stops farming and lets all the land to someone else, it has become a landlord, and the remaining balance is due, as it would be for a let house. The one exception is a hard time: if the heir is a child, seriously ill or needs time to take over, the family can let the whole farm for up to five years without losing the arrangement.
 - **Selling part of it means paying part of the bill.** If you sell a field, you pay the share of the bill that goes with that field. The rest carries on as before.
 - **Selling up means paying the rest.** If the family sells the farm or business, or closes it, the remaining balance is due.
 
