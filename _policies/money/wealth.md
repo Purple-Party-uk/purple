@@ -9,9 +9,10 @@ bills: []
 flagship: false
 costing: estimate
 costing_note: "The revenue figure is for the portfolio levy. The register, trust, company and loan rules protect the other taxes from avoidance and have no separate estimate."
-# image: /assets/img/wealth.jpg   # uncomment when you have a photo
-# image_alt: "Describe the photo"
-# video: YOUTUBE_ID             # uncomment and paste the video ID
+image: /assets/img/wealth.jpg
+image_alt: "The City of London skyline, with its glass office towers under a grey sky"
+image_position: "center 45%"
+video: _luCGP5pKjw
 ---
 
 ## The problem
