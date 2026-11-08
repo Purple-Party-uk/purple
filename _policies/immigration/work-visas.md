@@ -53,7 +53,7 @@ A sector can recruit from abroad only if it meets the wage floors and working co
 
 The visa belongs to the worker. They can change jobs without reapplying. A worker who can walk away from a bad employer is much harder to exploit.
 
-From the day they arrive, work visa holders have the same rights as anyone else: the NHS, the [£18,000 income floor]({{ '/policies/money/nit/' | relative_url }}) and full employment protection.
+From the day they arrive, work visa holders have the same rights as anyone else: the NHS, [income protection]({{ '/policies/money/income-protection/' | relative_url }}) and full employment protection.
 
 ### The employer levy
 
@@ -69,7 +69,7 @@ Employers pay a levy for each work visa holder during that worker's first five y
 
 There is no upfront fee and there are no renewal fees. Instead, each work visa holder pays a small surcharge on their UK earnings for five years. That one surcharge covers everything, from the first visa to citizenship.
 
-The independent Fiscal Council sets the rate each year so that it covers the cost of processing visas, settlement and citizenship, and no more. The law caps it at 1% of earnings. Children pay nothing. Nobody pays it on income-floor payments, so it never pushes anyone below £18,000. Refugees do not pay it.
+The independent Fiscal Council sets the rate each year so that it covers the cost of processing visas, settlement and citizenship, and no more. The law caps it at 1% of earnings. Children pay nothing. Nobody pays it on income protection payments. Refugees do not pay it.
 
 Decisions on visas would be made within four weeks.
 
@@ -114,7 +114,7 @@ We have not yet put figures on this policy. These are the costs and income it ca
 
 - **The visa surcharge** is set to cover the cost of processing, from first visa to citizenship. It is not designed to raise money, and it replaces the income from today's fees.
 - **The employer levy** raises new money, earmarked for training and for enforcing employment standards.
-- **Equal rights for work visa holders** cost money in services and income-floor payments, set against the tax they pay.
+- **Equal rights for work visa holders** cost money in services, set against the tax they pay.
 - **The Integration Service** is a new cost.
 
 We will publish figures once these have been modelled.

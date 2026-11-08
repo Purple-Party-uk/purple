@@ -9,7 +9,7 @@ bills: ['tax-bill']
 flagship: true
 flag_order: 1
 costing: estimate
-costing_note: "Revenue was modelled on an earlier five-band version of this policy and is being recalculated for the six bands shown here. Comparisons with today use 2026/27 rates for England, Wales and Northern Ireland."
+costing_note: "Revenue was modelled on an earlier five-band version of this policy, before Sovereign Wealth Fund contributions were deducted ahead of income tax. It is being recalculated for the design shown here. Comparisons with today use 2026/27 rates for England, Wales and Northern Ireland."
 image: /assets/img/income-tax.jpg
 image_alt: "Travellers crossing the concourse at King's Cross station, seen from above"
 image_position: "center 60%"
@@ -47,22 +47,49 @@ Everyone gets the first £20,000 tax-free. There is no marriage allowance and th
 
 Each rate applies only to the part of your income inside that band, as it does today. Someone earning £30,000 pays nothing on the first £20,000 and 20% on the last £10,000.
 
-Here is what that means, compared with what someone earning a salary pays today in income tax and National Insurance.
-
-| Income | Tax today | Tax under Purple | Difference |
-|---|---|---|---|
-| £25,000 | £3,480 | £1,000 | £2,480 less |
-| £30,000 | £4,880 | £2,000 | £2,880 less |
-| £40,000 | £7,680 | £4,000 | £3,680 less |
-| £50,000 | £10,480 | £6,000 | £4,480 less |
-| £80,000 | £23,043 | £15,000 | £8,043 less |
-| £120,000 | £43,843 | £31,000 | £12,843 less |
-| £150,000 | £58,714 | £46,000 | £12,714 less |
-| £250,000 | £105,714 | £106,000 | £286 more |
+Every band, including the £20,000 tax-free allowance, rises with inflation each year. Nobody is pulled into a higher band just because prices went up.
 
 If you sell shares, a business or a second property for more than you paid, the profit counts as income in the year you sell. It is taxed at the same rates as wages.
 
 A single tax only works if people cannot slip around it. So perks from your own company or trust, money paid out of trusts, and large loans used to live on instead of an income are all taxed as income. [Taxes on wealth and assets]({{ '/policies/money/wealth/' | relative_url }}) explains how.
+
+### Your contributions to the Sovereign Wealth Fund
+
+On income above £20,000, you would also pay 5.5% into the Sovereign Wealth Fund, the national fund owned by everyone in the country. These are not taxes. The government cannot spend them. Each one pays for something you get back.
+
+| Contribution | Rate | What it pays for |
+|---|---|---|
+| Your pension | 2.5% | Your own pension pot. It is your money. |
+| Social care | 0.9% | A shared fund that can be spent only on social care |
+| Income protection | 2.1% | [Most of your pay if you lose your job]({{ '/policies/money/income-protection/' | relative_url }}) |
+
+The contributions are taken off before income tax is worked out, so you do not pay tax on the money going in. You pay tax once, when it comes out: pension withdrawals and income protection payments are taxed as income, like any other income.
+
+If you earn £20,000 or less, you pay nothing. The £20,000 threshold rises with inflation, like the tax bands. All three contributions are collected with income tax and shown as separate lines on your payslip. By law, each fund is kept separate.
+
+### What your employer pays
+
+Your employer would pay at least 8% of your pay into your pension pot, on top of your wages, plus 2% into the social care fund. Firms that pay their chief executive more than 20 times their typical worker pay more, up to 15%.
+
+Today, the legal minimum an employer pays into a workplace pension is [3% of your earnings between £6,240 and £50,270](https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay). On a salary of £30,000, that is £713 a year. Under Purple, it would be at least £2,400.
+
+### What you would pay, compared with today
+
+This table adds up income tax and contributions for a salaried employee. "Today" means income tax plus National Insurance.
+
+| Income | Today | Purple | Of which goes into your own pension | Difference |
+|---|---|---|---|---|
+| £20,000 | £2,080 | £0 | £0 | £2,080 less |
+| £25,000 | £3,480 | £1,220 | £125 | £2,260 less |
+| £30,000 | £4,880 | £2,440 | £250 | £2,440 less |
+| £40,000 | £7,680 | £4,880 | £500 | £2,800 less |
+| £50,000 | £10,480 | £7,320 | £750 | £3,160 less |
+| £80,000 | £23,043 | £17,310 | £1,500 | £5,733 less |
+| £120,000 | £43,843 | £34,300 | £2,500 | £9,543 less |
+| £150,000 | £58,714 | £49,575 | £3,250 | £9,139 less |
+| £250,000 | £105,714 | £111,060 | £5,750 | £5,346 more |
+
+Someone on £30,000 pays £2,440 a year less than today. They also build up £250 a year in their own pension, and their employer adds at least £2,400. Neither figure counts pension contributions people already make through work today.
 
 ## What it costs
 
@@ -72,7 +99,7 @@ It replaces employee National Insurance (£165 billion), capital gains tax (£15
 
 ## Who it affects
 
-**People who earn a wage or salary** pay less at every income up to about £250,000. Someone on £30,000 keeps nearly £2,900 more a year.
+**People who earn a wage or salary** pay less in tax and contributions at every income up to about £215,000. Leave out the part that goes into their own pension, and they pay less up to about £250,000. Someone on £30,000 keeps £2,440 more a year, and their employer pays more than three times as much into their pension.
 
 **People whose income comes from owning things**, such as shares, property or a business they sell, pay the same rates as people who work. For most of them, that means paying more than they do now.
 
