@@ -11,7 +11,7 @@
   date: "[Date]"
   where: Substack
   url: "https://joshuaskoczylis.substack.com"
-  policies: [nit]
+  policies: []
 - type: Article
   title: "[Housing and rent article title]"
   date: "[Date]"

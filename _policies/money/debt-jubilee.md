@@ -169,13 +169,13 @@ On the standard measure, the national debt roughly triples. We explain why we th
 
 **Homeowners with a mortgage** see it cut by up to £100,000 each, or cleared.
 
-**People over 60** get a steady extra income for life, on top of the £18,000 income floor.
+**People over 60** get a steady extra income for life.
 
 **Low earners** gain most. A flat £100,000 is worth far more to someone on £20,000 than to someone on £200,000.
 
 **Women** gain on average, because they tend to have smaller pensions. The rules on shared debts mean one partner's allowance can never be used to pay the other's debts.
 
-**Landlords** are paid full value for the share their tenants buy, but as pension savings, not cash. A landlord aged 35 may wait 25 years to draw any of it. Small landlords who lived on their rent keep their tenants' monthly payments and the income floor, but lose the Jubilee share as income.
+**Landlords** are paid full value for the share their tenants buy, but as pension savings, not cash. A landlord aged 35 may wait 25 years to draw any of it. Small landlords who lived on their rent keep their tenants' monthly payments, but lose the Jubilee share as income.
 
 **Families with older relatives in the UK** gain more over time, because Jubilee money can be given or left to family. Counting it towards the £400,000 allowance limits how much the wealthiest families gain.
 

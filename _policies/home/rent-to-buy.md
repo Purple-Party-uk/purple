@@ -88,12 +88,12 @@ Refuges and supported housing, tied homes, social care housing and military hous
 
 ### If your income falls
 
-The scheme bends rather than breaks. The [£18,000 income floor]({{ '/policies/money/nit/' | relative_url }}) covers most drops in income. If that is not enough, you can apply to a local hardship panel for a lower payment, and the 25 years are extended. Nobody loses their share because their income fell, and nobody is made homeless.
+The scheme bends rather than breaks. If you lose your job, [income protection]({{ '/policies/money/income-protection/' | relative_url }}) pays most of your wage for up to a year. If that is not enough, or your income falls for another reason, you can apply to a local hardship panel for a lower payment, and the 25 years are extended. Nobody loses their share because their income fell, and nobody is made homeless.
 
 The same national rules apply in every panel:
 
 - the lower payment must at least cover the 0.5% interest, so the amount owed never grows;
-- it is tested against your income after the income floor;
+- it is tested against your income, including any income protection payments;
 - no household pays more than a set share of its income on its home;
 - payments return to normal when income recovers.
 

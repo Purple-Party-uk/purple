@@ -92,7 +92,7 @@ If tax doesn't pay for spending in the household sense, why tax at all? Tax does
 - **The referee.** An independent Fiscal Council, which replaces the Office for Budget Responsibility, confirms the trigger has been met. It also decides whether the cause is spending at home or a shock from abroad.
 - **If the cause is at home,** the government must act within 60 days, using measures agreed in advance and in this order. First, slow down programmes that are still being phased in. Second, raise contributions into everyone's Sovereign Wealth Fund pension pot for a set period. That money is not lost. It comes back to you as savings. Third, add a temporary surcharge on the top income tax bands and on large financial portfolios.
 - **If the cause is abroad,** such as a jump in energy prices, we respond with targeted measures such as price caps, windfall taxes and help with essentials. Raising taxes on everyone would only make families poorer without fixing the cause.
-- **What is never cut.** The £18,000 income floor and the payment for each child are never used as a brake.
+- **What is never cut.** Income protection payments and the payment for each child are never used as a brake.
 - **It works both ways.** If inflation stays below 1% and unemployment is rising, the brake comes off.
 
 The Bank of England still sets interest rates, but as a backstop. Its main job becomes keeping borrowing costs low and steady. Higher interest rates hit mortgage holders, renters and small businesses first, so we would rather use tax and timing.

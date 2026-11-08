@@ -49,7 +49,7 @@ The bill on the home you live in cannot rise by more than 5% in any year, whatev
 
 **If you own your home but have a low income**, you can put off paying. This applies to anyone living in their only home whose property tax is more than a tenth of their income, such as a pensioner who bought decades ago. The unpaid tax builds up against the home, with interest at the rate the government pays to borrow, and is paid when the home is sold or from the estate. You pay the same tax in the end, just later. Once the amount owed reaches 80% of the home's value, you pay from income or sell.
 
-There are no exemptions. Households on the guaranteed income floor have the tax covered by that payment.
+There are no exemptions. How households on low incomes pay will be settled as part of our review of benefits.
 
 ## What it costs
 

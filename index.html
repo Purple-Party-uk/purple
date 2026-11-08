@@ -7,7 +7,7 @@ title: Purple
   <div class="hero-media blend" aria-hidden="true" style="background-image:linear-gradient(100deg,rgba(91,31,79,.82) 0%,rgba(58,45,134,.6) 50%,rgba(28,39,102,.35) 100%),url('{{ '/assets/img/hero.jpg' | relative_url }}');background-size:cover;background-position:center 60%"></div>
   <div class="wrap hero2-inner">
     <h1 class="reveal">The country got richer. You didn’t.<br><em>Let’s change that.</em></h1>
-    <p class="hero2-sub reveal">No income tax on your first £20,000. No VAT on everyday spending. A guaranteed income floor of £18,000. A pension that belongs to you and isn’t eaten up by fees.</p>
+    <p class="hero2-sub reveal">No income tax on your first £20,000. No VAT on everyday spending. Three-quarters of your pay if you lose your job. A pension that belongs to you and isn’t eaten up by fees.</p>
     <div class="ctas reveal"><a class="btn" href="{{ '/join/' | relative_url }}">Join Purple</a><a class="btn light" href="{{ '/policies/' | relative_url }}">Read our policies</a></div>
     <a class="manifesto-link on-dark reveal" href="{{ site.manifesto_pdf | relative_url }}">Download the full manifesto (PDF)</a>
   </div>
@@ -25,7 +25,7 @@ title: Purple
 </div></section>
 
 {% assign tax = site.policies | where: "key", "income-tax" | first %}
-{% assign nit = site.policies | where: "key", "nit" | first %}
+{% assign ip = site.policies | where: "key", "income-protection" | first %}
 {% assign jubilee = site.policies | where: "key", "debt-jubilee" | first %}
 {% assign rtb = site.policies | where: "key", "rent-to-buy" | first %}
 {% assign rnd = site.policies | where: "key", "research-development" | first %}
@@ -33,7 +33,7 @@ title: Purple
   <div class="num-grid">
     <a class="num reveal" href="{{ rtb.url | relative_url }}"><span class="big">25 years</span><span class="what">and the home you rent is yours. Every payment buys a share. No deposit.</span><span class="more">Rent to buy</span></a>
     <a class="num reveal" href="{{ tax.url | relative_url }}"><span class="big">£20,000</span><span class="what">you earn before paying any income tax</span><span class="more">Income tax reform</span></a>
-    <a class="num reveal" href="{{ nit.url | relative_url }}"><span class="big">£18,000</span><span class="what">an income floor no one falls below</span><span class="more">Negative income tax</span></a>
+    <a class="num reveal" href="{{ ip.url | relative_url }}"><span class="big">75%</span><span class="what">of your pay for six months if you lose your job</span><span class="more">Income protection</span></a>
     <a class="num reveal" href="{{ jubilee.url | relative_url }}"><span class="big">£100,000</span> <span class="what">for every adult: debt on your home paid off first, the rest into your pension</span><span class="more">Debt jubilee</span></a>
     {% comment %} Point this tile at the corporation tax policy once its page exists. {% endcomment %}
     <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">£1 million</span><span class="what">turnover a business can make before paying any corporation tax</span><span class="more">Corporation tax</span></a>
