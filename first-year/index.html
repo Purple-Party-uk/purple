@@ -1,0 +1,16 @@
+---
+layout: page-head
+nav: first-year
+title: Our first year
+heading: "Our first year"
+lede: "The first twelve months, set out precisely: what we would announce, what it costs, and the laws we would pass."
+---
+{% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}
+<section class="sec"><div class="wrap">
+  <div class="fy-grid">
+    <a class="fy" href="{{ '/first-year/kings-speech/' | relative_url }}"><span class="fy-k">01</span><h3>The King’s Speech</h3><p>The programme for our first session of Parliament, and the bills it announces.</p><span class="fy-go">Read the speech</span></a>
+    <a class="fy" href="{{ '/first-year/budget/' | relative_url }}"><span class="fy-k">02</span><h3>The first Budget</h3><p>What each measure costs and raises, the net effect, and how we pay for it.</p><span class="fy-go">See the Budget</span></a>
+    <a class="fy" href="{{ '/first-year/bills/' | relative_url }}"><span class="fy-k">03</span><h3>The bills</h3><p>{{ fy_bills.size }} published so far, out of the 25 to 40 we aim for. Filter by area and status.</p><span class="fy-go">Browse the bills</span></a>
+  </div>
+  <p class="note wide">Everything promised in the King’s Speech and the bills has to be paid for in the Budget. If a bill costs money, it appears in the Budget scorecard.</p>
+</div></section>

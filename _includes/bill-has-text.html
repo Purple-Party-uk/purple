@@ -1,0 +1,1 @@
+{% comment %} Sets has_text to true if bill include.b has any drafted clause or schedule text. {% endcomment %}{% assign has_text = false %}{% for part in include.b.parts %}{% for c in part.clauses %}{% if c.text %}{% assign has_text = true %}{% endif %}{% endfor %}{% endfor %}{% for s in include.b.schedules %}{% if s.text %}{% assign has_text = true %}{% endif %}{% endfor %}

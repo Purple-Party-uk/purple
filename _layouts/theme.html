@@ -11,7 +11,7 @@ nav: policies
 </div></div>
 {% assign stance = content | strip %}
 <section class="block stance"><div class="wrap">
-  <h2>What we stand for</h2>
+  <h2>Our vision for {{ page.name }}</h2>
   <div class="stance-body">
   {% if stance != "" %}{{ content }}{% else %}
     <p><span class="phtxt">[What we stand for in this area, 150–250 words: the problem readers recognise, the principle Purple applies to it, and what would change. Write it in the body of this area's file in _themes/.]</span></p>
@@ -19,12 +19,29 @@ nav: policies
   </div>
   {% unless page.image %}<div class="stance-photo">{% include image.html caption="A header photo for this area. Set image: in this area's file in _themes/" ratio="21/9" %}</div>{% endunless %}
 </div></section>
+<section class="sec when-strip"><div class="wrap">
+  <h2 class="list-head">When it happens</h2>
+  {% assign strip_cols = "year1:Year 1,years2-5:By Year 5,later:Longer term" | split: "," %}
+  <div class="strip3">
+  {% for col in strip_cols %}{% assign cid = col | split: ":" | first %}{% assign clabel = col | split: ":" | last %}
+    <div class="strip-col"><h3>{{ clabel }}</h3><ul>
+    {% assign found = 0 %}
+    {% for stg in site.data.plan.stages %}{% assign use = false %}{% if cid == "later" %}{% if stg.id == "years6-10" or stg.id == "beyond" %}{% assign use = true %}{% endif %}{% elsif stg.id == cid %}{% assign use = true %}{% endif %}
+      {% if use %}{% for it in stg.items %}{% if it.theme == page.key %}{% assign found = found | plus: 1 %}{% assign pol = site.policies | where: "key", it.policy | first %}
+        <li>{% if pol %}<a href="{{ pol.url | relative_url }}">{{ it.title }}</a>{% else %}{{ it.title }}{% endif %}<span>{{ it.when }}</span></li>
+      {% endif %}{% endfor %}{% endif %}
+    {% endfor %}
+    {% if found == 0 %}<li class="muted">Being worked out. <a href="{{ '/plan/' | relative_url }}">See the plan</a></li>{% endif %}
+    </ul></div>
+  {% endfor %}
+  </div>
+</div></section>
 <section class="block alt"><div class="wrap">
   <h2 class="list-head">Our policies</h2>
 {% if list.size > 0 %}
   <ul class="plist">
   {% for p in list %}
-    <li><a href="{{ p.url | relative_url }}"><h3>{{ p.title }}</h3><p>{{ p.summary }}</p><span class="read">Read the policy</span></a></li>
+    <li>{% include status-of.html doc=p %}<a href="{{ p.url | relative_url }}"><h3>{{ p.title }} {% include badge.html key=st_key label=st_label %}</h3><p>{{ p.summary }}</p><span class="read">Read the policy</span></a></li>
   {% endfor %}
   </ul>
 {% else %}

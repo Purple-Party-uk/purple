@@ -40,3 +40,20 @@ Put images in `assets/img/`. On a policy, uncomment `image:` / `video:` at the t
 - Privacy notice: legal review.
 - Imprint in `_config.yml`: real name and address.
 - Set `comment_form_endpoint`, `join_form_url` and `donate_url`. Until then those buttons show a "coming soon" message.
+
+## Structure (Nov 2026 restructure)
+
+Nav: The Plan · Policies · First Year · Join. The homepage is the vision.
+
+| Content | File |
+|---|---|
+| Six homepage promises and their tests | `_data/promises.yml` |
+| The Plan: stages and what we introduce when | `_data/plan.yml` |
+| Status labels (Vision · Costed brief · Draft bill) | `_data/status.yml` |
+| Cost tiers (Low / Medium / High) | `_data/cost_tiers.yml` |
+| First Budget scorecard | `_data/budget.yml` |
+| King's Speech text | `first-year/kings-speech/index.html` |
+
+Status is worked out automatically: "Draft bill" once any clause has text, "Costed brief" once the policy has `costing:`, otherwise "Vision". Set `status:` in a policy or bill to override.
+Bills are listed under First Year unless they set `first_year: false`. Add `theme:` and `costs_money: yes | no` to a bill to fill the Bills table.
+`/bills/` redirects to `/first-year/bills/`. Individual bill pages stay at `/bills/<key>/`.

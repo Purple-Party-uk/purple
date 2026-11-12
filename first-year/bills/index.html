@@ -1,0 +1,35 @@
+---
+layout: page-head
+nav: first-year
+title: The bills
+heading: "The bills"
+parent_title: "Our first year"
+parent_url: /first-year/
+lede: "The laws we would pass in our first year. We aim to publish between 25 and 40. Each one links to the policy it delivers."
+---
+{% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}
+{% assign themes = site.themes | sort: "order" %}
+<section class="sec"><div class="wrap">
+  <div class="bill-tools" role="search">
+    <label><span>Search</span><input type="search" id="bq" placeholder="Search bills"></label>
+    <label><span>Area</span><select id="btheme"><option value="">All areas</option>{% for t in themes %}<option value="{{ t.key }}">{{ t.name }}</option>{% endfor %}</select></label>
+    <label><span>Status</span><select id="bstatus"><option value="">Any status</option>{% for s in site.data.status %}<option value="{{ s.key }}">{{ s.label }}</option>{% endfor %}</select></label>
+    <label><span>Costs money</span><select id="bcost"><option value="">Either</option><option value="yes">Yes</option><option value="no">No</option><option value="tbc">Not yet known</option></select></label>
+  </div>
+  <p class="bill-count" id="bcount" aria-live="polite">{{ fy_bills.size }} bills</p>
+  <div class="table-scroll"><table class="ptable" id="btable">
+    <thead><tr><th scope="col">Bill</th><th scope="col">What it does</th><th scope="col">Area</th><th scope="col">Status</th><th scope="col">Costs money</th><th scope="col">Policy</th></tr></thead>
+    <tbody>{% for b in fy_bills %}{% include status-of.html doc=b %}{% assign btheme = b.theme %}{% unless btheme %}{% assign fp = site.policies | where: "key", b.policies[0] | first %}{% assign btheme = fp.theme %}{% endunless %}{% assign th = site.themes | where: "key", btheme | first %}{% if b.costs_money == true %}{% assign bc = "yes" %}{% elsif b.costs_money == false %}{% assign bc = "no" %}{% elsif b.costs_money %}{% assign bc = b.costs_money %}{% else %}{% assign bc = "tbc" %}{% endif %}
+      <tr data-theme="{{ btheme }}" data-status="{{ st_key }}" data-cost="{{ bc }}" data-text="{{ b.title | append: ' ' | append: b.summary | downcase | escape }}">
+        <td><a href="{{ b.url | relative_url }}"><strong>{{ b.title }}</strong></a></td>
+        <td>{{ b.summary }}</td>
+        <td>{% if th %}{{ th.name }}{% endif %}</td>
+        <td>{% include badge.html key=st_key label=st_label %}</td>
+        <td>{% if bc == "yes" %}Yes{% elsif bc == "no" %}No{% else %}<span class="muted">Not yet known</span>{% endif %}</td>
+        <td>{% for pid in b.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% unless forloop.last %}<br>{% endunless %}{% endif %}{% endfor %}</td>
+      </tr>
+    {% endfor %}</tbody>
+  </table></div>
+  <p class="empty" id="bnone" hidden>No bills match those filters.</p>
+  <div class="keys single"><div><h2 class="mini">What the statuses mean</h2>{% include status-legend.html %}</div></div>
+</div></section>
