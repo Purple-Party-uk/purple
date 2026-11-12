@@ -76,6 +76,18 @@ title: Purple
   </div>
 </div></section>
 
+{% assign L = site.data.people.leader %}
+<section class="sec" id="who"><div class="wrap leader home-leader">
+  <div class="leader-photo">{% if L.photo and L.photo != "" %}{% include image.html src=L.photo alt=L.name %}{% else %}{% include image.html caption="Portrait of the leader" ratio="4/5" %}{% endif %}</div>
+  <div class="leader-text">
+    <p class="kicker">Who we are</p>
+    <blockquote class="leader-quote big">{{ L.quote }}</blockquote>
+    <p class="leader-sign"><b>{{ L.name }}</b>, {{ L.role }}</p>
+    <p class="sec-lede">Purple is a new party, run by people with jobs and lives outside politics. Every donor over £1,000 is named, and every interest is declared.</p>
+    <a class="btn violet" href="{{ '/about/' | relative_url }}">Meet the team</a>
+  </div>
+</div></section>
+
 <section class="involve"><div class="wrap involve-grid">
   <a class="inv join reveal" href="{{ '/join/' | relative_url }}"><span class="inv-k">Join</span><h2>Help decide what we stand for.</h2><span class="inv-go">Register your interest</span></a>
   <a class="inv give reveal" href="{{ '/donate/' | relative_url }}"><span class="inv-k">Donate</span><h2>Every pound counted. Every large donor named.</h2><span class="inv-go">Give from £5</span></a>

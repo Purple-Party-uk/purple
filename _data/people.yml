@@ -1,0 +1,24 @@
+# Who we are. The leader appears on the homepage and at the top of the About page.
+# photo: path under /assets/img/ (leave "" for a placeholder). Use a real photo, not a stock image.
+# statement: first person, two or three short paragraphs: why I started Purple. Separate paragraphs with a blank line.
+# interests: employment, directorships, shareholdings, or "None".
+leader:
+  name: "[Name]"
+  role: "Leader"
+  photo: ""
+  quote: "[One sentence in your own words: why Purple exists.]"
+  statement: |
+    [Why I started Purple: the moment or the frustration that made you do it.]
+
+    [What you want Britain to look like, in plain words.]
+
+    [What you are asking the reader to do.]
+  bio: "[Two or three sentences: background and what you do outside politics.]"
+  interests: "[Employment, directorships, shareholdings, or 'None']"
+  links:
+    - { label: "Substack", url: "https://joshuaskoczylis.substack.com" }
+
+team:
+  - { name: "[Name]", role: "[Role, e.g. Treasurer]", photo: "", bio: "[Two or three sentences: background, what they do outside politics, why they are involved.]", interests: "[Declared interests or 'None']" }
+  - { name: "[Name]", role: "[Role, e.g. Nominating Officer]", photo: "", bio: "[Two or three sentences.]", interests: "[Declared interests or 'None']" }
+  - { name: "[Name]", role: "[Role]", photo: "", bio: "[Two or three sentences.]", interests: "[Declared interests or 'None']" }
