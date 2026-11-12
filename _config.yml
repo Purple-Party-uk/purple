@@ -9,7 +9,7 @@ baseurl: "/purple"
 url: ""
 
 # ---- Links to fill in before launch (leave "" until ready) ----
-manifesto_pdf: "/assets/purple-manifesto.pdf"   # upload the PDF to this path
+manifesto_pdf: ""   # not used: the website is the manifesto. Set a path here only if a dated print version is published.
 donate_url: ""        # payment provider checkout page
 join_form_url: ""     # MS Forms / Google Forms link for "Register your interest"
 comment_form_endpoint: ""  # form service endpoint for "Have your say"

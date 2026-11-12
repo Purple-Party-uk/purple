@@ -24,7 +24,7 @@ lede: "What changes, and when. Each step pays for the next."
     <div class="stage-plain">
       <p class="look-plain">{% if s.look contains "[" %}<span class="phtxt">{{ s.look }}</span>{% else %}{{ s.look }}{% endif %}</p>
       <ul class="changes">{% for it in s.items limit:3 %}<li>{{ it.title }}</li>{% endfor %}</ul>
-      {% if s.id == "year1" %}<p class="stage-more"><a href="{{ '/first-year/' | relative_url }}">Our first year in full</a></p>{% endif %}
+      {% if s.id == "year1" %}<p class="fy-links"><span>Our first year in full:</span><a href="{{ '/first-year/kings-speech/' | relative_url }}">King’s Speech</a><a href="{{ '/first-year/budget/' | relative_url }}">Budget</a><a href="{{ '/first-year/bills/' | relative_url }}">Bills</a></p>{% endif %}
     </div>
   </div>
   <details class="detail">

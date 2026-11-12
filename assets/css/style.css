@@ -879,3 +879,18 @@ body.dark-top:not(.scrolled) .menu .donate:hover{background:#fff;color:var(--vio
 #labels .detail{margin-top:0;border-top:0;}
 #labels .keys{margin-top:16px;}
 @media (max-width:900px){.stage-grid{grid-template-columns:1fr;gap:20px;}}
+
+/* Road: align rows across the four stages (subgrid), fallback min-height */
+.road{grid-template-rows:auto auto auto auto auto;}
+.stage{display:grid;grid-template-rows:subgrid;grid-row:span 5;}
+.stage > a{display:grid;grid-template-rows:subgrid;grid-row:span 4;height:auto;}
+@supports not (grid-template-rows:subgrid){.stage-short{min-height:4.4em;}}
+.stage .fy-links{grid-row:5;}
+
+/* First-year quick links (Plan Year 1 and homepage road) */
+.fy-links{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin:24px 0 0;font-weight:600;}
+.fy-links span{font-weight:500;color:var(--muted);}
+.fy-links a{color:var(--teal-dark);text-decoration:none;border-bottom:1.5px solid currentColor;}
+.fy-links a:hover{color:var(--violet);}
+.fy-links.small{margin:14px 0 0;font-size:14.5px;gap:6px 14px;}
+@media (max-width:1000px){.road{grid-template-rows:none;}.stage,.stage > a{display:flex;flex-direction:column;grid-row:auto;}}

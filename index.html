@@ -56,6 +56,7 @@ title: Purple
         <span class="stage-short">{{ s.short }}</span>
         <ul>{% for it in s.items limit:3 %}<li>{{ it.title }}</li>{% endfor %}</ul>
       </a>
+      {% if s.id == "year1" %}<p class="fy-links small"><a href="{{ '/first-year/kings-speech/' | relative_url }}">King’s Speech</a><a href="{{ '/first-year/budget/' | relative_url }}">Budget</a><a href="{{ '/first-year/bills/' | relative_url }}">Bills</a></p>{% endif %}
     </li>
   {% endfor %}
   </ol>
@@ -71,7 +72,7 @@ title: Purple
   <div class="fy-grid">
     <a class="fy reveal" href="{{ '/first-year/kings-speech/' | relative_url }}"><span class="fy-k">01</span><h3>The King’s Speech</h3><p>The programme for our first session of Parliament.</p><span class="fy-go">Read the speech</span></a>
     <a class="fy reveal" href="{{ '/first-year/budget/' | relative_url }}"><span class="fy-k">02</span><h3>The first Budget</h3><p>What each measure costs and raises, and how we pay for it.</p><span class="fy-go">See the Budget</span></a>
-    <a class="fy reveal" href="{{ '/first-year/bills/' | relative_url }}"><span class="fy-k">03</span><h3>{{ fy_bills.size }} bills, and counting</h3><p>We aim to publish 25 to 40. Read the laws, not just the promises.</p><span class="fy-go">Browse the bills</span></a>
+    <a class="fy reveal" href="{{ '/first-year/bills/' | relative_url }}"><span class="fy-k">03</span><h3>The Bills</h3><p>{{ fy_bills.size }} published so far, out of the 25 to 40 we aim for. Read the laws, not just the promises.</p><span class="fy-go">Browse the Bills</span></a>
   </div>
 </div></section>
 

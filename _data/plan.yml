@@ -14,7 +14,7 @@ stages:
   - id: year1
     label: "Year 1"
     span: "The first twelve months"
-    short: "Precise and costed: the King’s Speech, the first Budget and the bills."
+    short: "The King’s Speech, the first Budget and the Bills."
     look: "[What Britain looks like at the end of Year 1, in two or three sentences.]"
     items:
       - { title: "[Headline Year 1 item]", when: "[First 100 days]", theme: money, status: costed, cost: medium, condition: "", policy: "", bill: "" }
