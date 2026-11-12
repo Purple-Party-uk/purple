@@ -28,5 +28,5 @@ lede: "What each measure in our first Budget costs, what it raises, and the net 
 {% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
 <section class="sec tint" id="how-we-pay-for-it"><div class="wrap">
   <div class="sec-head"><p class="kicker">How we pay for it</p><h2>{{ pay.title }}</h2><p class="sec-lede">{{ pay.summary }}</p></div>
-  <article class="body">{{ pay.content }}</article>
+  <article class="body">{% if pay.video %}{% include video.html id=pay.video title=pay.title intro=pay.video_intro link=pay.video_link %}{% endif %}{{ pay.content }}</article>
 </div></section>

@@ -18,6 +18,10 @@ title: Purple
   </div>
 </section>
 
+<section class="sec home-film"><div class="wrap"><div class="film reveal">
+  {% if site.home_video and site.home_video != "" %}{% include video.html id=site.home_video title="Purple in 30 seconds" %}{% else %}<figure class="media"><div class="ph"><span class="play" aria-hidden="true">&#9654;</span>Video to come: Purple in 30 seconds. Set home_video in _config.yml</div></figure>{% endif %}
+</div></div></section>
+
 <section class="sec" id="promises"><div class="wrap">
   <div class="sec-head reveal">
     <p class="kicker">The Britain we’re building</p>
