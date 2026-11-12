@@ -52,7 +52,7 @@ nav: policies
     {% endif %}
     {% if related.size > 0 %}
     <div class="panel"><h3>Related writing</h3><ul>
-      {% for w in related %}<li><a href="{{ w.url | default: '/writing/' | relative_url }}"{% if w.url contains 'http' %} target="_blank" rel="noopener"{% endif %}><span class="wtype">{{ w.type }}</span>{{ w.title }}</a></li>{% endfor %}
+      {% for w in related %}<li><a href="{{ w.url | default: '/news/' | relative_url }}"{% if w.url contains 'http' %} target="_blank" rel="noopener"{% endif %}><span class="wtype">{{ w.type }}</span>{{ w.title }}</a></li>{% endfor %}
     </ul></div>
     {% endif %}
     <div class="panel toc"><h3>On this page</h3><ul id="toc"></ul></div>

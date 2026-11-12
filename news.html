@@ -1,0 +1,40 @@
+---
+layout: page-head
+nav: news
+title: News & events
+heading: "News & events"
+permalink: /news/
+lede: "What we’re doing, where you can meet us, and the thinking behind our policies."
+---
+<section class="sec" id="events"><div class="wrap">
+  <div class="sec-head"><p class="kicker">Events</p><h2>Come and meet us.</h2></div>
+  {% if site.data.events.size > 0 %}
+  <ul class="events">
+  {% for e in site.data.events %}
+    <li class="event">
+      <div class="ev-date">{{ e.date }}{% if e.time and e.time != "" %}<span>{{ e.time }}</span>{% endif %}</div>
+      <div class="ev-body"><h3>{% if e.url and e.url != "" %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</h3>
+        {% if e.place and e.place != "" %}<p class="ev-place">{{ e.place }}</p>{% endif %}{% if e.summary %}<p>{{ e.summary }}</p>{% endif %}</div>
+      {% if e.url and e.url != "" %}<a class="plink" href="{{ e.url }}" target="_blank" rel="noopener">Details</a>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% else %}<p class="muted">No events booked yet. <a href="{{ '/join/' | relative_url }}">Join</a> to hear first.</p>{% endif %}
+</div></section>
+<section class="sec tint" id="latest"><div class="wrap">
+  <div class="sec-head split"><div><p class="kicker">Latest</p><h2>News, blogs and speeches.</h2></div>
+    <p class="sec-lede">To discuss any of it, join the conversation on <a href="{{ site.substack_url }}" target="_blank" rel="noopener">our Substack</a>.</p></div>
+  <div class="filters" role="group" aria-label="Filter by type">
+    <button class="filter on" data-type="All" aria-pressed="true">All</button>{% assign types = "News,Blog,Speech,Video" | split: "," %}{% for t in types %}<button class="filter" data-type="{{ t }}" aria-pressed="false">{{ t }}</button>{% endfor %}
+  </div>
+  <ul class="wlist" id="wlist">
+  {% for w in site.data.writing %}
+    <li data-type="{{ w.type }}">
+      <div class="wmeta"><span class="wtype">{{ w.type }}</span><span>{{ w.date }}</span><span>{{ w.where }}</span></div>
+      <h3>{% if w.url and w.url != "" %}<a href="{{ w.url }}" target="_blank" rel="noopener">{{ w.title }}</a>{% else %}{{ w.title }}{% endif %}</h3>
+      {% if w.summary %}<p class="wsum">{{ w.summary }}</p>{% endif %}
+      {% if w.policies.size > 0 %}<div class="wpol">{% for pid in w.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a class="chip" href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</div></section>
