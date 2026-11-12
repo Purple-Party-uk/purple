@@ -920,3 +920,9 @@ body.dark-top:not(.scrolled) .menu .donate:hover{background:#fff;color:var(--vio
 .member p{font-size:15.5px;}
 .member .leader-role{margin:4px 0 12px;}
 @media (max-width:900px){.leader{grid-template-columns:1fr;gap:28px;}.leader-photo{max-width:360px;}.team{grid-template-columns:1fr;}}
+
+/* Homepage 30-second film */
+.home-film{padding:72px 0 0;}
+.film{max-width:960px;}
+.film .media{margin:0;}
+.home-film + .sec{padding-top:80px;}

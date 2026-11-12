@@ -13,6 +13,7 @@ manifesto_pdf: ""   # not used: the website is the manifesto. Set a path here on
 donate_url: ""        # payment provider checkout page
 join_form_url: ""     # MS Forms / Google Forms link for "Register your interest"
 comment_form_endpoint: ""  # form service endpoint for "Have your say"
+home_video: ""      # YouTube ID of the 30-second homepage film (leave "" for a placeholder)
 substack_url: "https://joshuaskoczylis.substack.com"
 imprint: "Promoted by [Name] on behalf of Purple, [full postal address]."
 
