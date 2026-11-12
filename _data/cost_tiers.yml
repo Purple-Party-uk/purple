@@ -1,0 +1,10 @@
+# Cost tiers used in the Plan. Ranges are gross cost per year once fully in place.
+- key: low
+  label: "Low"
+  range: "Under £1bn a year"
+- key: medium
+  label: "Medium"
+  range: "£1bn–£10bn a year"
+- key: high
+  label: "High"
+  range: "Over £10bn a year"

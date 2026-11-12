@@ -1,11 +1,11 @@
 ---
 layout: default
-nav: bills
+nav: first-year
 ---
 {% if page.image %}{% if page.image contains "://" %}{% assign head_img = page.image %}{% else %}{% assign head_img = page.image | relative_url %}{% endif %}{% endif %}
 <div class="page-head{% if page.image %} has-image{% endif %}">{% if page.image %}<div class="ph-media" style="background-image:url('{{ head_img }}');{% if page.image_position %}background-position:{{ page.image_position }};{% endif %}" role="img" aria-label="{{ page.image_alt | escape }}"></div>{% if page.image_credit %}<p class="ph-credit">{{ page.image_credit }}</p>{% endif %}{% endif %}<div class="wrap">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/bills/' | relative_url }}">Bills</a> / {{ page.title }}</nav>
-  <span class="tag">Draft bill</span>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/first-year/' | relative_url }}">Our first year</a> / <a href="{{ '/first-year/bills/' | relative_url }}">Bills</a> / {{ page.title }}</nav>
+  {% include status-of.html doc=page %}<span class="tag">Bill</span> {% include badge.html key=st_key label=st_label %}
   <h1>{{ page.title }}</h1>
   {% if page.policies and page.policies.size > 0 %}<div class="delivers"><span>Delivers</span>{% for pid in page.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>{% endif %}
   <p class="longtitle">{{ page.long_title }}</p>

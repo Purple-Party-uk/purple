@@ -1,0 +1,31 @@
+---
+layout: page-head
+nav: first-year
+title: The King’s Speech
+heading: "Our first King’s Speech"
+parent_title: "Our first year"
+parent_url: /first-year/
+lede: "The programme we would set out for the first session of Parliament."
+---
+{% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}
+<section class="sec"><div class="wrap">
+  <article class="body speech">
+    {% comment %} Replace the placeholder paragraphs below with the speech text. {% endcomment %}
+    <p><span class="phtxt">[Opening of the speech: the purpose of this Government’s first session.]</span></p>
+    <p><span class="phtxt">[Section on the economy, tax and the first Budget.]</span></p>
+    <p><span class="phtxt">[Section on homes, work and public services.]</span></p>
+    <p><span class="phtxt">[Section on democracy, justice and Britain’s place in the world.]</span></p>
+    <p><span class="phtxt">[Closing.]</span></p>
+  </article>
+</div></section>
+<section class="sec tint" id="bills"><div class="wrap">
+  <div class="sec-head split"><div><p class="kicker">Announced in the speech</p><h2>The bills</h2></div><a class="plink" href="{{ '/first-year/bills/' | relative_url }}">Filter and search all bills</a></div>
+  <div class="table-scroll"><table class="ptable">
+    <thead><tr><th scope="col">Bill</th><th scope="col">What it does</th><th scope="col">Policy</th><th scope="col">Status</th></tr></thead>
+    <tbody>{% for b in fy_bills %}{% include status-of.html doc=b %}
+      <tr><td><a href="{{ b.url | relative_url }}"><strong>{{ b.title }}</strong></a></td><td>{{ b.summary }}</td>
+        <td>{% for pid in b.policies %}{% assign p = site.policies | where: "key", pid | first %}{% if p %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% unless forloop.last %}<br>{% endunless %}{% endif %}{% endfor %}</td>
+        <td>{% include badge.html key=st_key label=st_label %}</td></tr>
+    {% endfor %}</tbody>
+  </table></div>
+</div></section>

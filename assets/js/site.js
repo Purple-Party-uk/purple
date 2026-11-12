@@ -152,4 +152,22 @@
   /* Join: form not set yet */
   const jb = $("#joinBtn");
   if(jb && !cfg.joinFormUrl) jb.addEventListener("click", e => { e.preventDefault(); toast("Sign-up opens soon."); });
+  /* Bills table: search and filters */
+  const bt = $("#btable");
+  if(bt){
+    const q = $("#bq"), th = $("#btheme"), st = $("#bstatus"), co = $("#bcost"), count = $("#bcount"), none = $("#bnone");
+    const rows = $$("#btable tbody tr");
+    const apply = () => {
+      const v = q.value.trim().toLowerCase(); let n = 0;
+      rows.forEach(r => {
+        const ok = (!v || r.dataset.text.includes(v)) && (!th.value || r.dataset.theme === th.value) &&
+                   (!st.value || r.dataset.status === st.value) && (!co.value || r.dataset.cost === co.value);
+        r.hidden = !ok; if(ok) n++;
+      });
+      count.textContent = n + (n === 1 ? " bill" : " bills") + (n === rows.length ? "" : " of " + rows.length);
+      none.hidden = n !== 0;
+    };
+    [q, th, st, co].forEach(el => el.addEventListener("input", apply));
+    apply();
+  }
 })();

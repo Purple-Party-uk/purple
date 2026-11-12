@@ -1,0 +1,9 @@
+# The first Budget scorecard. Figures in £bn per year, once in place.
+# Leave cost or revenue empty (~) until known; the page shows a placeholder.
+# Every bill that costs money must have a row here.
+year: "[Year]"
+measures:
+  - { name: "[Measure]", cost: ~, revenue: ~, policy: "", bill: "" }
+  - { name: "[Measure]", cost: ~, revenue: ~, policy: "", bill: "" }
+  - { name: "[Measure]", cost: ~, revenue: ~, policy: "", bill: "" }
+  - { name: "[Measure]", cost: ~, revenue: ~, policy: "", bill: "" }

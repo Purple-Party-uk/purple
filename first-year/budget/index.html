@@ -1,0 +1,32 @@
+---
+layout: page-head
+nav: first-year
+title: The first Budget
+heading: "Our first Budget"
+parent_title: "Our first year"
+parent_url: /first-year/
+lede: "What each measure in our first Budget costs, what it raises, and the net effect. Then how we pay for it."
+---
+{% comment %} Scorecard rows come from _data/budget.yml. Figures in £bn a year. {% endcomment %}
+{% assign t_cost = 0 %}{% assign t_rev = 0 %}{% assign t_known = true %}
+<section class="sec"><div class="wrap">
+  <div class="sec-head split"><div><p class="kicker">Scorecard</p><h2>Every measure, costed. <span>Our best estimates, open to challenge.</span></h2></div>
+  {% if site.fiscal_model_url and site.fiscal_model_url != "" %}<a class="btn violet" href="{{ site.fiscal_model_url }}">Open the fiscal model</a>{% else %}<span class="phtxt">[Link to the fiscal model: set fiscal_model_url in _config.yml]</span>{% endif %}</div>
+  <div class="table-scroll"><table class="ptable score">
+    <thead><tr><th scope="col">Measure</th><th scope="col" class="num">Cost</th><th scope="col" class="num">Revenue</th><th scope="col" class="num">Net effect</th><th scope="col">Policy</th></tr></thead>
+    <tbody>{% for m in site.data.budget.measures %}{% assign pol = site.policies | where: "key", m.policy | first %}
+      <tr><td><strong>{{ m.name }}</strong></td>
+        <td class="num">{% if m.cost != nil %}£{{ m.cost }}bn{% assign t_cost = t_cost | plus: m.cost %}{% else %}<span class="phtxt">[£bn]</span>{% assign t_known = false %}{% endif %}</td>
+        <td class="num">{% if m.revenue != nil %}£{{ m.revenue }}bn{% assign t_rev = t_rev | plus: m.revenue %}{% else %}<span class="phtxt">[£bn]</span>{% assign t_known = false %}{% endif %}</td>
+        <td class="num">{% if m.cost != nil and m.revenue != nil %}{% assign net = m.revenue | minus: m.cost %}{% if net >= 0 %}+{% endif %}£{{ net }}bn{% else %}<span class="muted">–</span>{% endif %}</td>
+        <td>{% if pol %}<a href="{{ pol.url | relative_url }}">{{ pol.title }}</a>{% endif %}</td></tr>
+    {% endfor %}</tbody>
+    <tfoot><tr><th scope="row">Total</th>{% if t_known %}{% assign t_net = t_rev | minus: t_cost %}<td class="num">£{{ t_cost }}bn</td><td class="num">£{{ t_rev }}bn</td><td class="num">{% if t_net >= 0 %}+{% endif %}£{{ t_net }}bn</td>{% else %}<td class="num" colspan="3"><span class="muted">Totals appear once every row is filled in</span></td>{% endif %}<td></td></tr></tfoot>
+  </table></div>
+  <p class="note">These are our best estimates, built from published figures. We don’t have the Treasury’s models, so some will be wrong. If you can show us where, <a href="{{ '/about/#corrections' | relative_url }}">tell us</a> and we’ll correct it publicly.</p>
+</div></section>
+{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
+<section class="sec tint" id="how-we-pay-for-it"><div class="wrap">
+  <div class="sec-head"><p class="kicker">How we pay for it</p><h2>{{ pay.title }}</h2><p class="sec-lede">{{ pay.summary }}</p></div>
+  <article class="body">{{ pay.content }}</article>
+</div></section>

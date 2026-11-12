@@ -1,0 +1,11 @@
+# One status taxonomy, used for policy badges, the Plan and the Bills table.
+# A policy or bill can set `status:` in its front matter to override the automatic rule.
+- key: vision
+  label: "Vision"
+  test: "We know what we want to achieve. The detail and the costing are still being worked out."
+- key: costed
+  label: "Costed brief"
+  test: "The policy is written up with our best estimate of what it costs."
+- key: bill
+  label: "Draft bill"
+  test: "The text of the law is drafted and published."

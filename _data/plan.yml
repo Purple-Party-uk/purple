@@ -1,0 +1,49 @@
+# The Plan: one source of truth for what we introduce, and when.
+# Theme pages, the Plan page and the homepage timeline all read from this file.
+#
+# Each item:
+#   title:     what we introduce (plain words)
+#   when:      when within the stage, e.g. "First 100 days", "Year 3"
+#   theme:     area key from _themes/ (money, home, work, health, ...)
+#   status:    vision | costed | bill
+#   cost:      low | medium | high   (see _data/cost_tiers.yml)
+#   condition: what has to be in place first, so we can pay for it ("" if none)
+#   policy:    policy key, if a policy page exists
+#   bill:      bill key, if a bill exists
+stages:
+  - id: year1
+    label: "Year 1"
+    span: "The first twelve months"
+    short: "Precise and costed: the King’s Speech, the first Budget and the bills."
+    look: "[What Britain looks like at the end of Year 1, in two or three sentences.]"
+    items:
+      - { title: "[Headline Year 1 item]", when: "[First 100 days]", theme: money, status: costed, cost: medium, condition: "", policy: "", bill: "" }
+      - { title: "[Headline Year 1 item]", when: "[First Budget]", theme: home, status: vision, cost: low, condition: "", policy: "", bill: "" }
+      - { title: "[Headline Year 1 item]", when: "[By the end of Year 1]", theme: work, status: vision, cost: low, condition: "", policy: "", bill: "" }
+  - id: years2-5
+    label: "Years 2–5"
+    span: "The rest of the first term"
+    short: "[One line: what this stage achieves.]"
+    look: "[What Britain looks like by the end of Year 5.]"
+    items:
+      - { title: "[Item]", when: "[Year 2]", theme: home, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Year 3]", theme: health, status: vision, cost: medium, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Year 4]", theme: making, status: vision, cost: medium, condition: "[What must be in place first]", policy: "", bill: "" }
+  - id: years6-10
+    label: "Years 6–10"
+    span: "The second term"
+    short: "[One line: what this stage achieves.]"
+    look: "[What Britain looks like by the end of Year 10.]"
+    items:
+      - { title: "[Item]", when: "[Year 6]", theme: planet, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Year 8]", theme: education, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Year 10]", theme: democracy, status: vision, cost: low, condition: "[What must be in place first]", policy: "", bill: "" }
+  - id: beyond
+    label: "Beyond"
+    span: "Year 10 onwards"
+    short: "[One line: the long-term change.]"
+    look: "[What Britain looks like once the plan is complete.]"
+    items:
+      - { title: "[Item]", when: "[Later]", theme: world, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Later]", theme: local, status: vision, cost: medium, condition: "[What must be in place first]", policy: "", bill: "" }
+      - { title: "[Item]", when: "[Later]", theme: justice, status: vision, cost: low, condition: "[What must be in place first]", policy: "", bill: "" }

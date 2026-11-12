@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="page-head{% if page.head_class %} {{ page.head_class }}{% endif %}"><div class="wrap">
-  {% if page.crumbs %}<nav class="crumbs" aria-label="Breadcrumb">{{ page.crumbs }}</nav>{% endif %}
+  {% if page.crumbs %}<nav class="crumbs" aria-label="Breadcrumb">{{ page.crumbs }}</nav>{% elsif page.parent_url %}<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ page.parent_url | relative_url }}">{{ page.parent_title }}</a> / {{ page.title }}</nav>{% endif %}
   {% if page.tag %}<span class="tag">{{ page.tag }}</span>{% endif %}
   <h1>{{ page.heading | default: page.title }}</h1>
   {% if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}{% if page.lede2 %}<p class="lede">{{ page.lede2 }}</p>{% endif %}

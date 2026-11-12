@@ -1,0 +1,62 @@
+---
+layout: page-head
+nav: plan
+title: The Plan
+heading: "The plan"
+lede: "We can’t do everything at once. Here is what we do first, what follows, and what each step costs."
+lede2: '<span class="phtxt">[Two or three sentences on why change is staged: the cost, and the sheer amount of law that has to change.]</span>'
+---
+{% comment %} Everything on this page comes from _data/plan.yml, _data/promises.yml, _data/status.yml and _data/cost_tiers.yml. {% endcomment %}
+<nav class="stage-nav" aria-label="Stages"><div class="wrap">
+  {% for s in site.data.plan.stages %}<a href="#{{ s.id }}"><b>{{ s.label }}</b><span>{{ s.span }}</span></a>{% endfor %}
+</div></nav>
+
+<section class="sec"><div class="wrap keys">
+  <div><h2 class="mini">What the labels mean</h2>{% include status-legend.html %}</div>
+  <div><h2 class="mini">Cost per year, once in place</h2>
+    <dl class="legend">{% for c in site.data.cost_tiers %}<div><dt><span class="cost c-{{ c.key }}">{{ c.label }}</span></dt><dd>{{ c.range }}</dd></div>{% endfor %}</dl>
+    <p class="note">Some of what we want costs a lot. Where it does, we say so, and we say what has to be in place before we can pay for it.</p>
+  </div>
+</div></section>
+
+{% for s in site.data.plan.stages %}
+<section class="sec stage-sec{% cycle '', ' tint' %}" id="{{ s.id }}"><div class="wrap">
+  <div class="stage-head">
+    <p class="kicker">Stage {{ forloop.index }} · {{ s.span }}</p>
+    <h2>{{ s.label }}</h2>
+  </div>
+  <div class="look">
+    <h3>What Britain looks like by the end of {{ s.label }}</h3>
+    <p>{% if s.look contains "[" %}<span class="phtxt">{{ s.look }}</span>{% else %}{{ s.look }}{% endif %}</p>
+  </div>
+  <div class="table-scroll"><table class="ptable">
+    <thead><tr><th scope="col">When</th><th scope="col">What we introduce</th><th scope="col">Area</th><th scope="col">Status</th><th scope="col">Cost</th><th scope="col">What has to be in place first</th></tr></thead>
+    <tbody>
+    {% for it in s.items %}{% assign th = site.themes | where: "key", it.theme | first %}{% assign pol = site.policies | where: "key", it.policy | first %}{% assign bil = site.bills | where: "key", it.bill | first %}{% assign sd = site.data.status | where: "key", it.status | first %}{% assign cd = site.data.cost_tiers | where: "key", it.cost | first %}
+      <tr>
+        <td class="when">{{ it.when }}</td>
+        <td class="what"><strong>{{ it.title }}</strong>{% if pol or bil %}<span class="links">{% if pol %}<a href="{{ pol.url | relative_url }}">Policy</a>{% endif %}{% if bil %}<a href="{{ bil.url | relative_url }}">Bill</a>{% endif %}</span>{% endif %}</td>
+        <td>{% if th %}<a href="{{ th.url | relative_url }}">{{ th.name }}</a>{% endif %}</td>
+        <td>{% if sd %}{% include badge.html key=sd.key label=sd.label %}{% endif %}</td>
+        <td>{% if cd %}<span class="cost c-{{ cd.key }}">{{ cd.label }}</span>{% endif %}</td>
+        <td class="cond">{% if it.condition and it.condition != "" %}{{ it.condition }}{% else %}<span class="muted">Nothing: can start straight away</span>{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  {% if s.id == "year1" %}<p class="stage-more"><a href="{{ '/first-year/' | relative_url }}">The first year in full: King’s Speech, Budget and bills</a></p>{% endif %}
+</div></section>
+{% endfor %}
+
+<section class="sec" id="tests"><div class="wrap">
+  <div class="sec-head">
+    <p class="kicker">How you can hold us to it</p>
+    <h2>Six promises, six tests. <span>Each with a number you can check.</span></h2>
+  </div>
+  <div class="table-scroll"><table class="ptable tests">
+    <thead><tr><th scope="col">Promise</th><th scope="col">The test</th><th scope="col">By</th></tr></thead>
+    <tbody>{% for p in site.data.promises limit:6 %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}
+      <tr><td><strong>{{ p.promise }}</strong></td><td>{% if p.test contains "[" %}<span class="phtxt">{{ p.test }}</span>{% else %}{{ p.test }}{% endif %}</td><td><a href="#{{ p.stage }}">{{ stg.label }}</a></td></tr>
+    {% endfor %}</tbody>
+  </table></div>
+</div></section>

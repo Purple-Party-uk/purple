@@ -3,19 +3,36 @@ layout: default
 nav: home
 title: Purple
 ---
+{% comment %}
+  Homepage = the vision. Order: hero, six promises, how we get there, our first year, join and donate.
+  Promises come from _data/promises.yml; the timeline from _data/plan.yml.
+{% endcomment %}
 <section class="hero2">
-  <div class="hero-media blend" aria-hidden="true" style="background-image:linear-gradient(100deg,rgba(91,31,79,.82) 0%,rgba(58,45,134,.6) 50%,rgba(28,39,102,.35) 100%),url('{{ '/assets/img/hero.jpg' | relative_url }}');background-size:cover;background-position:center 60%"></div>
+  <div class="hero-media blend" aria-hidden="true" style="background-image:linear-gradient(100deg,rgba(74,31,74,.86) 0%,rgba(46,36,116,.7) 55%,rgba(28,39,102,.5) 100%),url('{{ '/assets/img/hero.jpg' | relative_url }}');background-size:cover;background-position:center 60%"></div>
   <div class="wrap hero2-inner">
-    <h1 class="reveal">The country got richer. You didn’t.<br><em>Let’s change that.</em></h1>
-    <p class="hero2-sub reveal">No income tax on your first £20,000. No VAT on everyday spending. Three-quarters of your pay if you lose your job. A pension that belongs to you and isn’t eaten up by fees.</p>
-    <div class="ctas reveal"><a class="btn" href="{{ '/join/' | relative_url }}">Join Purple</a><a class="btn light" href="{{ '/policies/' | relative_url }}">Read our policies</a></div>
-    <a class="manifesto-link on-dark reveal" href="{{ site.manifesto_pdf | relative_url }}">Download the full manifesto (PDF)</a>
+    <p class="kicker on-dark reveal">Our vision for Britain</p>
+    {% comment %} Interim headline. Replace with the vision in one sentence once agreed. {% endcomment %}
+    <h1 class="reveal">The country got richer. You didn’t. <em>Let’s change that.</em></h1>
+    <p class="hero2-sub reveal"><span class="phtxt">[One or two sentences: the Britain Purple is building, in plain words.]</span></p>
+    <div class="ctas reveal"><a class="btn" href="{{ '/plan/' | relative_url }}">See how we get there</a><a class="btn light" href="{{ '/join/' | relative_url }}">Join Purple</a></div>
   </div>
-  <a class="scroll-cue" href="#after-hero" aria-label="Scroll down"></a>
 </section>
 
-<section class="statement" id="after-hero"><div class="wrap">
-  <p class="reveal">Rent, fees and paper profits are rewarded. <span>Work, research and building things are taxed.</span> We would turn that round.</p>
+<section class="sec" id="promises"><div class="wrap">
+  <div class="sec-head reveal">
+    <p class="kicker">The Britain we’re building</p>
+    <h2>Six promises. <span>Each one tied to a date in the plan.</span></h2>
+  </div>
+  <ol class="promises">
+  {% for p in site.data.promises limit:6 %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}
+    <li class="promise reveal">
+      <span class="pnum">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+      <h3>{{ p.promise }}</h3>
+      <p>{{ p.line }}</p>
+      <a class="plink" href="{{ '/plan/' | relative_url }}#{{ p.stage }}">{{ stg.label | default: 'The plan' }}</a>
+    </li>
+  {% endfor %}
+  </ol>
 </div></section>
 
 <section class="photo-strip"><div class="wrap strip-grid">
@@ -24,63 +41,38 @@ title: Purple
   {% include image.html src="/assets/img/home-classroom.jpg" alt="A teacher writing on a blackboard in front of a classroom" %}
 </div></section>
 
-{% assign tax = site.policies | where: "key", "income-tax" | first %}
-{% assign ip = site.policies | where: "key", "income-protection" | first %}
-{% assign jubilee = site.policies | where: "key", "debt-jubilee" | first %}
-{% assign rtb = site.policies | where: "key", "rent-to-buy" | first %}
-{% assign rnd = site.policies | where: "key", "research-development" | first %}
-<section class="numbers"><div class="wrap">
-  <div class="num-grid">
-    <a class="num reveal" href="{{ rtb.url | relative_url }}"><span class="big">25 years</span><span class="what">and the home you rent is yours. Every payment buys a share. No deposit.</span><span class="more">Rent to buy</span></a>
-    <a class="num reveal" href="{{ tax.url | relative_url }}"><span class="big">£20,000</span><span class="what">you earn before paying any income tax</span><span class="more">Income tax reform</span></a>
-    <a class="num reveal" href="{{ ip.url | relative_url }}"><span class="big">75%</span><span class="what">of your pay for six months if you lose your job</span><span class="more">Income protection</span></a>
-    <a class="num reveal" href="{{ jubilee.url | relative_url }}"><span class="big">£100,000</span> <span class="what">for every adult: debt on your home paid off first, the rest into your pension</span><span class="more">Debt jubilee</span></a>
-    {% comment %} Point this tile at the corporation tax policy once its page exists. {% endcomment %}
-    <a class="num reveal" href="{{ '/policies/' | relative_url }}"><span class="big">£1 million</span><span class="what">turnover a business can make before paying any corporation tax</span><span class="more">Corporation tax</span></a>
-    <a class="num reveal" href="{{ rnd.url | relative_url }}"><span class="big">£165bn</span><span class="what">a year of government spending on research, more than seven times today’s budget</span><span class="more">Research and development</span></a>
+<section class="sec" id="road"><div class="wrap">
+  <div class="sec-head split reveal">
+    <div><p class="kicker">How we get there</p>
+    <h2>We can’t do it all at once. <span>So here is what comes first.</span></h2></div>
+    <p class="sec-lede">Some of this costs a lot, and some of it takes years to legislate. We start with a first year we can set out precisely. Each stage after it builds the conditions to pay for the next.</p>
   </div>
-  <a class="bills-line reveal" href="{{ '/bills/' | relative_url }}"><span class="big">{{ site.bills.size }}</span><span>draft bills already written, so you can read the law we would pass, not just the promise.</span><span class="more">Read the bills</span></a>
+  <ol class="road">
+  {% for s in site.data.plan.stages %}
+    <li class="stage reveal">
+      <a href="{{ '/plan/' | relative_url }}#{{ s.id }}">
+        <span class="stage-label">{{ s.label }}</span>
+        <span class="stage-span">{{ s.span }}</span>
+        <span class="stage-short">{{ s.short }}</span>
+        <ul>{% for it in s.items limit:3 %}<li>{{ it.title }}</li>{% endfor %}</ul>
+      </a>
+    </li>
+  {% endfor %}
+  </ol>
+  <a class="btn violet" href="{{ '/plan/' | relative_url }}">Read the full plan</a>
 </div></section>
 
-{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
-<section class="afford"><div class="wrap afford-grid">
-  <div class="afford-head reveal">
-    <h2>Can Britain afford this? <span>Yes. The real limit is people and materials, not money.</span></h2>
-    {% include image.html src="/assets/img/home-afford.jpg" alt="A construction worker in a hard hat and high-visibility vest cutting steel, sparks flying" %}
+{% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}
+<section class="sec tint" id="first-year"><div class="wrap">
+  <div class="sec-head reveal">
+    <p class="kicker">Our first year</p>
+    <h2>The first year, in detail. <span>What we would pass, and what it costs.</span></h2>
   </div>
-  <div class="afford-body reveal">
-    <p>The government issues the pound, so it cannot run out of pounds the way a household can. It can run out of workers, materials and energy. If it spends beyond those, prices rise.</p>
-    <p>Our plans are built around that limit. We spend first on what lets Britain make more: homes, skills and research. We phase each change in over several years. And we write an inflation brake into law, checked by an independent referee, so nobody has to take a minister’s word for it.</p>
-    <p>Britain already borrows £132 billion a year. Our full costings will be published policy by policy.</p>
-    <a class="btn violet" href="{{ pay.url | relative_url }}">Read how we pay for it</a>
+  <div class="fy-grid">
+    <a class="fy reveal" href="{{ '/first-year/kings-speech/' | relative_url }}"><span class="fy-k">01</span><h3>The King’s Speech</h3><p>The programme for our first session of Parliament.</p><span class="fy-go">Read the speech</span></a>
+    <a class="fy reveal" href="{{ '/first-year/budget/' | relative_url }}"><span class="fy-k">02</span><h3>The first Budget</h3><p>What each measure costs and raises, and how we pay for it.</p><span class="fy-go">See the Budget</span></a>
+    <a class="fy reveal" href="{{ '/first-year/bills/' | relative_url }}"><span class="fy-k">03</span><h3>{{ fy_bills.size }} bills, and counting</h3><p>We aim to publish 25 to 40. Read the laws, not just the promises.</p><span class="fy-go">Browse the bills</span></a>
   </div>
-</div></section>
-
-<section class="feature-band"><div class="wrap feature-grid">
-  <h2 class="reveal">Rent today buys your landlord a house. <span>Under Purple, it buys you one.</span></h2>
-  <div class="reveal">
-    <p>Almost every rented home becomes rent-to-buy. Each payment buys you a share, and within 25 years the home is yours. The Debt Jubilee pays off up to £100,000 of it on day one. Your payments never rise faster than wages, and your share comes with you when you move.</p>
-    <a class="btn violet" href="{{ rtb.url | relative_url }}">See how rent to buy works</a>
-  </div>
-</div></section>
-
-<section class="block home-video"><div class="wrap"><div class="hv reveal">{% include video.html %}</div></div></section>
-
-{% assign vat = site.policies | where: "key", "vat" | first %}
-{% assign media = site.policies | where: "key", "media-reform" | first %}
-<section class="feature-band"><div class="wrap feature-grid">
-  <h2 class="reveal">No more 20% VAT at the till. <span>And most businesses stop collecting it.</span></h2>
-  <div class="reveal">
-    <p>Clothes, phone bills, petrol, repairs, haircuts: everyday spending comes out of VAT altogether, and the law makes sure shops pass the cut on. VAT stays only on luxuries and on things like gambling, tobacco and flights.</p>
-    <p>For businesses, that means no registration and no quarterly returns, unless you sell luxury goods, gambling, payday loans or flights. Pubs and corner shops are spared too: the tax on alcohol and tobacco is paid by the producer.</p>
-    <p><a href="{{ media.url | relative_url }}">No more TV licence, either.</a> The BBC is funded from general taxation, so no household pays a flat £180 a year whatever its income.</p>
-    <a class="btn violet" href="{{ vat.url | relative_url }}">See how the VAT cut works</a>
-  </div>
-</div></section>
-
-<section class="block"><div class="wrap">
-  <div class="block-head"><div><h2>Where to start</h2><p>The policies that would change most for most people.</p></div><a href="{{ '/policies/' | relative_url }}">All policy areas</a></div>
-  {% include flagships.html %}
 </div></section>
 
 <section class="involve"><div class="wrap involve-grid">

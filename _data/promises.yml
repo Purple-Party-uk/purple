@@ -1,0 +1,29 @@
+# The six promises on the homepage. Exactly six: more reads as over-promising.
+# promise: a lived outcome in plain words, under ten words.
+# line: one sentence saying what changes in someone's life.
+# stage: the Plan stage where this promise becomes specific (year1, years2-5, years6-10, beyond).
+# test: the measurable test shown on the Plan (metric, target and source).
+- promise: "[Promise one]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: years2-5
+  test: "[Metric, target and source]"
+- promise: "[Promise two]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: year1
+  test: "[Metric, target and source]"
+- promise: "[Promise three]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: years2-5
+  test: "[Metric, target and source]"
+- promise: "[Promise four]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: years6-10
+  test: "[Metric, target and source]"
+- promise: "[Promise five]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: years6-10
+  test: "[Metric, target and source]"
+- promise: "[Promise six]"
+  line: "[One sentence: what changes in someone’s life.]"
+  stage: beyond
+  test: "[Metric, target and source]"
