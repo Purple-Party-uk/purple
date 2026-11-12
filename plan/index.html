@@ -32,7 +32,7 @@ lede2: '<span class="phtxt">[Two or three sentences on why change is staged: the
   <div class="table-scroll"><table class="ptable">
     <thead><tr><th scope="col">When</th><th scope="col">What we introduce</th><th scope="col">Area</th><th scope="col">Status</th><th scope="col">Cost</th><th scope="col">What has to be in place first</th></tr></thead>
     <tbody>
-    {% for it in s.items %}{% assign th = site.themes | where: "key", it.theme | first %}{% assign pol = site.policies | where: "key", it.policy | first %}{% assign bil = site.bills | where: "key", it.bill | first %}{% assign sd = site.data.status | where: "key", it.status | first %}{% assign cd = site.data.cost_tiers | where: "key", it.cost | first %}
+    {% for it in s.items %}{% assign th = nil %}{% assign pol = nil %}{% assign bil = nil %}{% assign sd = nil %}{% assign cd = nil %}{% if it.theme and it.theme != "" %}{% assign th = site.themes | where: "key", it.theme | first %}{% endif %}{% if it.policy and it.policy != "" %}{% assign pol = site.policies | where: "key", it.policy | first %}{% endif %}{% if it.bill and it.bill != "" %}{% assign bil = site.bills | where: "key", it.bill | first %}{% endif %}{% if it.status and it.status != "" %}{% assign sd = site.data.status | where: "key", it.status | first %}{% endif %}{% if it.cost and it.cost != "" %}{% assign cd = site.data.cost_tiers | where: "key", it.cost | first %}{% endif %}
       <tr>
         <td class="when">{{ it.when }}</td>
         <td class="what"><strong>{{ it.title }}</strong>{% if pol or bil %}<span class="links">{% if pol %}<a href="{{ pol.url | relative_url }}">Policy</a>{% endif %}{% if bil %}<a href="{{ bil.url | relative_url }}">Bill</a>{% endif %}</span>{% endif %}</td>
@@ -55,7 +55,7 @@ lede2: '<span class="phtxt">[Two or three sentences on why change is staged: the
   </div>
   <div class="table-scroll"><table class="ptable tests">
     <thead><tr><th scope="col">Promise</th><th scope="col">The test</th><th scope="col">By</th></tr></thead>
-    <tbody>{% for p in site.data.promises limit:6 %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}
+    <tbody>{% for p in site.data.promises limit:6 %}{% assign stg = nil %}{% if p.stage %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}{% endif %}
       <tr><td><strong>{{ p.promise }}</strong></td><td>{% if p.test contains "[" %}<span class="phtxt">{{ p.test }}</span>{% else %}{{ p.test }}{% endif %}</td><td><a href="#{{ p.stage }}">{{ stg.label }}</a></td></tr>
     {% endfor %}</tbody>
   </table></div>

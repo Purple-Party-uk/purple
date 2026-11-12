@@ -27,7 +27,7 @@ nav: policies
     <div class="strip-col"><h3>{{ clabel }}</h3><ul>
     {% assign found = 0 %}
     {% for stg in site.data.plan.stages %}{% assign use = false %}{% if cid == "later" %}{% if stg.id == "years6-10" or stg.id == "beyond" %}{% assign use = true %}{% endif %}{% elsif stg.id == cid %}{% assign use = true %}{% endif %}
-      {% if use %}{% for it in stg.items %}{% if it.theme == page.key %}{% assign found = found | plus: 1 %}{% assign pol = site.policies | where: "key", it.policy | first %}
+      {% if use %}{% for it in stg.items %}{% if it.theme == page.key %}{% assign found = found | plus: 1 %}{% assign pol = nil %}{% if it.policy and it.policy != "" %}{% assign pol = site.policies | where: "key", it.policy | first %}{% endif %}
         <li>{% if pol %}<a href="{{ pol.url | relative_url }}">{{ it.title }}</a>{% else %}{{ it.title }}{% endif %}<span>{{ it.when }}</span></li>
       {% endif %}{% endfor %}{% endif %}
     {% endfor %}
