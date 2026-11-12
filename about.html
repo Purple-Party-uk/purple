@@ -1,11 +1,41 @@
 ---
 layout: page-head
 nav: about
-title: About Purple
+title: About us
+heading: "Who we are"
 permalink: /about/
 lede: "Britain rewards owning over making. Purple exists to reverse that, with every policy published in full and open to challenge."
 ---
 {% capture PH %}<span class="phtxt">{% endcapture %}{% capture PE %}</span>{% endcapture %}
+{% assign L = site.data.people.leader %}
+<section class="sec" id="leadership"><div class="wrap leader">
+  <div class="leader-photo">{% if L.photo and L.photo != "" %}{% include image.html src=L.photo alt=L.name %}{% else %}{% include image.html caption="Portrait of the leader" ratio="4/5" %}{% endif %}</div>
+  <div class="leader-text">
+    <p class="kicker">Our leader</p>
+    <h2>{{ L.name }}</h2>
+    <p class="leader-role">{{ L.role }}</p>
+    <blockquote class="leader-quote">{{ L.quote }}</blockquote>
+    <div class="leader-statement">{{ L.statement | markdownify }}</div>
+    <p class="leader-bio">{{ L.bio }}</p>
+    <p class="interests"><b>Declared interests:</b> {{ L.interests }}</p>
+    {% if L.links %}<p class="fy-links">{% for l in L.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}</p>{% endif %}
+  </div>
+</div></section>
+
+<section class="sec tint" id="team"><div class="wrap">
+  <div class="sec-head"><p class="kicker">The team</p><h2>The people responsible for Purple. <span>And their interests outside it.</span></h2></div>
+  <div class="team">
+  {% for m in site.data.people.team %}
+    <div class="member">
+      <div class="member-photo">{% if m.photo and m.photo != "" %}<img src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">{% endif %}</div>
+      <h3>{{ m.name }}</h3><p class="leader-role">{{ m.role }}</p>
+      <p>{{ m.bio }}</p>
+      <p class="interests"><b>Declared interests:</b> {{ m.interests }}</p>
+    </div>
+  {% endfor %}
+  </div>
+</div></section>
+
 <section class="block"><div class="wrap about-grid">
   <div class="about-label"><h2>What we believe</h2></div>
   <div>
@@ -20,21 +50,6 @@ lede: "Britain rewards owning over making. Purple exists to reverse that, with e
       <h3>Not left, not right</h3>
       <p>The question we ask of every policy is not whether it is left or right, but whether it rewards people for creating value or lets others extract it. Some of our answers will sound left-wing, others right-wing. That is the point.</p>
     </div>
-  </div>
-</div></section>
-
-<section class="block alt"><div class="wrap about-grid">
-  <div class="about-label"><h2>Who we are</h2><p>The people responsible for Purple, and their interests outside it.</p></div>
-  <div class="people">
-  {% for i in (1..3) %}
-    <div class="person">
-      <div class="avatar" aria-hidden="true"></div>
-      <div><h3>{{ PH }}[Name]{{ PE }}</h3><p class="role">{{ PH }}[Role, e.g. Leader / Treasurer / Nominating Officer]{{ PE }}</p>
-      <p>{{ PH }}[Two or three sentences: background, what they do outside politics, why they are involved]{{ PE }}</p>
-      <p class="interests"><b>Declared interests:</b> {{ PH }}[Employment, directorships, shareholdings, or 'None']{{ PE }}</p></div>
-    </div>
-  {% endfor %}
-  {% include image.html caption="Purple volunteers and members together" %}
   </div>
 </div></section>
 
