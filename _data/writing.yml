@@ -1,18 +1,18 @@
-# Speeches & Writing. Newest first. type: Article | Speech | Video
+# News, blogs, speeches and videos. Newest first. type: News | Blog | Speech | Video
 # policies: list of policy ids this piece relates to (shows on those policy pages)
-- type: Article
+- type: Blog
   title: "Your Pension Is a Ponzi Scheme. There. Someone Said It."
   date: "[Date]"
   where: Substack
   url: "https://joshuaskoczylis.substack.com"
   policies: [pensions]
-- type: Article
+- type: Blog
   title: "We Stole This Idea From Milton Friedman. The Rest Is Ours."
   date: "[Date]"
   where: Substack
   url: "https://joshuaskoczylis.substack.com"
   policies: []
-- type: Article
+- type: Blog
   title: "[Housing and rent article title]"
   date: "[Date]"
   where: Substack

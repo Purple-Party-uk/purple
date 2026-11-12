@@ -1,0 +1,14 @@
+# Upcoming events, soonest first. Past events can be deleted or moved to writing.yml as a Speech or Video.
+# date: shown as written. time and place optional. url: booking or details link ("" if none).
+- title: "[Event title]"
+  date: "[Day Month Year]"
+  time: "[7pm]"
+  place: "[Venue, town]"
+  summary: "[One line on what the event is.]"
+  url: ""
+- title: "[Event title]"
+  date: "[Day Month Year]"
+  time: ""
+  place: "[Online]"
+  summary: "[One line on what the event is.]"
+  url: ""

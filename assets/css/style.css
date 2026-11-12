@@ -827,3 +827,36 @@ h2.mini{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:upper
   .foot-grid{grid-template-columns:1fr 1fr;}
   .ptable{font-size:14.5px;}
 }
+
+/* Nav: Donate as an outline pill beside Join */
+.menu{gap:22px;}
+.menu .donate{padding:8px 16px;border-radius:999px;box-shadow:inset 0 0 0 1.5px var(--violet);color:var(--violet);}
+.menu .donate:hover,.menu .donate.active{background:var(--violet);color:#fff;box-shadow:inset 0 0 0 1.5px var(--violet);}
+body.dark-top:not(.scrolled) .menu .donate{color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6);}
+body.dark-top:not(.scrolled) .menu .donate:hover{background:#fff;color:var(--violet-deep);}
+.menu li:nth-last-child(2){margin-left:6px;}
+@media (max-width:1060px){.menu{gap:16px;}.menu a{font-size:15px;}}
+
+/* News & events */
+.events{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink);}
+.event{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--line);}
+.ev-date{font-weight:800;font-size:20px;letter-spacing:-0.02em;}
+.ev-date span{display:block;font-weight:500;font-size:14.5px;color:var(--muted);letter-spacing:0;}
+.ev-body h3{font-size:22px;margin:0 0 4px;}
+.ev-body h3 a{color:var(--ink);text-decoration:none;}
+.ev-body h3 a:hover{color:var(--violet);}
+.ev-body p{margin:0;color:var(--muted);}
+.ev-place{font-weight:600;color:var(--teal-dark)!important;margin-bottom:4px!important;}
+.wsum{color:var(--muted);margin:6px 0 0;}
+@media (max-width:760px){.event{grid-template-columns:1fr;gap:8px;}}
+@media (max-width:900px){
+  .burger{display:block;}
+  .menu{display:none;position:absolute;left:0;right:0;top:68px;background:var(--paper);flex-direction:column;align-items:flex-start;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--line);}
+  .menu.open{display:flex;}
+  .menu li{width:100%;}
+  .menu li:nth-last-child(2){margin-left:0;}
+  .menu a{display:block;padding:12px 0;font-size:16px;}
+  .menu .donate,.menu .join{display:inline-block;margin-top:8px;padding:9px 18px;}
+  body.dark-top:not(.scrolled) .menu a:not(.join){color:#3A3756;}
+  body.dark-top:not(.scrolled) .menu .donate{color:var(--violet);box-shadow:inset 0 0 0 1.5px var(--violet);}
+}
