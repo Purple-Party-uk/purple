@@ -14,7 +14,7 @@ lede: "What each measure in our first Budget costs, what it raises, and the net 
   {% if site.fiscal_model_url and site.fiscal_model_url != "" %}<a class="btn violet" href="{{ site.fiscal_model_url }}">Open the fiscal model</a>{% else %}<span class="phtxt">[Link to the fiscal model: set fiscal_model_url in _config.yml]</span>{% endif %}</div>
   <div class="table-scroll"><table class="ptable score">
     <thead><tr><th scope="col">Measure</th><th scope="col" class="num">Cost</th><th scope="col" class="num">Revenue</th><th scope="col" class="num">Net effect</th><th scope="col">Policy</th></tr></thead>
-    <tbody>{% for m in site.data.budget.measures %}{% assign pol = site.policies | where: "key", m.policy | first %}
+    <tbody>{% for m in site.data.budget.measures %}{% assign pol = nil %}{% if m.policy and m.policy != "" %}{% assign pol = site.policies | where: "key", m.policy | first %}{% endif %}
       <tr><td><strong>{{ m.name }}</strong></td>
         <td class="num">{% if m.cost != nil %}£{{ m.cost }}bn{% assign t_cost = t_cost | plus: m.cost %}{% else %}<span class="phtxt">[£bn]</span>{% assign t_known = false %}{% endif %}</td>
         <td class="num">{% if m.revenue != nil %}£{{ m.revenue }}bn{% assign t_rev = t_rev | plus: m.revenue %}{% else %}<span class="phtxt">[£bn]</span>{% assign t_known = false %}{% endif %}</td>

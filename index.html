@@ -24,7 +24,7 @@ title: Purple
     <h2>Six promises. <span>Each one tied to a date in the plan.</span></h2>
   </div>
   <ol class="promises">
-  {% for p in site.data.promises limit:6 %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}
+  {% for p in site.data.promises limit:6 %}{% assign stg = nil %}{% if p.stage %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}{% endif %}
     <li class="promise reveal">
       <span class="pnum">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
       <h3>{{ p.promise }}</h3>
