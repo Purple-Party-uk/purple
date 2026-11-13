@@ -8,7 +8,7 @@ nav: policies
 {% if page.image %}{% if page.image contains "://" %}{% assign head_img = page.image %}{% else %}{% assign head_img = page.image | relative_url %}{% endif %}{% endif %}
 <div class="page-head{% if page.image %} has-image{% endif %}">{% if page.image %}<div class="ph-media" style="background-image:url('{{ head_img }}');{% if page.image_position %}background-position:{{ page.image_position }};{% endif %}" role="img" aria-label="{{ page.image_alt | escape }}"></div>{% if page.image_credit %}<p class="ph-credit">{{ page.image_credit }}</p>{% endif %}{% endif %}<div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/policies/' | relative_url }}">Policies</a> / <a href="{{ t.url | relative_url }}">{{ t.name }}</a> / {{ page.title }}</nav>
-  <span class="tag">{{ t.name }}</span> {% include status-of.html doc=page %}{% include badge.html key=st_key label=st_label %} {% include when-tag.html doc=page %}
+  <div class="ph-labels"><span class="tag">{{ t.name }}</span>{% include status-of.html doc=page %}{% include badge.html key=st_key label=st_label %}{% include when-tag.html doc=page %}</div>
   <h1>{{ page.title }}</h1>
   <p class="lede">{{ page.summary }}</p>
 </div></div>
