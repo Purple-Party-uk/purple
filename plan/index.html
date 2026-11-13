@@ -64,12 +64,19 @@ lede: "What changes, and when. Each step pays for the next."
 
 <section class="sec tint" id="labels"><div class="wrap">
   <details class="detail">
-    <summary>What the labels mean <span>Status and cost, for anyone checking our working</span></summary>
+    <summary>What the labels mean <span>Status, cost and timing, for anyone checking our working</span></summary>
     <div class="keys">
       <div><h2 class="mini">Status</h2>{% include status-legend.html %}</div>
       <div><h2 class="mini">Cost per year, once in place</h2>
         <dl class="legend">{% for c in site.data.cost_tiers %}<div><dt><span class="cost c-{{ c.key }}">{{ c.label }}</span></dt><dd>{{ c.range }}</dd></div>{% endfor %}</dl>
       </div>
     </div>
+    <div class="keys single"><div><h2 class="mini">Timing</h2>
+      <dl class="legend legend-timing">
+        <div><dt>{% include when-tag.html when="tbc" %}</dt><dd>We have not yet decided when this happens.</dd></div>
+        {% for s in site.data.plan.stages %}<div><dt>{% include when-tag.html when=s.id %}</dt><dd>Introduced in the {{ s.label }} stage of the plan ({{ s.span | downcase }}).</dd></div>
+        {% endfor %}{% assign span_eg = "year1,years2-5" | split: "," %}<div><dt>{% include when-tag.html when=span_eg %}</dt><dd>Introduced in steps across more than one stage. The years run from the start of the first stage to the end of the last.</dd></div>
+      </dl>
+    </div></div>
   </details>
 </div></section>

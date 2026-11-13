@@ -1,5 +1,14 @@
 {% comment %}
-  Timing label for a policy (include.doc). Reads `when:` from front matter.
-  Not set means we have not decided yet, so it shows "TBC".
-  Examples: when: "Year 1" | "Phased from Year 2" | "First Budget"
-{% endcomment %}{% assign w = include.doc["when"] | default: "TBC" %}<span class="when-tag{% if w == 'TBC' %} is-tbc{% endif %}"><span class="wt-k">Timing</span> {{ w }}</span>
+  Timing label for a policy. Reads `when:` from the policy's front matter (include.doc),
+  or from include.when (used by the label key on the Plan page).
+
+  The labels are a fixed set, taken from the stages in _data/plan.yml:
+    (not set)                 -> TBC              we have not decided yet
+    when: year1               -> Year 1
+    when: years2-5            -> Years 2–5
+    when: years6-10           -> Years 6–10
+    when: beyond              -> After Year 10
+    when: [year1, years2-5]   -> Phased, Years 1–5         spans stages: [first stage, last stage]
+    when: [years2-5, beyond]  -> Phased, Year 2 onwards
+  An unknown stage key shows TBC, so check the spelling against the ids in _data/plan.yml.
+{% endcomment %}{% assign w = include.when | default: include.doc["when"] %}{% assign wt = "TBC" %}{% assign wspan = false %}{% if w %}{% assign wl = w | join: "," | split: "," %}{% assign wa = wl | first | strip %}{% assign wb = wl | last | strip %}{% assign sa = site.data.plan.stages | where: "id", wa | first %}{% assign sb = site.data.plan.stages | where: "id", wb | first %}{% if sa and sb %}{% if wa == wb %}{% assign wt = sa.timing %}{% else %}{% assign wspan = true %}{% if sb.to %}{% assign wt = "Phased, Years " | append: sa.from | append: "–" | append: sb.to %}{% else %}{% assign wt = "Phased, Year " | append: sa.from | append: " onwards" %}{% endif %}{% endif %}{% endif %}{% endif %}<span class="when-tag{% if wt == 'TBC' %} is-tbc{% endif %}{% if wspan %} is-span{% endif %}"><span class="wt-k">Timing</span>{{ wt }}</span>

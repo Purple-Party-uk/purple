@@ -55,5 +55,19 @@ Nav: The Plan · Policies · First Year · Join. The homepage is the vision.
 | King's Speech text | `first-year/kings-speech/index.html` |
 
 Status is worked out automatically: "Draft bill" once any clause has text, "Costed brief" once the policy has `costing:`, otherwise "Vision". Set `status:` in a policy or bill to override.
+
+Timing labels come from a fixed set tied to the Plan stages in `_data/plan.yml`. In a policy's front matter:
+
+| Front matter | Label shown |
+|---|---|
+| (no `when:`) | TBC |
+| `when: year1` | Year 1 |
+| `when: years2-5` | Years 2–5 |
+| `when: years6-10` | Years 6–10 |
+| `when: beyond` | After Year 10 |
+| `when: [year1, years2-5]` | Phased, Years 1–5 (spans stages: first stage, last stage) |
+| `when: [years2-5, beyond]` | Phased, Year 2 onwards |
+
+An unrecognised key shows TBC. Change a stage's `timing`, `from` or `to` in `_data/plan.yml` and every label follows.
 Bills are listed under First Year unless they set `first_year: false`. Add `theme:` and `costs_money: yes | no` to a bill to fill the Bills table.
 `/bills/` redirects to `/first-year/bills/`. Individual bill pages stay at `/bills/<key>/`.
