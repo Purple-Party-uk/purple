@@ -10,8 +10,17 @@
 #   condition: what has to be in place first, so we can pay for it ("" if none)
 #   policy:    policy key, if a policy page exists
 #   bill:      bill key, if a bill exists
+#
+# Each stage also sets the policy Timing labels (see _includes/when-tag.html):
+#   timing:    the label a policy in this stage shows
+#   from, to:  the years the stage covers, used to word labels that span stages
+#              (leave `to` empty for the open-ended last stage)
+# Change a stage here and every Timing label on the site follows.
 stages:
   - id: year1
+    timing: "Year 1"
+    from: 1
+    to: 1
     label: "Year 1"
     span: "The first twelve months"
     short: "The King’s Speech, the first Budget and the Bills."
@@ -21,6 +30,9 @@ stages:
       - { title: "[Headline Year 1 item]", when: "[First Budget]", theme: home, status: vision, cost: low, condition: "", policy: "", bill: "" }
       - { title: "[Headline Year 1 item]", when: "[By the end of Year 1]", theme: work, status: vision, cost: low, condition: "", policy: "", bill: "" }
   - id: years2-5
+    timing: "Years 2–5"
+    from: 2
+    to: 5
     label: "Years 2–5"
     span: "The rest of the first term"
     short: "[One line: what this stage achieves.]"
@@ -30,6 +42,9 @@ stages:
       - { title: "[Item]", when: "[Year 3]", theme: health, status: vision, cost: medium, condition: "[What must be in place first]", policy: "", bill: "" }
       - { title: "[Item]", when: "[Year 4]", theme: making, status: vision, cost: medium, condition: "[What must be in place first]", policy: "", bill: "" }
   - id: years6-10
+    timing: "Years 6–10"
+    from: 6
+    to: 10
     label: "Years 6–10"
     span: "The second term"
     short: "[One line: what this stage achieves.]"
@@ -39,8 +54,11 @@ stages:
       - { title: "[Item]", when: "[Year 8]", theme: education, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
       - { title: "[Item]", when: "[Year 10]", theme: democracy, status: vision, cost: low, condition: "[What must be in place first]", policy: "", bill: "" }
   - id: beyond
+    timing: "After Year 10"
+    from: 11
+    to:
     label: "Beyond"
-    span: "Year 10 onwards"
+    span: "After Year 10"
     short: "[One line: the long-term change.]"
     look: "[What Britain looks like once the plan is complete.]"
     items:
