@@ -1,0 +1,5 @@
+{% comment %}
+  Costing badge for a policy (include.doc). Reads `costing:` from front matter.
+  estimate -> Costed | partial -> Partly costed | anything else -> Costing in progress
+  "Costed" means we have a best estimate, not a Treasury-grade figure.
+{% endcomment %}{% assign c = include.doc.costing %}{% if c == "estimate" %}{% include badge.html key="costed" label="Costed" %}{% elsif c == "partial" %}{% include badge.html key="partial" label="Partly costed" %}{% else %}{% include badge.html key="vision" label="Costing in progress" %}{% endif %}
