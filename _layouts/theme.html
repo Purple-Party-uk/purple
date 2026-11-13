@@ -41,7 +41,7 @@ nav: policies
 {% if list.size > 0 %}
   <ul class="plist">
   {% for p in list %}
-    <li>{% include status-of.html doc=p %}<a href="{{ p.url | relative_url }}"><h3>{{ p.title }} {% include badge.html key=st_key label=st_label %}</h3><p>{{ p.summary }}</p><span class="read">Read the policy</span></a></li>
+    <li>{% include status-of.html doc=p %}<a href="{{ p.url | relative_url }}"><h3>{{ p.title }} {% include badge.html key=st_key label=st_label %}</h3><p>{{ p.summary }}</p>{% include when-tag.html doc=p %}<span class="read">Read the policy</span></a></li>
   {% endfor %}
   </ul>
 {% else %}

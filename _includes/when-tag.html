@@ -1,0 +1,5 @@
+{% comment %}
+  Timing label for a policy (include.doc). Reads `when:` from front matter.
+  Not set means we have not decided yet, so it shows "TBC".
+  Examples: when: "Year 1" | "Phased from Year 2" | "First Budget"
+{% endcomment %}{% assign w = include.doc["when"] | default: "TBC" %}<span class="when-tag{% if w == 'TBC' %} is-tbc{% endif %}"><span class="wt-k">Timing</span> {{ w }}</span>
