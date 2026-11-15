@@ -24,7 +24,7 @@ title: Purple
 <section class="sec" id="promises"><div class="wrap">
   <div class="sec-head reveal">
     <p class="kicker">The Britain we’re building</p>
-    <h2>Six promises. <span>Each one tied to a date in the plan.</span></h2>
+    <h2>Six promises. <span>Yes, we have a plan.</span></h2>
     <p class="sec-lede">Imagine a Britain where your rent builds a home you own, and your work builds savings that are yours. Where no one is one bad month away from losing everything, and no one grows rich just by sitting on what they already have. Where the things we all depend on, from energy and water to the trains and the NHS, are run for the people who use them. Where politics answers to voters, not donors, and your rights do not depend on being in the majority. A country that makes things, and shares what it makes.</p>
   </div>
   <ol class="promises">
@@ -67,11 +67,10 @@ title: Purple
   <a class="btn violet" href="{{ '/plan/' | relative_url }}">Read the full plan</a>
 </div></section>
 
-{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
 <section class="sec tint" id="pay"><div class="wrap">
   <div class="sec-head reveal">
     <h2>How we pay for it</h2>
-    <p class="sec-lede">For every step in the plan, we will publish what it costs and the tax that pays for it. Our costings are best estimates, and we show our working so you can check them.</p>
+    <p class="sec-lede">A government is not a household. It creates the pounds it spends, and tax takes pounds back out, so that spending doesn’t push up prices. The real limit is what Britain can make and do, not money.</p>
     <p class="sec-lede">We tax what people take, not what they make. The first £20,000 you earn is tax-free, and National Insurance goes. The bill moves to land, large fortunes and the biggest businesses.</p>
   </div>
   <ul class="pay-steps reveal">
@@ -79,7 +78,8 @@ title: Purple
     <li><b>From years 2–5:</b> one Business Value Tax replaces VAT, corporation tax and employers’ National Insurance. A land tax replaces business rates. A fairer property tax replaces council tax and stamp duty.</li>
     <li><b>Throughout:</b> an independent Fiscal Council checks the numbers, and an Inflation Brake in law tells the government what to do if prices rise too fast.</li>
   </ul>
-  <a class="btn violet" href="{{ pay.url | default: '/policies/money/how-we-pay-for-it/' | relative_url }}">How we pay for it</a>
+  <p class="note pay-note">For every step in the plan, we will publish what it costs and how we keep prices steady while we do it. Our costings are best estimates, and we show our working so you can check them.</p>
+  <a class="btn violet" href="{{ '/how-we-pay-for-it/' | relative_url }}">How we pay for it</a>
 </div></section>
 
 {% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}

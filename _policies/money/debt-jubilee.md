@@ -157,9 +157,9 @@ The cost comes year by year:
 
 The real risk is not the £6 trillion. It is what people spend once their repayments stop, and what people over 60 draw from their pots. Together, that could add £130–170 billion a year of spending power. That is 4–6% of the economy each year. If it comes too fast, prices rise.
 
-We control it in three ways. The one-twentieth limit slows what people over 60 can take out. The half-payment rule moves much of the old mortgage money into pension pots for three years. And our [Inflation Brake Rule]({{ '/policies/money/how-we-pay-for-it/' | relative_url }}) is set up with Jubilee spending counted in advance. If prices still run hot, the honest choices are a lower limit, higher taxes at the top, or slowing other Purple programmes. We would rather say that now.
+We control it in three ways. The one-twentieth limit slows what people over 60 can take out. The half-payment rule moves much of the old mortgage money into pension pots for three years. And our [Inflation Brake Rule]({{ '/how-we-pay-for-it/' | relative_url }}) is set up with Jubilee spending counted in advance. If prices still run hot, the honest choices are a lower limit, higher taxes at the top, or slowing other Purple programmes. We would rather say that now.
 
-On the standard measure, the national debt roughly triples. We explain why we think that measure misleads in [How we pay for it]({{ '/policies/money/how-we-pay-for-it/' | relative_url }}).
+On the standard measure, the national debt roughly triples. We explain why we think that measure misleads in [How we pay for it]({{ '/how-we-pay-for-it/' | relative_url }}).
 
 ## Who it affects
 

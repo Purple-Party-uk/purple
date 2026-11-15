@@ -1,0 +1,37 @@
+---
+layout: default
+nav: plan
+---
+{% comment %}
+  A standalone explainer kept in the policies collection (so other pages can look it up by key)
+  but shown as its own page, outside the policy-area lists.
+  Front matter: related (policy keys) and related_tbc (titles of policies still to come).
+{% endcomment %}
+{% if page.image %}{% if page.image contains "://" %}{% assign head_img = page.image %}{% else %}{% assign head_img = page.image | relative_url %}{% endif %}{% endif %}
+<div class="page-head{% if page.image %} has-image{% endif %}">{% if page.image %}<div class="ph-media" style="background-image:url('{{ head_img }}');{% if page.image_position %}background-position:{{ page.image_position }};{% endif %}" role="img" aria-label="{{ page.image_alt | escape }}"></div>{% endif %}<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/plan/' | relative_url }}">The Plan</a> / {{ page.title }}</nav>
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.summary }}</p>
+</div></div>
+<div class="wrap doc">
+  <article class="body">
+    {% include video.html id=page.video title=page.title intro=page.video_intro link=page.video_link %}
+    {{ content }}
+    {% if page.related or page.related_tbc %}
+    <h2 id="the-policies-that-do-this">The policies that do this</h2>
+    <ul class="pay-policies">
+      {% for k in page.related %}{% assign p = site.policies | where: "key", k | first %}{% if p %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a><span>{{ p.summary }}</span></li>{% endif %}{% endfor %}
+      {% for t in page.related_tbc %}<li class="tbc"><b>{{ t }}</b><span>Policy page to come.</span></li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% include say-form.html %}
+  </article>
+  <aside class="side">
+    <div class="panel toc"><h3>On this page</h3><ul id="toc"></ul></div>
+    <div class="panel"><h3>See it in practice</h3><ul>
+      <li><a href="{{ '/first-year/budget/' | relative_url }}">Our first Budget</a></li>
+      <li><a href="{{ '/plan/' | relative_url }}">The Plan</a></li>
+      <li><a href="{{ '/policies/money/' | relative_url }}">Your Money &amp; Security policies</a></li>
+    </ul></div>
+  </aside>
+</div>

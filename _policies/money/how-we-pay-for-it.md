@@ -1,11 +1,18 @@
 ---
 key: how-we-pay-for-it
-theme: money
-order: 9
+# Not a policy card: this is its own page, linked from the home page, Plan, Budget and footer.
+# No theme, so it does not appear in the Money & Security list.
+layout: explainer
+permalink: /how-we-pay-for-it/
+nav: plan
 title: "How we pay for it"
 summary: "A government is not a household. The limit on what Britain can afford is people, skills, materials and energy, not pounds. Here is how we spend, how we keep prices steady, and why you shouldn't lose sleep over the deficit."
 bills: []
 flagship: false
+# The policies that put this into practice, shown at the end of the page.
+related: [income-tax, wealth, property-tax, vat, inheritance]
+# Policies not yet on the site, shown as "to come".
+related_tbc: ["Fiscal Council and Inflation Brake Rule (replacing the OBR)", "Business Value Tax", "Land value tax"]
 image: /assets/img/how-we-pay-for-it.jpg
 image_alt: "A pile of Bank of England and Royal Bank of Scotland £5 and £10 notes"
 video: mqSBiLfcNS4
@@ -15,7 +22,7 @@ video: mqSBiLfcNS4
 
 - The UK government creates the pounds it spends. It cannot run out of them the way a family can.
 - The real limit is what the country can make and do. If spending outruns that, prices rise.
-- Tax has two jobs: keeping prices steady and deciding who carries the load.
+- Tax doesn't pay for spending the way a wage pays a family's bills. It takes pounds back out of the economy, so that spending doesn't push up prices, and it decides who carries the load.
 - Britain already borrows £132 billion a year. Our full costings will be published policy by policy.
 - We bring spending in step by step, and we spend first on the things that let Britain make more.
 - If prices run too hot, a brake written into law kicks in automatically, with an independent referee.
