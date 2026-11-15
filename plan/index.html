@@ -49,7 +49,13 @@ lede: "What changes, and when. Each step pays for the next."
 </div></section>
 {% endfor %}
 
-<section class="sec" id="tests"><div class="wrap">
+{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
+<section class="sec" id="pay"><div class="wrap">
+  <div class="sec-head"><p class="kicker">How we pay for it</p><h2>{{ pay.title }}</h2><p class="sec-lede">{{ pay.summary }}</p></div>
+  <a class="btn violet" href="{{ pay.url | relative_url }}">Read how we pay for it</a>
+</div></section>
+
+<section class="sec tint" id="tests"><div class="wrap">
   <div class="sec-head">
     <p class="kicker">Hold us to it</p>
     <h2>Six promises. <span>Six tests you can check.</span></h2>
@@ -62,7 +68,7 @@ lede: "What changes, and when. Each step pays for the next."
   </table></div>
 </div></section>
 
-<section class="sec tint" id="labels"><div class="wrap">
+<section class="sec" id="labels"><div class="wrap">
   <details class="detail">
     <summary>What the labels mean <span>Status, cost and timing, for anyone checking our working</span></summary>
     <div class="keys">

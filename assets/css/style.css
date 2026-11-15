@@ -952,3 +952,9 @@ body.dark-top:not(.scrolled) .menu .donate:hover{background:#fff;color:var(--vio
 .pay-steps li{font-size:17px;line-height:1.55;color:var(--muted);padding:16px 0;border-bottom:1px solid var(--line);}
 .pay-steps b{color:var(--ink);}
 .sec-head .sec-lede + .sec-lede{margin-top:16px;}
+.pay-note{margin:0 0 28px;}
+.pay-policies{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);}
+.pay-policies li{padding:14px 0;border-bottom:1px solid var(--line);}
+.pay-policies li a,.pay-policies li b{display:block;font-weight:700;}
+.pay-policies li span{display:block;color:var(--muted);font-size:.95em;}
+.pay-policies li.tbc b{color:var(--muted);}
