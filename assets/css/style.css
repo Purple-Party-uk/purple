@@ -946,3 +946,9 @@ body.dark-top:not(.scrolled) .menu .donate:hover{background:#fff;color:var(--vio
 .ph-labels{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px;}
 .ph-labels .tag,.ph-labels .badge,.ph-labels .when-tag,.page-head .ph-labels .tag,.page-head .ph-labels .badge,.page-head .ph-labels .when-tag{display:inline-flex;align-items:center;gap:7px;box-sizing:border-box;height:34px;margin:0;padding:0 15px;font-size:13px;font-weight:700;letter-spacing:.02em;line-height:1;vertical-align:middle;}
 .ph-labels .when-tag .wt-k{font-size:11px;}
+
+/* Home: how we pay for it */
+.pay-steps{list-style:none;margin:0 0 40px;padding:0;max-width:860px;border-top:1px solid var(--line);}
+.pay-steps li{font-size:17px;line-height:1.55;color:var(--muted);padding:16px 0;border-bottom:1px solid var(--line);}
+.pay-steps b{color:var(--ink);}
+.sec-head .sec-lede + .sec-lede{margin-top:16px;}
