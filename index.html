@@ -4,16 +4,15 @@ nav: home
 title: Purple
 ---
 {% comment %}
-  Homepage = the vision. Order: hero, six promises, how we get there, our first year, join and donate.
+  Homepage = the vision. Order: hero, six goals, how we get there, how we pay for it, our first year, join and donate.
   Promises come from _data/promises.yml; the timeline from _data/plan.yml.
 {% endcomment %}
 <section class="hero2">
   <div class="hero-media blend" aria-hidden="true" style="background-image:linear-gradient(100deg,rgba(74,31,74,.86) 0%,rgba(46,36,116,.7) 55%,rgba(28,39,102,.5) 100%),url('{{ '/assets/img/hero.jpg' | relative_url }}');background-size:cover;background-position:center 60%"></div>
   <div class="wrap hero2-inner">
     <p class="kicker on-dark reveal">Our vision for Britain</p>
-    {% comment %} Interim headline. Replace with the vision in one sentence once agreed. {% endcomment %}
     <h1 class="reveal">The country got richer. You didn’t. <em>Let’s change that.</em></h1>
-    <p class="hero2-sub reveal"><span class="phtxt">[One or two sentences: the Britain Purple is building, in plain words.]</span></p>
+    <p class="hero2-sub reveal">A Britain that belongs to the people who live and work in it. This is our plan to build it, step by step, with what each step costs and how we pay for it.</p>
     <div class="ctas reveal"><a class="btn" href="{{ '/plan/' | relative_url }}">See how we get there</a><a class="btn light" href="{{ '/join/' | relative_url }}">Join Purple</a></div>
   </div>
 </section>
@@ -26,6 +25,7 @@ title: Purple
   <div class="sec-head reveal">
     <p class="kicker">The Britain we’re building</p>
     <h2>Six promises. <span>Each one tied to a date in the plan.</span></h2>
+    <p class="sec-lede">Imagine a Britain where your rent builds a home you own, and your work builds savings that are yours. Where no one is one bad month away from losing everything, and no one grows rich just by sitting on what they already have. Where the things we all depend on, from energy and water to the trains and the NHS, are run for the people who use them. Where politics answers to voters, not donors, and your rights do not depend on being in the majority. A country that makes things, and shares what it makes.</p>
   </div>
   <ol class="promises">
   {% for p in site.data.promises limit:6 %}{% assign stg = nil %}{% if p.stage %}{% assign stg = site.data.plan.stages | where: "id", p.stage | first %}{% endif %}
@@ -33,7 +33,7 @@ title: Purple
       <span class="pnum">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
       <h3>{{ p.promise }}</h3>
       <p>{{ p.line }}</p>
-      <a class="plink" href="{{ '/plan/' | relative_url }}#{{ p.stage }}">{{ stg.label | default: 'The plan' }}</a>
+      <a class="plink" href="{{ '/plan/' | relative_url }}#{{ p.stage }}">{% if stg %}Starts: {{ stg.label }}{% else %}The plan{% endif %}</a>
     </li>
   {% endfor %}
   </ol>
@@ -49,7 +49,7 @@ title: Purple
   <div class="sec-head split reveal">
     <div><p class="kicker">How we get there</p>
     <h2>Year one, we start. <span>By year five, you’ll feel it.</span></h2></div>
-    <p class="sec-lede">Each step pays for the next. It’s costed, and we show our working.</p>
+    <p class="sec-lede">We will not do everything at once, and we will not pretend we can. The plan comes in four stages. Each stage builds on the one before, and we show what each one costs and how we pay for it.</p>
   </div>
   <ol class="road">
   {% for s in site.data.plan.stages %}
@@ -58,7 +58,7 @@ title: Purple
         <span class="stage-label">{{ s.label }}</span>
         <span class="stage-span">{{ s.span }}</span>
         <span class="stage-short">{{ s.short }}</span>
-        <ul>{% for it in s.items limit:3 %}<li>{{ it.title }}</li>{% endfor %}</ul>
+        <ul>{% for st in s.steps %}<li>{{ st }}</li>{% endfor %}</ul>
       </a>
       {% if s.id == "year1" %}<p class="fy-links small"><a href="{{ '/first-year/kings-speech/' | relative_url }}">King’s Speech</a><a href="{{ '/first-year/budget/' | relative_url }}">Budget</a><a href="{{ '/first-year/bills/' | relative_url }}">Bills</a></p>{% endif %}
     </li>
@@ -67,11 +67,27 @@ title: Purple
   <a class="btn violet" href="{{ '/plan/' | relative_url }}">Read the full plan</a>
 </div></section>
 
+{% assign pay = site.policies | where: "key", "how-we-pay-for-it" | first %}
+<section class="sec tint" id="pay"><div class="wrap">
+  <div class="sec-head reveal">
+    <h2>How we pay for it</h2>
+    <p class="sec-lede">For every step in the plan, we will publish what it costs and the tax that pays for it. Our costings are best estimates, and we show our working so you can check them.</p>
+    <p class="sec-lede">We tax what people take, not what they make. The first £20,000 you earn is tax-free, and National Insurance goes. The bill moves to land, large fortunes and the biggest businesses.</p>
+  </div>
+  <ul class="pay-steps reveal">
+    <li><b>From year 1:</b> close loopholes, tax gains from wealth the same as wages, a minimum tax on fortunes above £5 million, and a surcharge on share buybacks.</li>
+    <li><b>From years 2–5:</b> one Business Value Tax replaces VAT, corporation tax and employers’ National Insurance. A land tax replaces business rates. A fairer property tax replaces council tax and stamp duty.</li>
+    <li><b>Throughout:</b> an independent Fiscal Council checks the numbers, and an Inflation Brake in law tells the government what to do if prices rise too fast.</li>
+  </ul>
+  <a class="btn violet" href="{{ pay.url | default: '/policies/money/how-we-pay-for-it/' | relative_url }}">How we pay for it</a>
+</div></section>
+
 {% assign fy_bills = site.bills | where_exp: "b", "b.first_year != false" %}
-<section class="sec tint" id="first-year"><div class="wrap">
+<section class="sec" id="first-year"><div class="wrap">
   <div class="sec-head reveal">
     <p class="kicker">Our first year</p>
     <h2>Our first year. <span>What we’d pass, and how we pay for it.</span></h2>
+    <p class="sec-lede">Year one is already written: the King’s Speech, the first Budget, and the bills to deliver them. You can read them now.</p>
   </div>
   <div class="fy-grid">
     <a class="fy reveal" href="{{ '/first-year/kings-speech/' | relative_url }}"><span class="fy-k">01</span><h3>The King’s Speech</h3><p>The programme for our first session of Parliament.</p><span class="fy-go">Read the speech</span></a>
@@ -81,7 +97,7 @@ title: Purple
 </div></section>
 
 {% assign L = site.data.people.leader %}
-<section class="sec" id="who"><div class="wrap leader home-leader">
+<section class="sec tint" id="who"><div class="wrap leader home-leader">
   <div class="leader-photo">{% if L.photo and L.photo != "" %}{% include image.html src=L.photo alt=L.name %}{% else %}{% include image.html caption="Portrait of the leader" ratio="4/5" %}{% endif %}</div>
   <div class="leader-text">
     <p class="kicker">Who we are</p>

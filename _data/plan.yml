@@ -16,6 +16,10 @@
 #   from, to:  the years the stage covers, used to word labels that span stages
 #              (leave `to` empty for the open-ended last stage)
 # Change a stage here and every Timing label on the site follows.
+#
+# Homepage timeline:
+#   short:     the stage's one-word name, e.g. "Foundations"
+#   steps:     what happens in the stage, in plain words (shown on the homepage)
 stages:
   - id: year1
     timing: "Year 1"
@@ -23,7 +27,12 @@ stages:
     to: 1
     label: "Year 1"
     span: "The first twelve months"
-    short: "The King’s Speech, the first Budget and the Bills."
+    short: "Foundations"
+    steps:
+      - "Close tax loopholes"
+      - "Raise the lowest incomes and end benefit sanctions"
+      - "Reform the Crown, party funding and the second chamber"
+      - "Set up the agencies the rest of the plan needs"
     look: "[What Britain looks like at the end of Year 1, in two or three sentences.]"
     items:
       - { title: "[Headline Year 1 item]", when: "[First 100 days]", theme: money, status: costed, cost: medium, condition: "", policy: "", bill: "" }
@@ -35,7 +44,12 @@ stages:
     to: 5
     label: "Years 2–5"
     span: "The rest of the first term"
-    short: "[One line: what this stage achieves.]"
+    short: "Build"
+    steps:
+      - "Clear household debt"
+      - "Open Rent-to-Buy"
+      - "Start everyone’s wealth fund pot"
+      - "Bring in the new tax system"
     look: "[What Britain looks like by the end of Year 5.]"
     items:
       - { title: "[Item]", when: "[Year 2]", theme: home, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
@@ -47,7 +61,12 @@ stages:
     to: 10
     label: "Years 6–10"
     span: "The second term"
-    short: "[One line: what this stage achieves.]"
+    short: "Scale up"
+    steps:
+      - "Clear mortgage debt"
+      - "Bring the NHS to full strength"
+      - "Free childcare from 12 months"
+      - "Put water and rail in public hands"
     look: "[What Britain looks like by the end of Year 10.]"
     items:
       - { title: "[Item]", when: "[Year 6]", theme: planet, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
@@ -59,7 +78,11 @@ stages:
     to:
     label: "Beyond"
     span: "After Year 10"
-    short: "[One line: the long-term change.]"
+    short: "Mature"
+    steps:
+      - "The wealth fund pays our pensions"
+      - "A shorter working week"
+      - "Most firms owned by the people who work in them"
     look: "[What Britain looks like once the plan is complete.]"
     items:
       - { title: "[Item]", when: "[Later]", theme: world, status: vision, cost: high, condition: "[What must be in place first]", policy: "", bill: "" }
